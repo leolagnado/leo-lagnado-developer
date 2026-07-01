@@ -1,0 +1,383 @@
+                                         Peko's Fraction Pizzeria
+    Privacy Policy, Terms of Use & Safety Disclaimer
+                                                    Effective: June 29, 2026
+ Plain-language summary for parents and guardians
+  • The app is a fictional, child-friendly fraction game about making pretend pizzas for animal characters.
+  • The app is designed to be offline-first and does not require an account, login, profile, chat, social sharing, analytics,
+     advertising, tracking, subscriptions, in-app purchases, or external AI service.
+  • The app does not collect, store, sell, rent, or share personal information from users or children.
+  • Gameplay activity is intended to remain on the device. Local app data can usually be removed by clearing app storage or
+     uninstalling the app.
+  • There are no third-party ads and no in-app checkout. Any paid-app purchase, refund, tax, rating, review, install, or store
+     diagnostic information is handled by Google Play under Google terms and user settings.
+  • The animal food content is pretend. Some ingredients shown may be unsafe, toxic, or fatal to real animals. Never feed pets
+     based on anything shown in the app.
+  • Privacy questions, parent or guardian inquiries, legal notices, and dispute notices may be sent by post to the address in
+     Section 2.
+
+
+
+1. Overview and Scope
+This Privacy Policy explains how Peko's Fraction Pizzeria handles information when a person uses the Android application. The
+developer and publisher of the app is referred to in this document as the "Developer," "we," "us," or "our."
+Peko's Fraction Pizzeria is a local-first educational game. Children practice early fraction concepts by slicing fictional pizzas into
+equal parts, placing pretend toppings, filling fictional animal orders, and exploring a cozy ingredient and animal encyclopedia.
+This document also contains Terms of Use and a Safety Disclaimer. The privacy provisions describe data handling. The terms
+address the app licence, acceptable use, educational limitations, fictional animal-food content, risk allocation, platform terms, and
+disputes.
+This policy expands the in-app Disclaimer & Privacy Policy and is intended to remain consistent with it. If a child uses the app, the
+child's parent or guardian is responsible for supervising that use.
+
+
+2. Developer and Postal Contact
+Questions, privacy requests, parent or guardian inquiries, legal notices, and dispute notices may be sent by post to the address
+below. Please do not mail devices, passwords, recovery keys, payment cards, medical records, original documents, or
+irreplaceable materials.
+    Peko's Fraction Pizzeria Privacy
+    PO BOX 99900 CQ 646 543
+    RPO THE BEACHES
+    Toronto ON M4E 0B4
+    Canada
+Because the app does not collect accounts, profiles, or personal gameplay records, most privacy choices can be handled directly
+on the device by clearing app storage, uninstalling the app, or changing device and Google Play settings.
+
+
+3. How the App Works
+The app provides three primary play areas: Orders, Free Play, and Magical Garden. In Orders, a fictional animal customer asks
+for a pizza divided into a certain number of slices and requests toppings on specific numbers of slices. In Free Play, the user can
+choose a denominator and experiment with toppings without a timed challenge. In Magical Garden, the user can view fictional
+ingredient and animal information.
+The app is designed to operate without a Developer-operated server. The current version is not designed to transmit gameplay
+activity, child information, or personal information to the Developer.
+
+                                         Peko's Fraction Pizzeria | Privacy, Terms & Safety | June 29, 2026
+4. Information Processed and Collected
+The word "processed" includes information used locally by the app on the device. The word "collected" in Google Play privacy
+disclosures generally refers to information transmitted off the device so that the Developer or a third party can access it beyond
+what is necessary for a real-time feature. The app is designed so its core gameplay data is processed locally and not collected by
+the Developer.
+The following matrix describes the current app version. If the app's practices materially change, this policy and applicable Google
+Play disclosures should be updated before or when the changed practice becomes available.
+ Data category                                    How it is handled                                      Details
+ Personal information                             No                                                     The app does not ask for or collect names,
+                                                                                                         email addresses, phone numbers, accounts,
+                                                                                                         profiles, contact details, or user identifiers.
+ Children's personal information                  No                                                     The app is designed not to collect personal
+                                                                                                         information from children.
+ Location                                         No                                                     The app does not request or collect precise
+                                                                                                         or approximate location.
+ Camera, microphone, photos, contacts             No                                                     The app does not request access to these
+                                                                                                         device features.
+ Advertising ID and tracking identifiers          No                                                     The app does not use Android advertising
+                                                                                                         identifiers or tracking identifiers.
+ Analytics or behavioral tracking                 No                                                     The app does not use analytics tracking for
+                                                                                                         gameplay.
+ User-generated content or chat                   No                                                     The app has no posting, messaging, sharing,
+                                                                                                         upload, social, or public profile features.
+ External AI inputs or output                     No                                                     The app does not use an external AI or chat
+                                                                                                         service for gameplay.
+ Payment card information                         Handled by Google Play                                 If the app is purchased through Google Play,
+                                                                                                         Google processes payment, refund, tax, and
+                                                                                                         transaction information. The Developer does
+                                                                                                         not collect payment-card numbers.
+ Store-level information                          Handled by Google Play                                 Google Play may provide store-level
+                                                                                                         information such as installs, sales, refunds,
+                                                                                                         ratings, reviews, and diagnostics according to
+                                                                                                         Google systems and user settings.
+ Local gameplay state                             On-device only                                         Settings, current play state, stars, selected
+                                                                                                         ingredients, or progress information may exist
+                                                                                                         locally as part of app operation but is not sent
+                                                                                                         to the Developer.
+ Postal correspondence                            Only if voluntarily sent                               If a person writes to the postal address, the
+                                                                                                         correspondence and return details may be
+                                                                                                         used to respond, protect legal rights, and
+                                                                                                         keep ordinary business records.
+
+
+
+5. Purposes of Local Processing
+The app processes local gameplay information only to provide app functionality. This may include showing the selected game
+mode, drawing pizza slices, recording placed toppings for the current pizza, checking whether a pizza order is complete, showing
+fraction results, playing local sounds, displaying encyclopedia content, and remembering any local settings or progress supported
+by the app.
+Local gameplay information is not uploaded, used for advertising, sold, rented, or used to identify a person across apps, devices,
+or services.
+
+
+6. Permissions, Consent, and User Choices
+The current app is designed not to request sensitive device permissions such as location, camera, microphone, contacts, photos,
+or phone state. The app should not request Android advertising ID permission for a child-directed or family-oriented experience.
+A user or parent can stop using the app at any time. Local app data can usually be removed by clearing the app's storage in
+Android settings or uninstalling the app. Google Play purchase history, Family Library settings, refund requests, reviews, ratings,
+and device-level settings are controlled by Google or the user's device settings, not by the Developer.
+
+
+
+
+                                           Peko's Fraction Pizzeria | Privacy, Terms & Safety | June 29, 2026
+7. Local Storage, Retention, and Deletion
+The app stores or temporarily maintains gameplay state in the app environment on the device. If the app later adds persistent
+settings or progress, those records should remain in the app's private storage unless the policy and disclosures are updated.
+Local app data remains on the device until the app is uninstalled, app storage is cleared, the operating system removes it, or a
+local reset option removes it. The app is intended to avoid Developer access to local gameplay data.
+The app is configured not to participate in Android app-data backup where supported. However, device-level services, Google
+Play, device diagnostics, and operating-system behavior are controlled by Google, the device manufacturer, and the user's
+settings.
+
+
+8. No Sale, Advertising, or Developer Sharing
+The Developer does not sell or rent personal information, share personal information for cross-context behavioral advertising,
+operate an advertising network, or track users across apps or websites.
+The current app has no Developer-operated account system, social network, remote AI provider, marketing SDK, third-party
+analytics SDK, or advertising SDK that receives gameplay content or personal information.
+The app may include Android, Google Play, open-source, or other software components that execute locally as part of normal app
+operation. Their inclusion does not authorize those component authors to access user gameplay data through the app.
+
+
+9. Google Play, Android, and System Services
+Google provides Google Play, Android, purchase processing, refund handling, tax handling, Family Library features, store ratings
+and reviews, app installation, app updates, security scanning, crash reporting, optional diagnostics, and device-level settings.
+Google may process information independently under Google's agreements, policies, and the user's device and account settings.
+The Developer does not control Google's systems.
+If the app is purchased through Google Play, Google Play processes payment, refund, tax, and transaction information. The
+Developer does not receive or store payment-card numbers. Google Play may separately provide the Developer with store-level
+information such as installs, purchases, refunds, ratings, reviews, and diagnostics according to Google systems and user settings.
+If Google Play Family Library or other sharing options are available for the app, those features are provided and controlled by
+Google Play and the user's family group settings.
+
+
+10. Children's Privacy
+The app is intended to be appropriate for children and families. The Developer does not knowingly collect personal information
+from children through the app.
+The app does not allow children to create accounts, post content, message other users, upload photos, share freeform content,
+disclose personal information inside the app, or interact with strangers.
+If a parent or guardian believes a child has sent personal information to the Developer outside the app, such as by postal
+correspondence, the parent or guardian may contact the Developer by post. The Developer will take reasonable steps to review
+and delete unnecessary personal information, subject to ordinary business, legal, security, and recordkeeping needs.
+
+
+11. Google Play Data Safety Alignment
+The Google Play Data safety section should be completed so it remains consistent with the current app and this policy. Based on
+the current described app design, the intended posture is:
+     Data collected by the app: none.
+     Data shared by the app: none.
+     Personal and sensitive user data accessed by the app: none, apart from platform-level store purchase and diagnostic activity
+      handled by Google Play or Android outside the Developer-operated app workflow.
+     Ads: none.
+     In-app purchases and subscriptions: none.
+     Accounts: none.
+     External server features: none.
+     Developer contact mechanism: postal contact in this policy.
+If the app later adds analytics, network features, accounts, purchases, permissions, cloud save, support email, forms, user-
+generated content, or external services, the Data safety section, this policy, and any in-app disclosures should be updated before
+or when those features become available.
+
+
+                                       Peko's Fraction Pizzeria | Privacy, Terms & Safety | June 29, 2026
+12. Security
+The app reduces privacy risk by avoiding personal-data collection, avoiding accounts, avoiding advertising and analytics SDKs,
+avoiding sensitive device permissions, and keeping gameplay local. These choices reduce risk but cannot guarantee absolute
+security, uninterrupted operation, availability, compatibility, or protection from device compromise, operating-system defects,
+malicious software, storage failure, unauthorized access, or user error.
+Parents and guardians should protect the device and Google Account with appropriate passcodes, authentication, age-
+appropriate device settings, parental controls, software updates, and purchase controls.
+
+
+13. Privacy Choices and Requests
+Because the Developer does not receive or maintain accounts, gameplay profiles, analytics records, or local gameplay data, the
+Developer generally cannot access, export, correct, or delete those items remotely. Users manage local data through Android
+settings, Google Play settings, device settings, parental controls, or app removal.
+A person may send a privacy inquiry or request by post to the address in Section 2. The request should identify the applicable
+jurisdiction and describe the requested action without including unnecessary sensitive information. Identity or authority may need
+to be verified before responding. If the Developer does not hold relevant information, the response may state that fact.
+
+
+14. Ads, Subscriptions, and In-App Purchases
+The app contains no third-party ads, no ad SDKs, no subscriptions, and no in-app purchases. The app is intended to be a buy-
+once-and-play educational experience.
+If the app is sold as a paid app through Google Play, the purchase transaction is handled by Google Play, not by an in-app
+checkout operated by the Developer. Refunds and purchase-related rights are handled through Google Play and applicable law.
+
+
+15. Fictional Food and Animal Safety Disclaimer
+The app is a work of fiction created for educational and entertainment purposes only.
+The ingredients, topping combinations, recipes, animal characters, and animal-food scenarios shown in the app are fictional. They
+are not real-world dietary, nutritional, medical, veterinary, allergy, or food-safety advice for humans or animals.
+Some ingredients shown in the app may be harmful, highly toxic, or fatal to real dogs, cats, and other animals. Never feed a pet
+based on anything shown in the app. For animal diet, animal health, or animal safety questions, consult a licensed veterinarian.
+For human food, allergy, nutrition, medical, or safety questions, consult an appropriate qualified professional.
+Parents and guardians should supervise children and make clear that the app's animal characters and recipes are pretend.
+
+
+16. Educational Disclaimer
+The app is intended to support early fraction learning through visual play. It is not a substitute for professional educational
+assessment, tutoring, therapy, curriculum advice, school instruction, individualized education planning, or medical, psychological,
+occupational, or behavioral advice.
+The Developer does not guarantee any particular educational outcome, grade improvement, skill acquisition, therapy result, or
+learning result. Children learn at different rates, and the app should be used as one optional learning support among many.
+
+
+17. Changes and Contact
+This document may be updated to reflect app changes, legal requirements, platform rules, or improved explanations. The effective
+date identifies the current version. Material privacy changes should be reflected in the app, Google Play listing, or published policy
+as appropriate before or when the changed practice becomes available.
+Privacy questions and legal notices may be sent to the postal address in Section 2.
+
+
+
+                                                    Terms of Use
+The following terms govern use of the app and allocate responsibility for educational content, fictional animal-food content,
+gameplay choices, platform services, and related risks.
+
+
+
+
+                                        Peko's Fraction Pizzeria | Privacy, Terms & Safety | June 29, 2026
+18. Agreement and Relationship with Google
+These Terms of Use form an agreement between the user and the Developer, not Google. By downloading, installing, accessing,
+or using Peko's Fraction Pizzeria, the user agrees to these Terms. If the user does not agree, the user must not use the app.
+The app is licensed, not sold. Google Play terms, Google Play refund rules, Google Play Family Library rules, Google account
+settings, Android operating-system terms, and any other applicable Google rules also apply. These Terms supplement applicable
+Google terms and do not create obligations for Google beyond Google's own agreements.
+If these Terms conflict with mandatory Google Play distribution terms or non-waivable law, the conflicting portion will apply only to
+the maximum extent permitted.
+
+
+19. Limited Licence
+Subject to these Terms, applicable Google Play rules, and applicable law, the Developer grants a limited, personal, revocable,
+non-exclusive, non-transferable licence to download, install, and use the app for personal, family, educational, and entertainment
+purposes on Android devices the user owns or controls. The app may also be accessed through Google Play Family Library or
+other Google-supported arrangements to the extent Google's rules permit.
+No ownership in the app, interface, code, graphics, artwork, characters, sounds, text, documentation, branding, or other content is
+transferred. All rights not expressly granted are reserved by the Developer and applicable licensors.
+
+
+20. Gameplay Content and User Review
+The app provides educational game prompts, pizza orders, fraction examples, ingredient cards, animal character descriptions,
+and feedback. These materials are designed for playful learning and may be simplified, fictionalized, stylized, incomplete, or
+inaccurate outside the app context.
+Parents, guardians, educators, and users are responsible for deciding whether the app is appropriate for a child's age, needs,
+learning context, and supervision level.
+
+
+21. User Responsibilities and Supervision
+Parents and guardians are responsible for supervising children who use the app, setting device and purchase controls, deciding
+when and how the child uses the app, and explaining that the app's animal-food scenarios are pretend.
+Users are responsible for using the app lawfully, maintaining the device, keeping adequate device storage, protecting account
+credentials, managing Google Play purchases and refunds through Google, and complying with applicable school, family, and
+device rules.
+
+
+22. Acceptable Use and Restrictions
+The user may not misuse the app, interfere with its operation, bypass security or platform restrictions, use it unlawfully, distribute
+malware, attempt unauthorized access, or use the app or its content to harm, harass, deceive, exploit, or endanger any person or
+animal.
+Except where applicable law or an open-source licence expressly permits, the user may not copy, redistribute, sell, rent, lease,
+sublicense, publish, modify, reverse engineer, decompile, extract, scrape, train models on, or create derivative works from
+proprietary portions of the app, including its design, art, characters, sounds, code, documentation, or bundled materials, or
+otherwise commercially exploit the app.
+Open-source software components, if any, remain subject to their respective licences and notices. Those licences govern the
+covered components where they conflict with these restrictions.
+
+
+23. Availability, Updates, and Support
+The app may be updated, changed, suspended, limited, or discontinued. Features may fail or behave differently because of app
+updates, Android changes, Google Play changes, device hardware, memory pressure, storage limits, permissions, corrupted
+installation files, local settings, or other technical conditions.
+Unless separately promised in writing or required by law, the Developer does not guarantee maintenance, support, updates,
+compatibility, recovery, continued availability, or continued distribution. The Developer, not Google, is responsible for any
+maintenance or support the Developer elects to provide.
+
+
+
+
+                                        Peko's Fraction Pizzeria | Privacy, Terms & Safety | June 29, 2026
+24. No Warranty
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP IS PROVIDED "AS IS," "AS AVAILABLE," AND
+WITH ALL FAULTS. THE DEVELOPER DISCLAIMS ALL EXPRESS, IMPLIED, AND STATUTORY WARRANTIES AND
+CONDITIONS, INCLUDING ACCURACY, RELIABILITY, AVAILABILITY, SECURITY, QUIET ENJOYMENT, NON-
+INFRINGEMENT, MERCHANTABILITY, SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR PURPOSE.
+No app description, screenshot, demonstration, policy, update, support response, or communication creates a warranty. The user
+assumes the risk and cost of using the app and of any servicing, correction, restoration, backup, or recovery.
+Nothing in these Terms limits any non-waivable warranty, refund, consumer protection, or other right that applies under Google
+Play rules or applicable law.
+
+
+25. Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER WILL NOT BE LIABLE FOR PERSONAL
+INJURY OR FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL LOSS OR
+DAMAGE, INCLUDING LOSS, DELETION, CORRUPTION, INTERRUPTION, DEVICE ISSUE, LOSS OF PROGRESS, LOSS OF
+SETTINGS, LOSS OF DATA, LOSS OF PROFITS, BUSINESS LOSS, GOODWILL LOSS, OR CLAIMS ARISING FROM
+RELIANCE ON FICTIONAL FOOD, ANIMAL, OR EDUCATIONAL CONTENT.
+These limitations apply to claims arising from or related to the app, gameplay choices, fictional animal-food content, educational
+content, Google Play, Android, device failure, user choices, third-party components, updates, or inability to use the app,
+regardless of the theory of liability and even if the possibility of loss was disclosed.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER'S TOTAL AGGREGATE LIABILITY FOR
+ALL CLAIMS RELATING TO THE APP WILL NOT EXCEED THE GREATER OF THE AMOUNT THE USER PAID FOR THE APP
+DURING THE TWELVE MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM OR CAD $50. Nothing in this section
+limits rights or remedies that cannot be limited under applicable law.
+
+
+26. Indemnity
+To the maximum extent permitted by applicable law, the user will defend, indemnify, and hold the Developer harmless from third-
+party claims, liabilities, losses, damages, and reasonable costs arising from the user's unlawful misuse of the app, breach of these
+Terms, violation of another person's rights, or real-world action taken in reliance on fictional app content.
+
+
+27. Dispute Notice, Individual Arbitration, and Class Proceedings
+Before starting arbitration or litigation, the complaining party should send a written notice describing the dispute, supporting facts,
+and requested relief to the postal address in Section 2. The parties should attempt in good faith to resolve the dispute for 30 days
+after receipt.
+Where permitted by applicable law, and except for a claim eligible for small claims court, a request for urgent injunctive relief
+concerning intellectual property or security, or a dispute that applicable law prohibits from pre-dispute arbitration, disputes arising
+out of or relating to the app or these Terms will be resolved by final and binding individual arbitration rather than in court.
+Where arbitration applies, it will be administered under the ADR Institute of Canada Arbitration Rules in effect when the claim is
+filed, before one neutral arbitrator. The legal seat will be Toronto, Ontario, Canada. A hearing may occur remotely, in person, or
+on written submissions as the arbitrator permits. The arbitrator may award any individual remedy available under applicable law.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ARBITRATION AND LITIGATION MUST PROCEED ONLY
+ON AN INDIVIDUAL BASIS, AND NEITHER PARTY MAY BRING OR PARTICIPATE IN A CLASS, COLLECTIVE,
+CONSOLIDATED, MASS, PRIVATE-ATTORNEY-GENERAL, OR REPRESENTATIVE ACTION OR ARBITRATION. This
+paragraph does not limit any non-waivable right a consumer may have under applicable consumer protection, privacy, or class
+proceedings law.
+If a portion of this section is unenforceable for a particular claim or remedy, it will be severed only to the minimum extent
+necessary. The affected claim or remedy will proceed in a court of competent jurisdiction in Toronto, Ontario, while the
+enforceable remainder continues to apply.
+
+
+28. Governing Law
+These Terms and disputes concerning the app are governed by the laws of Ontario and the federal laws of Canada applicable
+there, without regard to conflict-of-law principles. Where arbitration does not apply, and where permitted by law, the parties submit
+to the exclusive jurisdiction of courts located in Toronto, Ontario. The United Nations Convention on Contracts for the International
+Sale of Goods does not apply.
+
+
+                                         Peko's Fraction Pizzeria | Privacy, Terms & Safety | June 29, 2026
+Nothing in this section limits any non-waivable consumer protection, privacy, child protection, platform, or other rights that a user
+may have under applicable law in the user's place of residence.
+
+
+29. Google and Third-Party Terms
+Google is not a party to these Terms and is not responsible for the app or its content except as Google's own terms require. The
+Developer, not Google, is responsible for addressing claims relating to the app, including product-liability, legal-compliance,
+privacy, consumer-protection, and intellectual-property claims, to the extent those claims are the Developer's responsibility under
+applicable law and Google Play rules.
+The user must comply with applicable third-party terms, including Google Play, Android, Google account, payment, refund, family
+sharing, device, and open-source component terms. The user represents that the user is not prohibited from using the app under
+applicable export control, sanctions, or restricted-party laws.
+
+
+30. Termination and General Terms
+The licence terminates automatically if the user materially breaches these Terms. The user may stop using the app at any time.
+Provisions that by their nature should survive termination will survive, including ownership, disclaimers, liability limits, indemnity,
+dispute resolution, governing law, and general terms.
+If any provision is invalid or unenforceable, it will be modified or severed only to the minimum extent necessary, and the remainder
+will continue. Failure to enforce a provision is not a waiver. These Terms, the Privacy Policy, applicable Google terms, and
+component licences form the entire agreement concerning their respective subject matter.
+The Developer may update these Terms for future use of the app. Continued use after updated terms are made available
+constitutes acceptance to the extent permitted by law.
+
+
+
+
+                                         Peko's Fraction Pizzeria | Privacy, Terms & Safety | June 29, 2026
+

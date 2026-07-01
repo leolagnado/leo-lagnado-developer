@@ -1,0 +1,18 @@
+---
+import { FileText, LayoutGrid, Mail } from '@lucide/astro';
+import { withBase } from '../utils/paths';
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href={withBase()} aria-label="Apps by Leonardo Mathiazzi Lagnado, home">
+      <span class="wordmark-mark" aria-hidden="true">LM</span>
+      <span>Apps by Leonardo</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href={`${withBase()}#apps`}><LayoutGrid size={16} aria-hidden="true" />Apps</a>
+      <a href={withBase('legal/')}><FileText size={16} aria-hidden="true" />Legal</a>
+      <a href={`${withBase()}#contact`}><Mail size={16} aria-hidden="true" />Contact</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,39 @@
+---
+import { ExternalLink, FileText } from '@lucide/astro';
+import type { App } from '../data/apps';
+import { withBase } from '../utils/paths';
+
+interface Props {
+  app: App;
+  index: number;
+}
+
+const { app, index } = Astro.props;
+---
+
+<article class={`app-card accent-${app.accent}`} style={`--card-delay: ${index * 90}ms`}>
+  <div class="app-card-top">
+    <img class="app-icon" src={withBase(app.icon)} alt={`${app.name} app icon`} width="104" height="104" loading="lazy" />
+    <div class="platform-list" aria-label="Platforms">
+      {app.platforms.map((platform) => <span class="platform-pill">{platform}</span>)}
+    </div>
+  </div>
+  <div class="app-copy">
+    <h3>{app.name}</h3>
+    <p>{app.description}</p>
+  </div>
+  <div class="app-actions">
+    {app.storeLinks.map((link) =>
+      link.disabled ? (
+        <span class="button button-disabled" aria-disabled="true">{link.label}</span>
+      ) : (
+        <a class="button button-store" href={link.href} target="_blank" rel="noreferrer">
+          {link.label}<ExternalLink size={15} aria-hidden="true" />
+        </a>
+      ),
+    )}
+    <a class="button button-legal" href={withBase(app.legalPath)}>
+      <FileText size={15} aria-hidden="true" />Legal
+    </a>
+  </div>
+</article>

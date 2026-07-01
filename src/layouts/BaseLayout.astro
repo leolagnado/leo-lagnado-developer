@@ -1,0 +1,43 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import { withBase } from '../utils/paths';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Apps by Leonardo Mathiazzi Lagnado',
+  description = 'Independent mobile apps for learning, accessibility, and everyday utility.',
+} = Astro.props;
+
+const pageTitle = title === 'Apps by Leonardo Mathiazzi Lagnado'
+  ? title
+  : `${title} | Apps by Leonardo Mathiazzi Lagnado`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#080808" />
+    <link rel="icon" type="image/svg+xml" href={withBase('favicon.svg')} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      <Header />
+      <main id="main-content">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

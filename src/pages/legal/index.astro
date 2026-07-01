@@ -1,0 +1,37 @@
+---
+import { ArrowDown, FileText, ShieldCheck } from '@lucide/astro';
+import { apps } from '../../data/apps';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../utils/paths';
+---
+
+<BaseLayout title="Legal Policies" description="Official HTML legal policies for apps by Leonardo Mathiazzi Lagnado.">
+  <section class="page-hero">
+    <div class="container narrow-container">
+      <p class="eyebrow"><ShieldCheck size={16} aria-hidden="true" />Official policy library</p>
+      <h1>Legal policies</h1>
+      <p>Review the complete legal documents for each app. Every policy is published as an accessible HTML page.</p>
+    </div>
+  </section>
+  <section class="section legal-index-section">
+    <div class="container narrow-container">
+      <div class="legal-index-grid">
+        {apps.map((app) => (
+          <a class={`legal-index-card accent-${app.accent}`} href={withBase(app.legalPath)}>
+            <img src={withBase(app.icon)} alt={`${app.name} app icon`} width="72" height="72" />
+            <span class="legal-index-copy">
+              <small>Legal policy</small>
+              <strong>{app.name}</strong>
+              <span>Complete HTML document</span>
+            </span>
+            <span class="round-arrow" aria-hidden="true"><ArrowDown class="rotate-link-icon" size={18} /></span>
+          </a>
+        ))}
+      </div>
+      <div class="policy-format-note">
+        <FileText size={20} aria-hidden="true" />
+        <p>These pages are HTML versions of the source legal policies. The policy wording is preserved from each source document.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

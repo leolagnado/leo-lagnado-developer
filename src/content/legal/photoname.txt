@@ -1,0 +1,459 @@
+ Privacy Policy, Terms of Use
+ & Photo Safety Notice
+ PhotoName
+ Effective: June 30, 2026
+
+
+
+    Plain-language summary
+
+     • PhotoName uses the Photos permission you choose to analyze selected pictures and propose clearer
+       filenames.
+
+     • The bundled artificial-intelligence model runs on the iPhone. Photos, photo metadata, prompts, and AI
+       output are not sent to the Developer or an external AI provider.
+
+     • The current app has no accounts, advertising, tracking, social features, or third-party analytics SDKs.
+
+     • Settings, proposals, decisions, and processing history are stored locally so PhotoName can remember
+       what it already handled.
+
+     • PhotoName creates a new copy rather than changing the existing Photos asset. Originals are never
+       deleted automatically.
+
+     • Apple may separately process App Store, iCloud Photos, backup, purchase, and optional diagnostics
+       information under Apple's own terms.
+
+
+
+ 1. Overview and Scope
+ This Privacy Policy explains how PhotoName handles information when a person uses the PhotoName
+ iPhone application. The developer and publisher of PhotoName is referred to in this document as the
+ "Developer," "we," "us," or "our."
+
+ PhotoName is a local-first photo utility. It uses a bundled vision-language model to examine photos the
+ user permits it to access, generate proposed filenames, and create user-approved renamed copies in
+ Apple Photos.
+
+ This document also contains the Terms of Use and Photo Safety Notice. The privacy provisions describe
+ data handling; the terms address the licence, AI output, photo copying, risk allocation, and disputes.
+
+
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                  Page 1
+ 2. Developer and Postal Contact
+ Questions, privacy requests, legal notices, and dispute notices may be sent by post to the address below.
+ Please do not mail original photographs, devices, passwords, recovery keys, payment cards, or
+ irreplaceable materials.
+
+     Developer
+     PO BOX 99900 CQ 646 543
+     RPO THE BEACHES
+     Toronto ON M4E 0B4
+     Canada
+
+ 3. How PhotoName Works
+ PhotoName does not rename an existing Apple Photos asset in place. After the user approves a
+ filename, the app creates a new renamed copy and leaves the original in the photo library unless the user
+ later chooses to delete it.
+ PhotoName keeps local processing history so it can normally offer only new or changed photos. The user
+ may reset processed history without deleting photos.
+
+ For unedited photos, PhotoName preserves supported photo resources and metadata when Apple
+ Photos permits. If edited-photo support is enabled, the renamed copy reflects the photo's current visible
+ appearance. That copy does not retain the original's reversible edit history and may not retain every
+ linked photo component. Some assets may remain unsupported.
+
+ 4. Information Processed and Collected
+ The word "processed" includes information used locally by the app. Under Apple's App Store privacy
+ guidance, data processed only on the device is not treated as "collected." PhotoName's core photo and
+ AI workflow is processed locally and is not collected by the Developer.
+
+ The following matrix describes the current app version. If the app's practices materially change, the policy
+ and applicable App Store disclosures will be updated.
+
+   Data category          How it is handled   Details
+
+                                              PhotoName reads photos the user permits it to access so the local AI can
+   Photo and image
+                          On-device only      understand the scene and the app can create user-approved renamed copies.
+   content
+                                              The Developer does not receive the images.
+
+                                              May include filenames, capture dates, location, dimensions, resource types,
+                                              Photos identifiers, and album membership. Album names may be used locally
+   Photo metadata         On-device only
+                                              to supply a missing year and are given to the AI only if the user enables album
+                                              context.
+
+                                              Prompts, image previews, generated descriptions, and filename suggestions
+   AI inputs and output   On-device only      are processed by the bundled local model and are not sent to an external AI
+                                              service.
+
+                                              Settings, proposals, choices, processing history, technical safety records, and
+   Local app records      On-device only      original/copy relationships help the app resume work, avoid repeatedly offering
+                                              the same photos, and support cleanup or undo.
+
+                                              PhotoName may temporarily write image data inside its app sandbox while
+   Temporary working      On-device,
+                                              analyzing or copying a photo. The app is designed to remove temporary files
+   files                  temporary
+                                              after use.
+
+
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                             Page 2
+   Data category             How it is handled     Details
+
+                                                   PhotoName is not designed as a face-recognition service and does not create
+                             Not intentionally
+   Biometric information                           or store biometric templates. The general-purpose AI may still make an
+                             created
+                                                   inaccurate inference about people shown in a photo.
+
+   Advertising or tracking                         PhotoName does not request an advertising identifier, track activity across
+                             No
+   identifiers                                     apps or websites, or use data for targeted advertising.
+
+   Account or profile                              The app has no Developer-operated account, login, cloud profile, contact list,
+                             No
+   information                                     chat, or social-sharing system.
+
+                                                   If the app is purchased through the App Store, Apple processes payment,
+   Payment information       Handled by Apple      refund, tax, and transaction information. The Developer does not receive
+                                                   payment-card numbers.
+
+                                                   Apple may provide store-level metrics or diagnostics from users who choose to
+   App Store analytics
+                             Handled by Apple      share them. Apple controls this processing and its availability under Apple's
+   and diagnostics
+                                                   privacy terms and device settings.
+
+                                                   If a person writes to the postal address in this document, the correspondence
+   Postal                    Only if voluntarily
+                                                   and return details may be used to respond, protect legal rights, and keep
+   correspondence            sent
+                                                   ordinary business records.
+
+
+
+ 5. Purposes of Local Processing
+ PhotoName processes permitted information only to provide app functionality: find photos that still need
+ review, generate and validate filename suggestions, avoid duplicate filenames, create renamed copies,
+ remember user choices, and support history, cleanup, and undo.
+
+ The app may create local technical records to identify photos and reduce the risk of acting on the wrong
+ asset. Those records are not uploaded, used for advertising, or used to identify a person across apps,
+ devices, or services.
+
+ 6. Photos Permission, Consent, and User Choices
+ PhotoName requests read-and-write access to Apple Photos because its core function requires reading
+ selected assets and creating approved replacement assets. The user may grant access to all photos or to
+ a limited selection, subject to the options iOS provides.
+
+ Photos access can be limited, expanded, or revoked through iPhone Settings. Revoking access prevents
+ future reading and may prevent PhotoName from verifying, undoing, or cleaning up assets it can no
+ longer access. Revoking permission does not delete photos or local PhotoName records by itself.
+ Album names are not given to the local AI by default. If album context is enabled, album names may help
+ a suggestion. A year in an album name may also be used locally when no reliable photo or filename date
+ is available.
+
+ No original is deleted automatically. Deletion requires a separate selection in PhotoName and Apple's
+ system confirmation. Apple controls Recently Deleted, iCloud synchronization, and final removal.
+
+ 7. Local AI Processing
+ The bundled model and supporting libraries run on the iPhone. PhotoName does not configure the model
+ to call an external AI service or upload image content, prompts, or generated output.
+ AI output is probabilistic. It may be inaccurate, repetitive, offensive, incomplete, overconfident, or
+ misleading. It may incorrectly describe a person, relationship, place, activity, object, text, date, or
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                                  Page 3
+ sensitive characteristic. PhotoName is not a factual identification service, biometric identification service,
+ accessibility substitute, or professional record-management system.
+
+ Every filename is presented for user review. The user is responsible for editing or rejecting unsuitable
+ suggestions before applying them.
+
+ 8. Local Storage, Retention, and Deletion
+ PhotoName stores preferences and processing history in the app's private container. These records
+ generally remain until the user resets applicable history, removes the app, or erases the device. Records
+ needed to maintain an unresolved original/copy relationship may remain until that relationship is resolved.
+
+ Temporary working files are designed to be removed after use. Unexpected termination,
+ operating-system behavior, backups, or storage failure may delay or prevent immediate removal.
+
+ Resetting processed history does not delete photos. It makes eligible photos available for future review
+ while preserving records still needed for active rename, cleanup, or undo safety.
+ Deleting PhotoName normally removes its private app container from the device, subject to iOS and
+ backup behavior. It does not delete originals, renamed copies, managed Photos albums, or items in
+ Recently Deleted. Those assets are stored and controlled by Apple Photos.
+
+ Device backups and iCloud backups, if enabled, are controlled by Apple and the user's settings. Restored
+ backups may restore local app records.
+
+ 9. No Sale, Advertising, or Developer Sharing
+ PhotoName does not sell or rent personal information, share it for cross-context behavioural advertising,
+ operate an advertising network, or track users across apps or websites.
+
+ The current app has no Developer-operated server, account system, remote AI provider, social network,
+ third-party analytics SDK, or marketing SDK that receives photo content or model requests.
+ PhotoName includes third-party software and model components that execute locally. Their inclusion
+ does not authorize their authors to access the user's photos through PhotoName. Apple and the
+ operating system may separately process information as described below.
+
+ 10. Apple, iCloud Photos, and System Services
+ Apple provides iOS, the App Store, Photos, iCloud Photos, iCloud backup, permission controls, purchase
+ processing, crash reporting, and optional app analytics. Apple may process data independently under
+ Apple's agreements, privacy policy, and the user's device and account settings. The Developer does not
+ control Apple's systems.
+ When iCloud Photos is enabled, Apple may download source resources to the device at PhotoName's
+ request and may upload renamed copies or deletions made through Photos. A photo that appears local
+ may therefore involve Apple-controlled network transfer. That transfer is between the device and Apple
+ services, not a transmission to the Developer or an external AI provider.
+
+ App Store purchases, refunds, taxes, ratings, reviews, installations, and diagnostics may be processed
+ by Apple. PhotoName does not receive payment-card details.
+
+
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                  Page 4
+ 11. Security
+ PhotoName uses iOS app sandboxing, Apple Photos permissions, local processing, and local safety
+ checks to reduce risk. These measures cannot guarantee absolute security, availability, successful
+ recovery, or protection from device compromise, operating-system defects, storage failure, malicious
+ software, unauthorized access, or user error.
+ The user should protect the device and Apple Account with appropriate passcodes, authentication,
+ software updates, and backups. PhotoName should never be treated as the only backup or archive of
+ important photographs.
+
+ 12. Privacy Choices and Requests
+ The user can control Photos access in iPhone Settings, control optional album context and edited-photo
+ processing in PhotoName Settings, review or reject suggestions, reset processed history, undo eligible
+ renames, and decide whether to delete an original.
+ Because the Developer does not receive or maintain the user's photo library, prompts, AI output, or local
+ ledger, the Developer generally cannot access, export, correct, or delete those items remotely. The user
+ manages them on the device through PhotoName, Photos, iOS Settings, backup settings, or app
+ removal.
+ A person may send a privacy inquiry or request by post. The request should identify the applicable
+ jurisdiction and describe the requested action without including unnecessary photo content or sensitive
+ information. Identity or authority may need to be verified before responding. If no relevant information is
+ held, the response may state that fact.
+
+ 13. Children's Privacy
+ PhotoName is a general-audience photo utility and is not directed to children under 13 or marketed as a
+ children's app. The app does not provide accounts, chat, posting, public profiles, or social sharing.
+ Photos may depict children or contain other sensitive personal information, but that content remains in
+ the local and Apple-controlled workflow described in this policy. A parent or guardian should supervise a
+ child's use of the app and control the device's Photos permission.
+
+ 14. Changes and Contact
+ This document may be updated to reflect app changes, legal requirements, platform rules, or improved
+ explanations. The effective date identifies the current version. Material privacy changes will be reflected
+ in the app, the App Store listing, or the published policy as appropriate before or when the changed
+ practice becomes available.
+
+ Privacy questions and legal notices may be sent to the postal address in Section 2.
+
+
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                Page 5
+         Terms of Use & Photo Safety Notice
+ The following terms govern use of PhotoName and allocate responsibility for AI suggestions, photo
+ copying, verification, cleanup, and related risks.
+
+ 15. Agreement and Relationship with Apple
+ These Terms of Use form an agreement between the user and the Developer, not Apple. By
+ downloading, installing, accessing, or using PhotoName, the user agrees to these Terms. If the user does
+ not agree, the user must not use the app.
+ PhotoName is licensed, not sold. Apple's Standard Licensed Application End User License Agreement
+ and Apple Media Services Usage Rules also apply. These Terms supplement applicable Apple terms and
+ do not create obligations for Apple beyond Apple's own agreements.
+
+ 16. Limited Licence
+ Subject to these Terms, applicable Apple Usage Rules, and applicable law, the Developer grants a
+ limited, personal, revocable, non-exclusive, non-transferable licence to use PhotoName on
+ Apple-branded products the user owns or controls. The app may also be accessed through Family
+ Sharing or other Apple-supported arrangements to the extent Apple's rules permit.
+
+ No ownership in PhotoName, its interface, code, model packaging, documentation, graphics, branding, or
+ other content is transferred. All rights not expressly granted are reserved by the Developer and applicable
+ licensors.
+
+ 17. AI Suggestions and User Review
+ PhotoName provides automated filename suggestions, not verified facts. The app does not guarantee
+ correct recognition, spelling, translation, dates, locations, relationships, identities, events, objects,
+ activities, cultural context, or other details.
+
+ The user is solely responsible for reviewing, editing, approving, or ignoring each suggestion and for
+ determining whether a filename is appropriate, lawful, respectful, non-defamatory, and suitable for the
+ user's intended archive or workflow.
+
+ The user must not rely on PhotoName output for legal evidence, identity verification, accessibility,
+ medical decisions, law enforcement, immigration, employment, insurance, financial decisions, or other
+ high-impact purposes.
+
+ 18. Photo Copies, Edited Photos, and Deletion
+ PhotoName creates a new renamed copy rather than changing the existing Apple Photos asset. The
+ original remains available unless the user later chooses to delete it.
+ When edited-photo support is enabled, the renamed copy reflects the photo's current visible appearance.
+ It does not retain the original's reversible edit history and may not retain every linked component or
+ capability of the original. The original is the only version that preserves those features unless another
+ independent backup does so.
+
+ Originals are not deleted automatically. Deletion requires a separate user choice and Apple's system
+ confirmation. Apple controls Recently Deleted, iCloud synchronization, storage optimization, and
+ permanent deletion. Undo Rename requests deletion of the renamed copy while retaining the original
+
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                Page 6
+ when the relevant assets remain accessible.
+ PhotoName performs safety checks, but no app check can guarantee that a renamed copy is identical,
+ complete, permanently available, synchronized, or suitable for every future use. The user should inspect
+ important copies and maintain an independent backup before deleting originals.
+
+ 19. User Responsibilities and Backups
+ Before processing or deleting important photos, the user must maintain independent backups and confirm
+ that those backups can be restored. The user should inspect important renamed copies and confirm that
+ they meet the user's needs before deleting an original.
+
+ The user is responsible for the device, Apple Account, iCloud configuration, available storage, Photos
+ permissions, app settings, proposal choices, and compliance with laws and third-party rights applicable to
+ the photos and filenames.
+ The user represents that the user has authority to process the selected photos and will not use
+ PhotoName to violate privacy, publicity, copyright, confidentiality, harassment, discrimination, or other
+ rights.
+
+ 20. Acceptable Use and Restrictions
+ The user may not misuse PhotoName; interfere with its operation; bypass security or platform restrictions;
+ use it unlawfully; distribute malware; attempt unauthorized access; or use the app to create, organize, or
+ distribute unlawful material.
+
+ Except where applicable law or an open-source licence expressly permits, the user may not copy,
+ redistribute, sell, rent, lease, sublicense, publish, modify, reverse engineer, decompile, extract, or create
+ derivative works from proprietary portions of PhotoName or commercially exploit the app, its design, or its
+ bundled materials.
+
+ Open-source software and model components remain subject to their respective licences and notices.
+ Those licences govern the covered components where they conflict with these restrictions.
+
+ 21. Availability, Updates, and Support
+ PhotoName may be updated, changed, suspended, limited, or discontinued. Features may fail or behave
+ differently because of app updates, iOS changes, Photos or iCloud behavior, device hardware, memory
+ pressure, storage, permissions, damaged assets, unsupported resource combinations, third-party editors,
+ model limitations, or network availability for iCloud resources.
+ Unless separately promised in writing, the Developer does not guarantee maintenance, support, updates,
+ compatibility, recovery, or continued availability. The Developer, not Apple, is responsible for any
+ maintenance or support the Developer elects to provide. Apple has no obligation to furnish maintenance
+ or support for PhotoName.
+
+ 22. No Warranty
+ TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, PHOTONAME IS PROVIDED "AS
+ IS," "AS AVAILABLE," AND WITH ALL FAULTS. THE DEVELOPER DISCLAIMS ALL EXPRESS,
+ IMPLIED, AND STATUTORY WARRANTIES AND CONDITIONS, INCLUDING ACCURACY,
+ RELIABILITY, AVAILABILITY, SECURITY, QUIET ENJOYMENT, NON-INFRINGEMENT,
+ MERCHANTABILITY, SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR PURPOSE.
+
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                Page 7
+ No suggestion, verification result, documentation, demonstration, update, or communication creates a
+ warranty. The user assumes the risk and cost of using PhotoName and of any servicing, correction,
+ restoration, backup, or recovery.
+
+ If PhotoName fails to conform to a warranty that applies under Apple's terms, the user may notify Apple,
+ and Apple may refund the purchase price, if any, as provided by Apple's rules. To the maximum extent
+ permitted by law, Apple has no other warranty obligation concerning PhotoName.
+
+ 23. Limitation of Liability
+ TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER WILL NOT BE
+ LIABLE FOR PERSONAL INJURY OR FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+ PUNITIVE, OR CONSEQUENTIAL LOSS OR DAMAGE, INCLUDING LOSS, DELETION,
+ CORRUPTION, DUPLICATION, DISCLOSURE, MISLABELLING, MISTRANSLATION, OR
+ UNAVAILABILITY OF PHOTOS, LIVE-PHOTO COMPONENTS, RAW RESOURCES, EDIT HISTORY,
+ METADATA, ALBUMS, FILENAMES, BACKUPS, PROFITS, BUSINESS, GOODWILL, OR DATA.
+
+ These limitations apply to claims arising from or related to PhotoName, AI output, the copy-and-cleanup
+ workflow, Apple Photos, iCloud, device failure, user choices, third-party components, or inability to use
+ the app, regardless of the theory of liability and even if the possibility of loss was disclosed.
+ TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER'S TOTAL
+ AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO PHOTONAME WILL NOT EXCEED THE
+ GREATER OF THE AMOUNT THE USER PAID FOR PHOTONAME DURING THE TWELVE MONTHS
+ BEFORE THE EVENT GIVING RISE TO THE CLAIM OR CAD $50.
+
+ 24. Indemnity
+ To the maximum extent permitted by applicable law, the user will defend, indemnify, and hold the
+ Developer harmless from third-party claims, liabilities, losses, damages, and reasonable costs arising
+ from the user's unlawful misuse of PhotoName, breach of these Terms, processing of photos without
+ authority, or infringement of another person's rights.
+
+ 25. Dispute Notice, Individual Arbitration, and Class Waiver
+ Before starting arbitration or litigation, the complaining party must send a written notice describing the
+ dispute, supporting facts, and requested relief to the postal address in Section 2. The parties will attempt
+ in good faith to resolve the dispute for 30 days after receipt.
+ EXCEPT FOR A CLAIM ELIGIBLE FOR SMALL CLAIMS COURT, A REQUEST FOR URGENT
+ INJUNCTIVE RELIEF CONCERNING INTELLECTUAL PROPERTY OR SECURITY, OR A DISPUTE
+ THAT APPLICABLE LAW PROHIBITS FROM PRE-DISPUTE ARBITRATION, EACH DISPUTE
+ ARISING OUT OF OR RELATING TO PHOTONAME OR THESE TERMS WILL BE RESOLVED BY
+ FINAL AND BINDING INDIVIDUAL ARBITRATION RATHER THAN IN COURT.
+ The arbitration will be administered under the ADR Institute of Canada Arbitration Rules in effect when
+ the claim is filed, before one neutral arbitrator. The legal seat will be Toronto, Ontario, Canada. A hearing
+ may occur remotely, in person, or on written submissions as the arbitrator permits. The arbitrator may
+ award any individual remedy available under applicable law but may not combine different persons'
+ claims without all parties' consent.
+
+ EACH PARTY WAIVES A JURY TRIAL TO THE EXTENT SUCH A RIGHT EXISTS. ARBITRATION AND
+ LITIGATION MUST PROCEED ONLY ON AN INDIVIDUAL BASIS. TO THE MAXIMUM EXTENT
+
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                Page 8
+ PERMITTED BY LAW, NEITHER PARTY MAY BRING OR PARTICIPATE IN A CLASS, COLLECTIVE,
+ CONSOLIDATED, MASS, PRIVATE-ATTORNEY-GENERAL, OR REPRESENTATIVE ACTION OR
+ ARBITRATION.
+
+ If a portion of this section is unenforceable for a particular claim or remedy, it will be severed only to the
+ minimum extent necessary. The affected claim or remedy will proceed in a court of competent jurisdiction
+ in Toronto, Ontario, while the enforceable remainder continues to apply.
+
+ 26. Governing Law
+ These Terms and disputes concerning PhotoName are governed by the laws of Ontario and the federal
+ laws of Canada applicable there, without regard to conflict-of-law principles. Where arbitration does not
+ apply, the parties submit to the exclusive jurisdiction of courts located in Toronto, Ontario. The United
+ Nations Convention on Contracts for the International Sale of Goods does not apply.
+
+ 27. Apple and Third-Party Terms
+ Apple is not a party to these Terms and is not responsible for PhotoName or its content. The Developer,
+ not Apple, is responsible for addressing claims relating to PhotoName, including product-liability,
+ legal-compliance, privacy, consumer-protection, and intellectual-property claims.
+
+ The user must comply with applicable third-party terms, including Apple Media Services, iCloud, Photos,
+ and open-source component licences. The user represents that the user is not located in a country or
+ region subject to a United States government embargo or designated as supporting terrorism and is not
+ listed on a United States government prohibited- or restricted-party list.
+
+ Apple and its subsidiaries are third-party beneficiaries of these Terms. Upon the user's acceptance, Apple
+ may enforce the applicable provisions against the user.
+
+ 28. Termination and General Terms
+ The licence terminates automatically if the user materially breaches these Terms. The user may stop
+ using PhotoName at any time. Provisions that by their nature should survive termination will survive,
+ including ownership, disclaimers, liability limits, indemnity, dispute resolution, and governing law.
+ If any provision is invalid or unenforceable, it will be modified or severed only to the minimum extent
+ necessary, and the remainder will continue. Failure to enforce a provision is not a waiver. These Terms,
+ the Privacy Policy, applicable Apple terms, and component licences form the entire agreement
+ concerning their respective subject matter.
+
+ The Developer may update these Terms for future use of PhotoName. Continued use after updated terms
+ are made available constitutes acceptance to the extent permitted by law.
+
+
+
+
+PhotoName | Privacy, Terms & Photo Safety                                                                 Page 9
+

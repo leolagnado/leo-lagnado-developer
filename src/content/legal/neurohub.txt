@@ -1,0 +1,83 @@
+Privacy Policy
+Welcome to the Privacy Policy for NeuroHub ("we", "us", or "our"), a free mobile
+application. This Privacy Policy describes how we handle your information while you use
+our app. By using NeuroHub, you agree to the terms of this Privacy Policy.
+
+Please note that this app does not require user registration, and our data collection
+practices are minimal. Our goal is to protect your privacy and provide a secure and
+enjoyable user experience.
+
+Information We Collect
+
+NeuroHub collects the following data, which is not linked to your identity:
+
+   a. Location: This optional data is collected to center the map in the app based on
+      your current location.
+
+   b. Usage Data: Information about how you interact with the app, including the
+      duration and frequency of your sessions. We also transmit the geographical
+      coordinates of the map (based on the area being viewed by the user as they
+      navigate) to two places:
+
+          o Firebase Firestore Database: the database is queried to find locations that
+            were previously rated and return them to the app to be displayed on the
+            map (rated locations are never connected to any specific user)
+
+          o OpenAI's ChatGPT API: a request is made to suggest sensory friendly
+            places and return them to the app to be displayed on the map
+
+      Please note that these coordinates do not represent the user's actual location, but
+      rather the area being viewed on the map as navigated by the user.
+
+   c. Diagnostics: Standard usage statistics and crash data that help maintain the app's
+      functionality and improve our services.
+
+How We Use Your Information
+
+We use the collected information for the following purposes:
+
+   1. To ensure the app's proper functioning and troubleshoot any issues that may
+      arise.
+   2. To analyze and improve the app's performance, features, and overall user
+      experience.
+   3. To generate contextually relevant responses within the app
+
+Information Sharing and Disclosure
+
+We do not sell, trade, or rent your personal information to third parties. We only share
+aggregated, anonymized usage data with third-party analytics providers to help us
+understand how users are interacting with the app and to improve our services.
+
+Data Retention
+
+We retain the collected information for as long as it is necessary to fulfill the purposes
+for which it was collected, or as required by applicable laws and regulations. Once the
+information is no longer needed, we securely delete or anonymize it.
+
+Security
+
+We take appropriate technical and organizational measures to protect your information
+against unauthorized access, alteration, disclosure, or destruction. However, please be
+aware that no method of electronic transmission or storage is 100% secure, and we
+cannot guarantee the absolute security of your information.
+
+Changes to This Privacy Policy
+
+We reserve the right to update or modify this Privacy Policy at any time. If we make any
+material changes, we will notify you through the app or by other appropriate means. By
+continuing to use NeuroHub after any changes to this Privacy Policy, you agree to be
+bound by the updated policy.
+
+Contact Us
+
+If you have any questions or concerns about this Privacy Policy or our data practices,
+please feel free to contact us at PO BOX 99900 CQ 646 543 RPO THE BEACHES
+TORONTO ON M4E 0B4 CANADA.
+
+Thank you for using NeuroHub, and we hope you enjoy our commitment to your privacy
+and a great user experience.
+
+This policy is effective as of 2022-05-11
+
+Last Updated: 2023-04-09
+
