@@ -1,4 +1,4 @@
-# Apps by Leonardo Mathiazzi Lagnado
+# Leonardo Mathiazzi Lagnado
 
 Static public developer website built with Astro for GitHub Pages.
 

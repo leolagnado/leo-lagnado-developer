@@ -1,0 +1,43 @@
+---
+import { parseLegalPolicy } from '../utils/legal';
+
+interface Props {
+  policyText: string;
+  accent: 'coral' | 'gold' | 'violet';
+}
+
+const { policyText, accent } = Astro.props;
+const pages = parseLegalPolicy(policyText);
+---
+
+<article class={`policy-pages policy-accent-${accent}`} id="policy-body">
+  {pages.map((page) => (
+    <section class="policy-page">
+      <div class="policy-page-content">
+        {page.blocks.map((block) => (
+          <>
+            {block.kind === 'app-title' && <p class="policy-app-title">{block.text}</p>}
+            {block.kind === 'document-title' && <h2 class="policy-document-title">{block.text}</h2>}
+            {block.kind === 'meta' && <p class="policy-meta">{block.text}</p>}
+            {block.kind === 'summary-title' && <h3 class="policy-summary-title">{block.text}</h3>}
+            {block.kind === 'heading' && <h3 class="policy-section-heading">{block.text}</h3>}
+            {block.kind === 'divider' && <h2 class="policy-divider">{block.text}</h2>}
+            {block.kind === 'paragraph' && <p class="policy-paragraph">{block.text}</p>}
+            {block.kind === 'list' && (
+              <ul class="policy-list">
+                {block.items?.map((item) => <li>{item}</li>)}
+              </ul>
+            )}
+            {block.kind === 'address' && (
+              <address class="policy-address">
+                {block.items?.map((item) => <span>{item}</span>)}
+              </address>
+            )}
+            {block.kind === 'table' && <pre class="policy-table">{block.text}</pre>}
+            {block.kind === 'footer' && <p class="policy-footer">{block.text}</p>}
+          </>
+        ))}
+      </div>
+    </section>
+  ))}
+</article>

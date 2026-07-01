@@ -1,14 +1,16 @@
 ---
 import { ArrowLeft, FileText } from '@lucide/astro';
+import LegalPolicy from './LegalPolicy.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../utils/paths';
 
 interface Props {
   appName: string;
   policyText: string;
+  accent: 'coral' | 'gold' | 'violet';
 }
 
-const { appName, policyText } = Astro.props;
+const { appName, policyText, accent } = Astro.props;
 ---
 
 <BaseLayout title={`${appName} Legal Policy`} description={`Complete legal policy for ${appName}.`}>
@@ -24,9 +26,7 @@ const { appName, policyText } = Astro.props;
   </section>
   <section class="legal-document-section">
     <div class="container legal-container">
-      <article class="legal-document" aria-label={`${appName} legal policy`}>
-        <pre class="legal-policy" id="policy-body">{policyText}</pre>
-      </article>
+      <LegalPolicy policyText={policyText} accent={accent} />
     </div>
   </section>
 </BaseLayout>
