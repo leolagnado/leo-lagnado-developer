@@ -1,5 +1,5 @@
 ---
-import { ExternalLink, FileText } from '@lucide/astro';
+import { ExternalLink } from '@lucide/astro';
 import type { App } from '../data/apps';
 import { withBase } from '../utils/paths';
 
@@ -32,8 +32,5 @@ const { app, index } = Astro.props;
         </a>
       ),
     )}
-    <a class="button button-legal" href={withBase(app.legalPath)}>
-      <FileText size={15} aria-hidden="true" />Legal
-    </a>
   </div>
 </article>

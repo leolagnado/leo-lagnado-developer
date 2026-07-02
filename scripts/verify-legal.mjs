@@ -21,7 +21,7 @@ const normalizeLegalText = (value) => value
 for (const policy of policies) {
   const source = await readFile(resolve(`src/content/legal/${policy}.txt`), 'utf8');
   const output = await readFile(resolve(`dist/legal/${policy}/index.html`), 'utf8');
-  const match = output.match(/<article class="policy-pages[^\"]*" id="policy-body">([\s\S]*?)<\/article>/);
+  const match = output.match(/<article class="policy-document-flow[^\"]*" id="policy-body">([\s\S]*?)<\/article>/);
 
   if (!match) {
     throw new Error(`Missing policy body in generated ${policy} page.`);

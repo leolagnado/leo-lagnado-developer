@@ -506,10 +506,6 @@ button {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.button-legal {
-  flex-grow: 0 !important;
-}
-
 .button-disabled {
   border-color: rgba(255, 255, 255, 0.07);
   background: rgba(255, 255, 255, 0.025);
@@ -532,21 +528,11 @@ button {
   color: #9fd0b6;
 }
 
-.text-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 26px;
-  color: var(--text);
-  font-weight: 650;
-}
-
 .rotate-link-icon {
   transform: rotate(-90deg);
   transition: transform 160ms ease;
 }
 
-.text-link:hover .rotate-link-icon,
 .legal-card:hover .rotate-link-icon {
   transform: translateX(3px) rotate(-90deg);
 }
@@ -703,92 +689,6 @@ button {
   font-size: 1.08rem;
 }
 
-.legal-index-section {
-  padding-top: 70px;
-}
-
-.legal-index-grid {
-  display: grid;
-  gap: 13px;
-}
-
-.legal-index-card {
-  --accent: var(--violet);
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  background: linear-gradient(120deg, color-mix(in srgb, var(--accent) 8%, transparent), var(--surface));
-  transition: border-color 180ms ease, transform 180ms ease;
-}
-
-.legal-index-card.accent-coral { --accent: var(--coral); }
-.legal-index-card.accent-gold { --accent: var(--gold); }
-.legal-index-card.accent-violet { --accent: var(--violet); }
-
-.legal-index-card:hover {
-  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
-  transform: translateX(5px);
-}
-
-.legal-index-card > img {
-  width: 72px;
-  height: 72px;
-  border-radius: 19px;
-  object-fit: cover;
-}
-
-.legal-index-copy {
-  display: grid;
-}
-
-.legal-index-copy small {
-  color: var(--text-muted);
-  font-size: 0.73rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.legal-index-copy strong {
-  margin-top: 1px;
-  font-size: 1.15rem;
-}
-
-.legal-index-copy > span {
-  color: var(--text-secondary);
-  font-size: 0.86rem;
-}
-
-.round-arrow {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.policy-format-note {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-top: 26px;
-  padding: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  color: var(--text-secondary);
-}
-
-.policy-format-note p {
-  margin: 0;
-  font-size: 0.88rem;
-}
-
 .legal-container {
   width: min(1080px, calc(100% - 36px));
 }
@@ -815,11 +715,11 @@ button {
   padding: 54px 0 100px;
 }
 
-.policy-pages {
+.policy-document-flow {
   --policy-accent: #2f6fc1;
   --policy-accent-soft: rgba(47, 111, 193, 0.12);
-  display: grid;
-  gap: 34px;
+  width: min(100%, 900px);
+  margin-inline: auto;
   color: var(--text);
 }
 
@@ -836,37 +736,6 @@ button {
 .policy-accent-violet {
   --policy-accent: #82aaff;
   --policy-accent-soft: rgba(130, 170, 255, 0.1);
-}
-
-.policy-page {
-  position: relative;
-  width: 100%;
-  min-height: 1040px;
-  padding: clamp(34px, 6.4vw, 76px);
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 24px;
-  background:
-    radial-gradient(circle at 90% 0%, var(--policy-accent-soft), transparent 24rem),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.028));
-  backdrop-filter: blur(18px);
-  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.48);
-}
-
-.policy-page::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 5px;
-  background: linear-gradient(90deg, var(--policy-accent), color-mix(in srgb, var(--policy-accent) 35%, white));
-  content: "";
-}
-
-.policy-page-content {
-  display: flex;
-  min-height: calc(1040px - clamp(68px, 12.8vw, 152px));
-  flex-direction: column;
 }
 
 .policy-app-title {
@@ -1002,11 +871,7 @@ button {
 }
 
 .policy-footer {
-  margin: auto 0 0;
-  padding-top: 28px;
-  color: #777;
-  font-size: 0.66rem;
-  text-align: center;
+  display: none;
 }
 
 @keyframes card-in {
@@ -1155,38 +1020,12 @@ button {
     padding: 64px 0 52px;
   }
 
-  .legal-index-card {
-    grid-template-columns: auto 1fr;
-    gap: 15px;
-    padding: 16px;
-  }
-
-  .legal-index-card > img {
-    width: 60px;
-    height: 60px;
-    border-radius: 16px;
-  }
-
-  .round-arrow {
-    display: none;
-  }
-
   .legal-document-section {
     padding-top: 30px;
   }
 
-  .policy-pages {
-    gap: 20px;
-  }
-
-  .policy-page {
-    min-height: 0;
-    padding: 30px 18px;
-    border-radius: 18px;
-  }
-
-  .policy-page-content {
-    min-height: 0;
+  .policy-document-flow {
+    width: 100%;
   }
 
   .policy-summary-title,
@@ -1206,9 +1045,6 @@ button {
     font-size: 0.54rem;
   }
 
-  .policy-footer {
-    margin-top: 32px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

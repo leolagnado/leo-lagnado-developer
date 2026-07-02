@@ -1,5 +1,5 @@
 ---
-import { ArrowDown, FileText, MapPin, ShieldCheck } from '@lucide/astro';
+import { ArrowDown, MapPin, ShieldCheck } from '@lucide/astro';
 import AppCard from '../components/AppCard.astro';
 import ContactReveal from '../components/ContactReveal.astro';
 import { apps } from '../data/apps';
@@ -19,7 +19,6 @@ import { withBase } from '../utils/paths';
         <p class="hero-location"><MapPin size={18} aria-hidden="true" />Based in Toronto, Ontario, Canada.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#apps">View apps<ArrowDown size={18} aria-hidden="true" /></a>
-          <a class="button button-secondary" href={withBase('legal/')}><FileText size={18} aria-hidden="true" />Legal policies</a>
         </div>
       </div>
       <div class="hero-icons" aria-label="Developer app icons">
@@ -38,7 +37,7 @@ import { withBase } from '../utils/paths';
       <div class="section-heading">
         <p class="eyebrow">Mobile apps</p>
         <h2 id="apps-title">Focused tools, thoughtfully built</h2>
-        <p>Explore the current app collection and find official store and legal links.</p>
+        <p>Discover thoughtful mobile tools built to support learning, accessibility, and the small tasks that shape everyday life.</p>
       </div>
       <div class="app-grid">
         {apps.map((app, index) => <AppCard app={app} index={index} />)}
@@ -51,8 +50,7 @@ import { withBase } from '../utils/paths';
       <div class="section-heading legal-copy">
         <p class="eyebrow"><ShieldCheck size={16} aria-hidden="true" />Clear and accessible</p>
         <h2 id="legal-title">Legal policies</h2>
-        <p>Legal policies are available in HTML for review by users, parents, guardians, App Store reviewers, and Google Play reviewers.</p>
-        <a class="text-link" href={withBase('legal/')}>View the legal index<ArrowDown class="rotate-link-icon" size={16} aria-hidden="true" /></a>
+        <p>Know what to expect before you download. Each app’s complete policy is easy to find and read right in your browser.</p>
       </div>
       <div class="legal-card-list">
         {apps.map((app) => (
