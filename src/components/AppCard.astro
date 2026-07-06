@@ -1,5 +1,5 @@
 ---
-import { ExternalLink } from '@lucide/astro';
+import { Apple, Bot, ExternalLink } from '@lucide/astro';
 import type { App } from '../data/apps';
 import { withBase } from '../utils/paths';
 
@@ -25,10 +25,15 @@ const { app, index } = Astro.props;
   <div class="app-actions">
     {app.storeLinks.map((link) =>
       link.disabled ? (
-        <span class="button button-disabled" aria-disabled="true">{link.label}</span>
+        <span class="button button-disabled" aria-disabled="true">
+          {link.store === 'ios' ? <Apple size={15} aria-hidden="true" /> : <Bot size={15} aria-hidden="true" />}
+          {link.label}
+        </span>
       ) : (
         <a class="button button-store" href={link.href} target="_blank" rel="noreferrer">
-          {link.label}<ExternalLink size={15} aria-hidden="true" />
+          {link.store === 'ios' ? <Apple size={15} aria-hidden="true" /> : <Bot size={15} aria-hidden="true" />}
+          {link.label}
+          <ExternalLink size={15} aria-hidden="true" />
         </a>
       ),
     )}

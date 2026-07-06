@@ -1,5 +1,6 @@
 export type StoreLink = {
   label: string;
+  store: 'ios' | 'android';
   href?: string;
   disabled?: boolean;
 };
@@ -25,10 +26,12 @@ export const apps: App[] = [
     storeLinks: [
       {
         label: 'App Store',
+        store: 'ios',
         href: 'https://apps.apple.com/ca/app/neurohub/id1621792528',
       },
       {
         label: 'Google Play',
+        store: 'android',
         href: 'https://play.google.com/store/apps/details?id=com.app.neurohub',
       },
     ],
@@ -37,13 +40,19 @@ export const apps: App[] = [
   {
     name: 'Peko’s Fraction Pizzeria',
     description:
-      'A child-friendly Android educational game that helps children practise fractions through playful pizza-building activities.',
-    platforms: ['Android'],
+      'A child-friendly educational game that helps children practise fractions through playful pizza-building activities.',
+    platforms: ['iOS', 'Android'],
     icon: 'assets/icons/peko.jpg',
     accent: 'gold',
     storeLinks: [
       {
+        label: 'App Store coming soon',
+        store: 'ios',
+        disabled: true,
+      },
+      {
         label: 'Google Play coming soon',
+        store: 'android',
         disabled: true,
       },
     ],
@@ -59,6 +68,7 @@ export const apps: App[] = [
     storeLinks: [
       {
         label: 'App Store coming soon',
+        store: 'ios',
         disabled: true,
       },
     ],
