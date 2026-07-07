@@ -29,12 +29,14 @@ const neuroHubHeadings = new Set([
   'Contact Us',
 ]);
 
-const appTitles = new Set(["Peko's Fraction Pizzeria", 'PhotoName']);
+const appTitles = new Set(["Peko's Fraction Pizzeria", 'PhotoName', 'ClearScribe']);
 const documentTitles = new Set([
   'Privacy Policy',
   'Privacy Policy, Terms of Use',
   '& Photo Safety Notice',
+  '& Audio Safety Notice',
   'Privacy Policy, Terms of Use & Safety Disclaimer',
+  'Privacy Policy, Terms of Use & Audio Safety Notice',
 ]);
 
 const indentation = (line: string) => line.length - line.trimStart().length;
@@ -54,7 +56,9 @@ const isBullet = (line: string) => /^(?:•||o\s|[a-c]\.\s|\d+\.\s)/.test(tri
 
 const isFooter = (line: string) => {
   const value = trimmed(line);
-  return value.includes('| Privacy, Terms & Safety |') || value.includes('| Privacy, Terms & Photo Safety');
+  return value.includes('| Privacy, Terms & Safety |')
+    || value.includes('| Privacy, Terms & Photo Safety')
+    || value.includes('| Privacy, Terms & Audio Safety');
 };
 
 const isSpecial = (line: string) => {
@@ -70,6 +74,7 @@ const isSpecial = (line: string) => {
     || value.startsWith('Plain-language summary')
     || value === 'Terms of Use'
     || value === 'Terms of Use & Photo Safety Notice'
+    || value === 'Terms of Use & Audio Safety Notice'
     || value === 'Developer'
     || value === "Peko's Fraction Pizzeria Privacy";
 };
@@ -128,7 +133,9 @@ export function parseLegalPolicy(policyText: string): LegalPage[] {
           continue;
         }
 
-        if (value === 'Terms of Use' || value === 'Terms of Use & Photo Safety Notice') {
+        if (value === 'Terms of Use'
+          || value === 'Terms of Use & Photo Safety Notice'
+          || value === 'Terms of Use & Audio Safety Notice') {
           blocks.push({ kind: 'divider', text: value });
           index += 1;
           continue;

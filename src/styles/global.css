@@ -311,21 +311,27 @@ button {
 }
 
 .hero-icon-1 {
-  top: 10px;
-  left: 12%;
+  top: 8px;
+  left: 18%;
   transform: rotate(-7deg);
 }
 
 .hero-icon-2 {
-  top: 134px;
-  right: 2%;
-  transform: rotate(6deg);
+  top: 56px;
+  right: -1%;
+  transform: rotate(5deg);
 }
 
 .hero-icon-3 {
-  bottom: 4px;
-  left: 18%;
-  transform: rotate(-3deg);
+  bottom: 18px;
+  left: 20%;
+  transform: rotate(-4deg);
+}
+
+.hero-icon-4 {
+  right: 10%;
+  bottom: 8px;
+  transform: rotate(12deg);
 }
 
 .icon-halo {
@@ -340,6 +346,7 @@ button {
 .icon-halo.accent-coral { background: var(--coral); }
 .icon-halo.accent-gold { background: var(--gold); }
 .icon-halo.accent-violet { background: var(--violet); }
+.icon-halo.accent-blue { background: var(--blue); }
 
 .hero-glow {
   position: absolute;
@@ -396,7 +403,7 @@ button {
 
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin-top: 48px;
 }
@@ -434,6 +441,7 @@ button {
 .app-card.accent-coral { --accent: var(--coral); }
 .app-card.accent-gold { --accent: var(--gold); }
 .app-card.accent-violet { --accent: var(--violet); }
+.app-card.accent-blue { --accent: var(--blue); }
 
 .app-card:hover {
   border-color: rgba(255, 255, 255, 0.22);
@@ -738,6 +746,11 @@ button {
   --policy-accent-soft: rgba(130, 170, 255, 0.1);
 }
 
+.policy-accent-blue {
+  --policy-accent: #5e9cff;
+  --policy-accent-soft: rgba(94, 156, 255, 0.1);
+}
+
 .policy-app-title {
   margin: 0 0 4px;
   color: var(--policy-accent);
@@ -895,21 +908,39 @@ button {
 
   .hero-icons {
     width: min(100%, 600px);
-    min-height: 330px;
+    min-height: 360px;
     margin-inline: auto;
   }
 
-  .hero-icon-1 { left: 3%; }
-  .hero-icon-2 { top: 78px; right: 3%; }
-  .hero-icon-3 { bottom: 0; left: 38%; }
+  .hero-icon-1 {
+    top: 0;
+    left: 4%;
+    transform: rotate(-7deg);
+  }
+  .hero-icon-2 {
+    top: 42px;
+    right: 2%;
+    transform: rotate(5deg);
+  }
+  .hero-icon-3 {
+    bottom: 0;
+    left: 14%;
+    transform: rotate(-4deg);
+  }
+
+  .hero-icon-4 {
+    right: 14%;
+    bottom: 10px;
+    transform: rotate(12deg);
+  }
 
   .app-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .app-card:last-child {
-    grid-column: 1 / -1;
-    min-height: 420px;
+    grid-column: auto;
+    min-height: 486px;
   }
 
   .legal-overview-grid {
@@ -965,7 +996,7 @@ button {
   }
 
   .hero-icons {
-    min-height: 250px;
+    min-height: 320px;
   }
 
   .hero-icon-wrap img {
@@ -973,9 +1004,27 @@ button {
     height: 112px;
   }
 
-  .hero-icon-1 { top: 0; left: 0; }
-  .hero-icon-2 { top: 48px; right: 0; }
-  .hero-icon-3 { bottom: 0; left: calc(50% - 56px); }
+  .hero-icon-1 {
+    top: 0;
+    left: 2%;
+  }
+  .hero-icon-2 {
+    top: 28px;
+    right: 0;
+  }
+  .hero-icon-3 {
+    top: 178px;
+    bottom: auto;
+    left: 10%;
+  }
+
+  .hero-icon-4 {
+    top: 188px;
+    right: 8%;
+    bottom: auto;
+    left: auto;
+    transform: rotate(12deg);
+  }
 
   .section {
     padding: 76px 0;

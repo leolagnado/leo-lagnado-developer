@@ -10,7 +10,7 @@ export type App = {
   description: string;
   platforms: string[];
   icon: string;
-  accent: 'coral' | 'gold' | 'violet';
+  accent: 'coral' | 'gold' | 'violet' | 'blue';
   storeLinks: StoreLink[];
   legalPath: string;
 };
@@ -73,5 +73,21 @@ export const apps: App[] = [
       },
     ],
     legalPath: 'legal/photoname/',
+  },
+  {
+    name: 'ClearScribe',
+    description:
+      'Private, on-device AI transcription for recordings, imported audio, and videos, with searchable history and TXT, PDF, or SRT export.',
+    platforms: ['iOS'],
+    icon: 'assets/icons/clearscribe.png',
+    accent: 'blue',
+    storeLinks: [
+      {
+        label: 'App Store coming soon',
+        store: 'ios',
+        disabled: true,
+      },
+    ],
+    legalPath: 'legal/clearscribe/',
   },
 ];
