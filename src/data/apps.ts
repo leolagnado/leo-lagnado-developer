@@ -46,9 +46,9 @@ export const apps: App[] = [
     accent: 'gold',
     storeLinks: [
       {
-        label: 'App Store coming soon',
+        label: 'App Store',
         store: 'ios',
-        disabled: true,
+        href: 'https://apps.apple.com/us/app/pekos-fraction-pizzeria/id6787588180',
       },
       {
         label: 'Google Play coming soon',
