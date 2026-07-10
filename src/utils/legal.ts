@@ -29,7 +29,7 @@ const neuroHubHeadings = new Set([
   'Contact Us',
 ]);
 
-const appTitles = new Set(["Peko's Fraction Pizzeria", 'PhotoName', 'ClearScribe']);
+const appTitles = new Set(["Peko's Fraction Pizzeria", 'PhotoName', 'QuietScript']);
 const documentTitles = new Set([
   'Privacy Policy',
   'Privacy Policy, Terms of Use',

@@ -75,7 +75,7 @@ export const apps: App[] = [
     legalPath: 'legal/photoname/',
   },
   {
-    name: 'ClearScribe',
+    name: 'QuietScript',
     description:
       'Private, on-device AI transcription for recordings, imported audio, and videos, with searchable history and TXT, PDF, or SRT export.',
     platforms: ['iOS'],
@@ -88,6 +88,6 @@ export const apps: App[] = [
         disabled: true,
       },
     ],
-    legalPath: 'legal/clearscribe/',
+    legalPath: 'legal/quietscript/',
   },
 ];

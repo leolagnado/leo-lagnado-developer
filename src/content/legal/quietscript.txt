@@ -1,25 +1,29 @@
  Privacy Policy, Terms of Use
  & Audio Safety Notice
- ClearScribe
- Effective: July 7, 2026
+ QuietScript
+ Effective: July 10, 2026
 
 
 
-    Plain-language summary
+     Plain-language summary
 
-      • ClearScribe uses the microphone permission you grant to record audio and the file or photo
-        permissions you grant to import audio or video files for transcription.
+      • QuietScript uses the microphone permission you grant to record audio and the file or photo permissions
+        you grant to import audio or video files for transcription.
 
       • The bundled speech recognition model runs entirely on the iPhone. Audio recordings, imported files,
         transcripts, and AI output are not sent to the Developer or an external AI provider.
 
+      • If the user chooses an optional model-quality setting that requires a download, QuietScript connects to
+         Hugging Face to retrieve the model file. The request may disclose ordinary network information to
+         Hugging Face and its delivery providers, but never uploads recordings or transcripts.
+
       • The current app has no accounts, advertising, tracking, social features, or third-party analytics SDKs.
 
-      • Settings, recordings, transcripts, and processing history are stored locally so ClearScribe can
-        remember your work.
+      • Settings, recordings, transcripts, and processing history are stored locally so QuietScript can remember
+        your work.
 
-      • ClearScribe never modifies or deletes original files from Apple Photos, iCloud Drive, or the Files app.
-        Recordings made within ClearScribe can be deleted by you at any time.
+      • QuietScript never modifies or deletes original files from Apple Photos, iCloud Drive, or the Files app.
+        Recordings made within QuietScript can be deleted by you at any time.
 
       • Apple may separately process App Store, iCloud, backup, purchase, and optional diagnostics
         information under Apple’s own terms.
@@ -27,13 +31,12 @@
 
 
  1. Overview and Scope
- This Privacy Policy explains how ClearScribe handles information when a person uses the ClearScribe
- iPhone application. The developer and publisher of ClearScribe is referred to in this document as the
+ This Privacy Policy explains how QuietScript handles information when a person uses the QuietScript
+ iPhone application. The developer and publisher of QuietScript is referred to in this document as the
  "Developer," "we," "us," or "our."
-
- ClearScribe is a local-first audio transcription utility. It uses a bundled speech recognition model to
- transcribe audio recordings and imported audio or video files entirely on the user’s device, without
- requiring an internet connection or external AI service.
+ QuietScript is a local-first audio transcription utility. It uses a bundled speech recognition model to
+ transcribe audio recordings and imported audio or video files entirely on the user’s device. Optional
+ model-quality settings may require a user-initiated download, as described in Section 5.
 
  This document also contains the Terms of Use and Audio Safety Notice. The privacy provisions describe
  data handling; the terms address the licence, AI output, audio processing, risk allocation, and disputes.
@@ -41,7 +44,7 @@
 
 
 
-ClearScribe | Privacy, Terms & Audio Safety                                                                 Page 1
+QuietScript | Privacy, Terms & Audio Safety                                                                  Page 1
  2. Developer and Postal Contact
  Questions, privacy requests, legal notices, and dispute notices may be sent by post to the address below.
  Please do not mail recordings, devices, passwords, recovery keys, payment cards, or irreplaceable
@@ -53,20 +56,20 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
      Toronto ON M4E 0B4
      Canada
 
- 3. How ClearScribe Works
- ClearScribe offers three ways to provide audio for transcription: recording directly from the device
+ 3. How QuietScript Works
+ QuietScript offers three ways to provide audio for transcription: recording directly from the device
  microphone, importing an audio file from the Files app or other sources, or selecting a video from Apple
  Photos to extract its audio track.
  Audio is decoded to 16 kHz mono PCM format and processed in sequential segments by the bundled
  on-device speech recognition model. Transcripts are generated locally with optional timestamps and can
  be exported as plain text, subtitles (SRT), or PDF documents.
 
- ClearScribe stores recordings and transcripts in the app’s private sandbox. The app never modifies,
+ QuietScript stores recordings and transcripts in the app’s private sandbox. The app never modifies,
  moves, or deletes original files from Apple Photos, iCloud Drive, or the Files app.
 
  4. Information Processed and Collected
  The word "processed" includes information used locally by the app. Under Apple’s App Store privacy
- guidance, data processed only on the device is not treated as "collected." ClearScribe’s core audio and AI
+ guidance, data processed only on the device is not treated as "collected." QuietScript’s core audio and AI
  workflow is processed locally and is not collected by the Developer.
 
  The following matrix describes the current app version. If the app’s practices materially change, the policy
@@ -74,7 +77,7 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
 
    Data category             How it is handled   Details
 
-                                                 ClearScribe records audio from the device microphone when the user starts a
+                                                 QuietScript records audio from the device microphone when the user starts a
    Audio recordings          On-device only      recording session. Recordings are stored in the app’s private sandbox and are
                                                  never uploaded to the Developer or an external service.
 
@@ -92,105 +95,118 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
    Local app records         On-device only      state, and free-trial tracking help the app resume work and manage the user
                                                  experience.
 
-                                                 ClearScribe may temporarily write decoded audio data (16 kHz PCM samples)
+                                                 QuietScript may temporarily write decoded audio data (16 kHz PCM samples)
    Temporary working         On-device,
                                                  inside its app sandbox while transcribing. The app is designed to remove
    files                     temporary
                                                  temporary files after use.
 
-   Advertising or tracking                       ClearScribe does not request an advertising identifier, track activity across
+   Advertising or tracking                       QuietScript does not request an advertising identifier, track activity across apps
                              No
-   identifiers                                   apps or websites, or use data for targeted advertising.
+   identifiers                                   or websites, or use data for targeted advertising.
 
 
 
 
-ClearScribe | Privacy, Terms & Audio Safety                                                                                Page 2
-   Data category           How it is handled     Details
+QuietScript | Privacy, Terms & Audio Safety                                                                                Page 2
+   Data category            How it is handled     Details
 
-   Account or profile                            The app has no Developer-operated account, login, cloud profile, contact list,
-                           No
-   information                                   chat, or social-sharing system.
+   Account or profile                             The app has no Developer-operated account, login, cloud profile, contact list,
+                            No
+   information                                    chat, or social-sharing system.
 
-                                                 If a purchase is made through the App Store, Apple processes payment,
-   Payment information     Handled by Apple      refund, tax, and transaction information. The Developer does not receive
-                                                 payment-card numbers.
+                                                  If a purchase is made through the App Store, Apple processes payment,
+   Payment information      Handled by Apple      refund, tax, and transaction information. The Developer does not receive
+                                                  payment-card numbers.
 
-                                                 Apple may provide store-level metrics or diagnostics from users who choose to
+                                                  If the user chooses an optional model-quality setting that requires a download,
+                                                  QuietScript contacts Hugging Face to retrieve the model file. The request may
+   Optional model           User initiated;       disclose ordinary network information, such as an IP address and request
+   downloads                network request       metadata, to Hugging Face and its delivery providers. Audio recordings,
+                                                  imported files, transcripts, timestamps, and generated transcription content are
+                                                  not uploaded.
+
+                                                  Apple may provide store-level metrics or diagnostics from users who choose to
    App Store analytics
-                           Handled by Apple      share them. Apple controls this processing and its availability under Apple’s
+                            Handled by Apple      share them. Apple controls this processing and its availability under Apple’s
    and diagnostics
-                                                 privacy terms and device settings.
+                                                  privacy terms and device settings.
 
-                                                 If a person writes to the postal address in this document, the correspondence
-   Postal                  Only if voluntarily
-                                                 and return details may be used to respond, protect legal rights, and keep
-   correspondence          sent
-                                                 ordinary business records.
+                                                  If a person writes to the postal address in this document, the correspondence
+   Postal                   Only if voluntarily
+                                                  and return details may be used to respond, protect legal rights, and keep
+   correspondence           sent
+                                                  ordinary business records.
 
 
 
- 5. Purposes of Local Processing
- ClearScribe processes permitted information only to provide app functionality: record audio, decode audio
- from imported files or video, transcribe speech using the local AI model, generate timestamps, store
- transcripts, export in multiple formats, and manage model downloads and user preferences.
+ 5. Optional Model Downloads
+ QuietScript includes a bundled speech recognition model. Optional quality settings may require the user
+ to download an additional model file. If the user starts that optional download, QuietScript contacts
+ Hugging Face to retrieve the file.
 
- The app may create local technical records to track transcription progress, model state, and trial usage.
- Those records are not uploaded, used for advertising, or used to identify a person across apps, devices,
- or services.
+ That request may disclose technical connection information, such as an IP address, request metadata,
+ and the requested model file, to Hugging Face and applicable content-delivery providers. Their handling
+ of that information is governed by their own terms and privacy policies.
+
+ QuietScript does not send audio recordings, imported files, transcripts, timestamps, prompts, or
+ generated transcription content to Hugging Face. Downloaded model files are stored locally on the
+ device. Local technical records may track transcription progress, model state, and trial usage; they are
+ not uploaded, used for advertising, or used to identify a person across apps, devices, or services.
 
  6. Permissions, Consent, and User Choices
- ClearScribe requests microphone access to record audio. It requests file access or Apple Photos access
+ QuietScript requests microphone access to record audio. It requests file access or Apple Photos access
  to import audio and video files. The user may grant or deny each permission independently, subject to the
  options iOS provides.
-
  Permissions can be changed or revoked through iPhone Settings at any time. Revoking microphone
  access prevents live recording. Revoking file or photo access prevents importing. Revoking permissions
- does not delete recordings or transcripts already stored in ClearScribe.
- ClearScribe never modifies or deletes original files from Apple Photos, iCloud Drive, or the Files app.
- Recordings and transcripts stored within ClearScribe can be deleted by the user at any time from within
+ does not delete recordings or transcripts already stored in QuietScript.
+
+ QuietScript never modifies or deletes original files from Apple Photos, iCloud Drive, or the Files app.
+ Recordings and transcripts stored within QuietScript can be deleted by the user at any time from within
  the app.
 
- 7. Local AI Processing
- The bundled Whisper speech recognition model and supporting libraries run on the iPhone. ClearScribe
+
+
+
+QuietScript | Privacy, Terms & Audio Safety                                                                               Page 3
+ 7. Local AI Processing
+ The bundled Whisper speech recognition model and supporting libraries run on the iPhone. QuietScript
  does not configure the model to call an external AI service or upload audio content, prompts, or
  generated transcripts.
  AI output is probabilistic. Transcriptions may contain inaccuracies, errors, omissions, misinterpretations,
- or fabrications. ClearScribe may incorrectly transcribe names, numbers, technical terms, foreign words,
- or other content. ClearScribe is not a verbatim court reporter, medical transcription service, accessibility
+ or fabrications. QuietScript may incorrectly transcribe names, numbers, technical terms, foreign words, or
+ other content. QuietScript is not a verbatim court reporter, medical transcription service, accessibility
  substitute, or professional record-management system.
 
  Every transcript is presented for user review. The user is responsible for verifying and editing transcripts
  before relying on, exporting, or sharing them.
 
-
-
-
-ClearScribe | Privacy, Terms & Audio Safety                                                                              Page 3
- 8. Local Storage, Retention, and Deletion
- ClearScribe stores preferences, recordings, transcript history, and model files in the app’s private
+ 8. Local Storage, Retention, and Deletion
+ QuietScript stores preferences, recordings, transcript history, and model files in the app’s private
  container. These records generally remain until the user deletes individual transcripts, removes the app,
  or erases the device.
 
  Temporary working files, including decoded PCM audio samples, are designed to be removed after use.
  Unexpected termination, operating-system behavior, backups, or storage failure may delay or prevent
  immediate removal.
- Deleting ClearScribe normally removes its private app container from the device, subject to iOS and
+
+ Deleting QuietScript normally removes its private app container from the device, subject to iOS and
  backup behavior. It does not delete original files from Apple Photos, iCloud Drive, or the Files app.
 
  Device backups and iCloud backups, if enabled, are controlled by Apple and the user’s settings. Restored
  backups may restore local app records.
 
  9. No Sale, Advertising, or Developer Sharing
- ClearScribe does not sell or rent personal information, share it for cross-context behavioural advertising,
+ QuietScript does not sell or rent personal information, share it for cross-context behavioural advertising,
  operate an advertising network, or track users across apps or websites.
 
- The current app has no Developer-operated server, account system, remote AI provider, social network,
- third-party analytics SDK, or marketing SDK that receives audio content or model requests.
-
- ClearScribe includes third-party software and model components that execute locally. Their inclusion
- does not authorize their authors to access the user’s recordings through ClearScribe. Apple and the
- operating system may separately process information as described below.
+ The current app has no Developer-operated server, account system, remote AI service that receives
+ audio content, social network, third-party analytics SDK, or marketing SDK. Optional model downloads
+ are the limited third-party network requests described in Section 5.
+ QuietScript includes third-party software and model components that execute locally. Their inclusion does
+ not authorize their authors to access the user’s recordings through QuietScript. Apple and the operating
+ system may separately process information as described below.
 
  10. Apple, iCloud, and System Services
  Apple provides iOS, the App Store, Photos, iCloud, iCloud backup, permission controls, purchase
@@ -198,41 +214,41 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
  Apple’s agreements, privacy policy, and the user’s device and account settings. The Developer does not
  control Apple’s systems.
 
- When iCloud backup is enabled, Apple may include ClearScribe’s private container data in device
+ When iCloud backup is enabled, Apple may include QuietScript’s private container data in device
  backups. That transfer is between the device and Apple services, not a transmission to the Developer or
  an external AI provider.
- App Store purchases, refunds, taxes, ratings, reviews, installations, and diagnostics may be processed
- by Apple. ClearScribe does not receive payment-card details.
+
+
+
+
+QuietScript | Privacy, Terms & Audio Safety                                                              Page 4
+ App Store purchases, refunds, taxes, ratings, reviews, installations, and diagnostics may be processed
+ by Apple. QuietScript does not receive payment-card details.
 
  11. Security
- ClearScribe uses iOS app sandboxing, Apple privacy permissions, local processing, and local storage to
+ QuietScript uses iOS app sandboxing, Apple privacy permissions, local processing, and local storage to
  reduce risk. These measures cannot guarantee absolute security, availability, successful recovery, or
  protection from device compromise, operating-system defects, storage failure, malicious software,
  unauthorized access, or user error.
-
  The user should protect the device and Apple Account with appropriate passcodes, authentication,
- software updates, and backups. ClearScribe should never be treated as the only copy of important
+ software updates, and backups. QuietScript should never be treated as the only copy of important
  recordings or transcripts.
 
-
-
-
-ClearScribe | Privacy, Terms & Audio Safety                                                              Page 4
- 12. Privacy Choices and Requests
+ 12. Privacy Choices and Requests
  The user can control microphone, file, and photo access in iPhone Settings; control model quality and
- timestamp preferences in ClearScribe Settings; review, edit, or delete transcripts; and export transcripts
- in the user’s preferred format.
+ timestamp preferences in QuietScript Settings; review, edit, or delete transcripts; and export transcripts in
+ the user’s preferred format.
 
  Because the Developer does not receive or maintain the user’s recordings, transcripts, or local app data,
  the Developer generally cannot access, export, correct, or delete those items remotely. The user
- manages them on the device through ClearScribe, iOS Settings, backup settings, or app removal.
+ manages them on the device through QuietScript, iOS Settings, backup settings, or app removal.
  A person may send a privacy inquiry or request by post. The request should identify the applicable
  jurisdiction and describe the requested action without including unnecessary audio content or sensitive
  information. Identity or authority may need to be verified before responding. If no relevant information is
  held, the response may state that fact.
 
  13. Children’s Privacy
- ClearScribe is a general-audience audio utility and is not directed to children under 13 or marketed as a
+ QuietScript is a general-audience audio utility and is not directed to children under 13 or marketed as a
  children’s app. The app does not provide accounts, chat, posting, public profiles, or social sharing.
 
  Audio recordings may capture children’s voices or other sensitive personal information, but that content
@@ -250,31 +266,31 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
 
 
 
-ClearScribe | Privacy, Terms & Audio Safety                                                              Page 5
+QuietScript | Privacy, Terms & Audio Safety                                                              Page 5
           Terms of Use & Audio Safety Notice
- The following terms govern use of ClearScribe and allocate responsibility for AI transcription accuracy,
+ The following terms govern use of QuietScript and allocate responsibility for AI transcription accuracy,
  audio recording, import, export, and related risks.
 
  15. Agreement and Relationship with Apple
  These Terms of Use form an agreement between the user and the Developer, not Apple. By
- downloading, installing, accessing, or using ClearScribe, the user agrees to these Terms. If the user does
+ downloading, installing, accessing, or using QuietScript, the user agrees to these Terms. If the user does
  not agree, the user must not use the app.
- ClearScribe is licensed, not sold. Apple’s Standard Licensed Application End User License Agreement
+ QuietScript is licensed, not sold. Apple’s Standard Licensed Application End User License Agreement
  and Apple Media Services Usage Rules also apply. These Terms supplement applicable Apple terms and
  do not create obligations for Apple beyond Apple’s own agreements.
 
  16. Limited Licence
  Subject to these Terms, applicable Apple Usage Rules, and applicable law, the Developer grants a
- limited, personal, revocable, non-exclusive, non-transferable licence to use ClearScribe on
- Apple-branded products the user owns or controls. The app may also be accessed through Family
- Sharing or other Apple-supported arrangements to the extent Apple’s rules permit.
+ limited, personal, revocable, non-exclusive, non-transferable licence to use QuietScript on Apple-branded
+ products the user owns or controls. The app may also be accessed through Family Sharing or other
+ Apple-supported arrangements to the extent Apple’s rules permit.
 
- No ownership in ClearScribe, its interface, code, model packaging, documentation, graphics, branding, or
+ No ownership in QuietScript, its interface, code, model packaging, documentation, graphics, branding, or
  other content is transferred. All rights not expressly granted are reserved by the Developer and applicable
  licensors.
 
  17. AI Transcription Accuracy and User Review
- ClearScribe provides automated speech-to-text transcriptions, not verified facts or verbatim records. The
+ QuietScript provides automated speech-to-text transcriptions, not verified facts or verbatim records. The
  app does not guarantee correct recognition of words, names, numbers, technical terms, foreign
  languages, accents, overlapping speakers, background noise, or other audio characteristics.
 
@@ -282,26 +298,26 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
  whether it is accurate, complete, appropriate, lawful, and suitable for the user’s intended purpose before
  relying on, exporting, or sharing it.
 
- The user must not rely on ClearScribe output for legal evidence, court reporting, medical transcription,
+ The user must not rely on QuietScript output for legal evidence, court reporting, medical transcription,
  accessibility, identity verification, law enforcement, immigration, employment, insurance, financial
  decisions, or other high-impact purposes.
 
  18. Audio Recording, Import, and Deletion
- ClearScribe records audio from the device microphone and stores recordings in the app’s private
+ QuietScript records audio from the device microphone and stores recordings in the app’s private
  sandbox. The user may also import audio files or extract audio from video files selected from Apple
  Photos.
- ClearScribe never modifies, moves, or deletes original files from Apple Photos, iCloud Drive, or the Files
- app. Recordings and transcripts stored within ClearScribe can be deleted by the user at any time from
+ QuietScript never modifies, moves, or deletes original files from Apple Photos, iCloud Drive, or the Files
+ app. Recordings and transcripts stored within QuietScript can be deleted by the user at any time from
  within the app.
 
- Deletion of recordings and transcripts within ClearScribe is permanent and cannot be undone. The user
+ Deletion of recordings and transcripts within QuietScript is permanent and cannot be undone. The user
  should export or back up important transcripts before deleting them.
 
 
 
 
-ClearScribe | Privacy, Terms & Audio Safety                                                            Page 6
- ClearScribe performs local processing, but no app can guarantee that a transcript is identical, complete,
+QuietScript | Privacy, Terms & Audio Safety                                                             Page 6
+ QuietScript performs local processing, but no app can guarantee that a transcript is identical, complete,
  permanently available, or suitable for every future use. The user should verify important transcripts and
  maintain independent copies.
 
@@ -313,48 +329,48 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
  and transcripts, including recording-consent laws in the user’s jurisdiction.
 
  The user represents that the user has authority to record or import the selected audio and will not use
- ClearScribe to violate privacy, recording-consent, copyright, confidentiality, harassment, discrimination, or
+ QuietScript to violate privacy, recording-consent, copyright, confidentiality, harassment, discrimination, or
  other rights.
 
  20. Acceptable Use and Restrictions
- The user may not misuse ClearScribe; interfere with its operation; bypass security or platform restrictions;
+ The user may not misuse QuietScript; interfere with its operation; bypass security or platform restrictions;
  use it unlawfully; distribute malware; attempt unauthorized access; or use the app to create, organize, or
  distribute unlawful material.
  Except where applicable law or an open-source licence expressly permits, the user may not copy,
  redistribute, sell, rent, lease, sublicense, publish, modify, reverse engineer, decompile, extract, or create
- derivative works from proprietary portions of ClearScribe or commercially exploit the app, its design, or its
+ derivative works from proprietary portions of QuietScript or commercially exploit the app, its design, or its
  bundled materials.
 
  Open-source software and model components remain subject to their respective licences and notices.
  Those licences govern the covered components where they conflict with these restrictions.
 
  21. Availability, Updates, and Support
- ClearScribe may be updated, changed, suspended, limited, or discontinued. Features may fail or behave
+ QuietScript may be updated, changed, suspended, limited, or discontinued. Features may fail or behave
  differently because of app updates, iOS changes, device hardware, memory pressure, storage,
  permissions, audio file format incompatibilities, model limitations, or background-task restrictions.
 
  Unless separately promised in writing, the Developer does not guarantee maintenance, support, updates,
  compatibility, recovery, or continued availability. The Developer, not Apple, is responsible for any
  maintenance or support the Developer elects to provide. Apple has no obligation to furnish maintenance
- or support for ClearScribe.
+ or support for QuietScript.
 
  22. No Warranty
- TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CLEARSCRIBE IS PROVIDED "AS
+ TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, QUIETSCRIPT IS PROVIDED "AS
  IS," "AS AVAILABLE," AND WITH ALL FAULTS. THE DEVELOPER DISCLAIMS ALL EXPRESS,
  IMPLIED, AND STATUTORY WARRANTIES AND CONDITIONS, INCLUDING ACCURACY,
  RELIABILITY, AVAILABILITY, SECURITY, QUIET ENJOYMENT, NON-INFRINGEMENT,
  MERCHANTABILITY, SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR PURPOSE.
 
  No transcription, demonstration, update, or communication creates a warranty. The user assumes the
- risk and cost of using ClearScribe and of any servicing, correction, restoration, backup, or recovery.
+ risk and cost of using QuietScript and of any servicing, correction, restoration, backup, or recovery.
 
 
 
 
-ClearScribe | Privacy, Terms & Audio Safety                                                              Page 7
- If ClearScribe fails to conform to a warranty that applies under Apple’s terms, the user may notify Apple,
+QuietScript | Privacy, Terms & Audio Safety                                                               Page 7
+ If QuietScript fails to conform to a warranty that applies under Apple’s terms, the user may notify Apple,
  and Apple may refund the purchase price, if any, as provided by Apple’s rules. To the maximum extent
- permitted by law, Apple has no other warranty obligation concerning ClearScribe.
+ permitted by law, Apple has no other warranty obligation concerning QuietScript.
 
  23. Limitation of Liability
  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER WILL NOT BE
@@ -363,18 +379,18 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
  CORRUPTION, INACCURACY, OR UNAVAILABILITY OF AUDIO RECORDINGS, TRANSCRIPTS,
  EXPORTS, TIMESTAMPS, BACKUPS, PROFITS, BUSINESS, GOODWILL, OR DATA.
 
- These limitations apply to claims arising from or related to ClearScribe, AI output, the transcription
+ These limitations apply to claims arising from or related to QuietScript, AI output, the transcription
  workflow, Apple Photos, iCloud, device failure, user choices, third-party components, or inability to use
  the app, regardless of the theory of liability and even if the possibility of loss was disclosed.
  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER’S TOTAL
- AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO CLEARSCRIBE WILL NOT EXCEED THE
- GREATER OF THE AMOUNT THE USER PAID FOR CLEARSCRIBE DURING THE TWELVE MONTHS
+ AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO QUIETSCRIPT WILL NOT EXCEED THE
+ GREATER OF THE AMOUNT THE USER PAID FOR QUIETSCRIPT DURING THE TWELVE MONTHS
  BEFORE THE EVENT GIVING RISE TO THE CLAIM OR CAD $50.
 
  24. Indemnity
  To the maximum extent permitted by applicable law, the user will defend, indemnify, and hold the
  Developer harmless from third-party claims, liabilities, losses, damages, and reasonable costs arising
- from the user’s unlawful misuse of ClearScribe, breach of these Terms, recording of audio without
+ from the user’s unlawful misuse of QuietScript, breach of these Terms, recording of audio without
  required consent, or infringement of another person’s rights.
 
  25. Dispute Notice, Individual Arbitration, and Class Waiver
@@ -385,7 +401,7 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
  EXCEPT FOR A CLAIM ELIGIBLE FOR SMALL CLAIMS COURT, A REQUEST FOR URGENT
  INJUNCTIVE RELIEF CONCERNING INTELLECTUAL PROPERTY OR SECURITY, OR A DISPUTE
  THAT APPLICABLE LAW PROHIBITS FROM PRE-DISPUTE ARBITRATION, EACH DISPUTE
- ARISING OUT OF OR RELATING TO CLEARSCRIBE OR THESE TERMS WILL BE RESOLVED BY
+ ARISING OUT OF OR RELATING TO QUIETSCRIPT OR THESE TERMS WILL BE RESOLVED BY
  FINAL AND BINDING INDIVIDUAL ARBITRATION RATHER THAN IN COURT.
  The arbitration will be administered under the ADR Institute of Canada Arbitration Rules in effect when
  the claim is filed, before one neutral arbitrator. The legal seat will be Toronto, Ontario, Canada. A hearing
@@ -401,20 +417,20 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
 
 
 
-ClearScribe | Privacy, Terms & Audio Safety                                                              Page 8
+QuietScript | Privacy, Terms & Audio Safety                                                              Page 8
  If a portion of this section is unenforceable for a particular claim or remedy, it will be severed only to the
  minimum extent necessary. The affected claim or remedy will proceed in a court of competent jurisdiction
  in Toronto, Ontario, while the enforceable remainder continues to apply.
 
  26. Governing Law
- These Terms and disputes concerning ClearScribe are governed by the laws of Ontario and the federal
+ These Terms and disputes concerning QuietScript are governed by the laws of Ontario and the federal
  laws of Canada applicable there, without regard to conflict-of-law principles. Where arbitration does not
  apply, the parties submit to the exclusive jurisdiction of courts located in Toronto, Ontario. The United
  Nations Convention on Contracts for the International Sale of Goods does not apply.
 
  27. Apple and Third-Party Terms
- Apple is not a party to these Terms and is not responsible for ClearScribe or its content. The Developer,
- not Apple, is responsible for addressing claims relating to ClearScribe, including product-liability,
+ Apple is not a party to these Terms and is not responsible for QuietScript or its content. The Developer,
+ not Apple, is responsible for addressing claims relating to QuietScript, including product-liability,
  legal-compliance, privacy, consumer-protection, and intellectual-property claims.
  The user must comply with applicable third-party terms, including Apple Media Services, iCloud, Photos,
  and open-source component licences. The user represents that the user is not located in a country or
@@ -426,18 +442,18 @@ ClearScribe | Privacy, Terms & Audio Safety                                     
 
  28. Termination and General Terms
  The licence terminates automatically if the user materially breaches these Terms. The user may stop
- using ClearScribe at any time. Provisions that by their nature should survive termination will survive,
+ using QuietScript at any time. Provisions that by their nature should survive termination will survive,
  including ownership, disclaimers, liability limits, indemnity, dispute resolution, and governing law.
  If any provision is invalid or unenforceable, it will be modified or severed only to the minimum extent
  necessary, and the remainder will continue. Failure to enforce a provision is not a waiver. These Terms,
  the Privacy Policy, applicable Apple terms, and component licences form the entire agreement
  concerning their respective subject matter.
 
- The Developer may update these Terms for future use of ClearScribe. Continued use after updated terms
+ The Developer may update these Terms for future use of QuietScript. Continued use after updated terms
  are made available constitutes acceptance to the extent permitted by law.
 
 
 
 
-ClearScribe | Privacy, Terms & Audio Safety                                                                Page 9
+QuietScript | Privacy, Terms & Audio Safety                                                                Page 9
 

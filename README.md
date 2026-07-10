@@ -25,4 +25,4 @@ The workflow in `.github/workflows/deploy.yml` builds and deploys every push to 
 
 - Peko’s Fraction Pizzeria Google Play URL is pending.
 - PhotoName App Store URL is pending.
-- ClearScribe App Store URL is pending.
+- QuietScript App Store URL is pending.
