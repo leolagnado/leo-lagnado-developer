@@ -67,9 +67,9 @@ export const apps: App[] = [
     accent: 'violet',
     storeLinks: [
       {
-        label: 'App Store coming soon',
+        label: 'App Store',
         store: 'ios',
-        disabled: true,
+        href: 'https://apps.apple.com/us/app/photoname/id6785927397',
       },
     ],
     legalPath: 'legal/photoname/',
