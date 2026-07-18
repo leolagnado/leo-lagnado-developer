@@ -1,674 +1,820 @@
- Privacy Policy, Terms of Use
- & Financial Safety Notice
- Tersa
- Effective: July 17, 2026
-
-
-
-     Plain-language summary
-
-      • Tersa is a manual-first personal-finance app. It does not connect to a bank, move money, or create a
-        Tersa account.
-
-      • Financial records are stored in an encrypted database on the iPhone. Optional Apple CloudKit sync can
-        copy records to the user's iCloud account.
-
-      • Household workspace content and attachments are encrypted by Tersa before CloudKit upload. Invited
-        household members can decrypt and use the shared workspace; the Developer has no master
-        household decryption key.
-
-      • The bundled artificial-intelligence model and receipt text recognition run on the iPhone. Tersa does not
-        send financial context, receipt images, recognized receipt text, prompts, or AI proposals to an external
-        AI provider.
-
-      • Tersa has no advertising, cross-app tracking, data brokerage, third-party analytics SDK, or remote
-        crash-reporting SDK.
-
-      • StoreKit purchases and subscriptions are handled by Apple. Exchange-rate requests send only a base
-        currency, quote currency, and requested date to the configured rate provider.
-
-      • Tersa provides record-keeping tools and unverified proposals, forecasts, and reports. It is not a bank,
-        accounting system of record, financial adviser, tax adviser, lawyer, broker, or investment service.
-
-      • Users control exports, encrypted backups, workspace deletion, CloudKit sharing, notification detail, and
-        optional device authentication. Some exported information may remain outside Tersa's protection.
-
-
-
- 1. Overview and Scope
- This Privacy Policy explains how the Tersa iPhone application handles information. The developer and
- publisher of Tersa is referred to as the "Developer," "we," "us," or "our." It applies to the current
- production version of Tersa and to support or legal correspondence sent to the Developer.
- Tersa is a local-first, manual-first personal-finance application. It provides double-entry record keeping,
- budgets, schedules, goals, reports, receipt capture, local artificial-intelligence assistance, optional Apple
- CloudKit synchronization, and user-controlled household sharing.
-
- This document also contains the Terms of Use and Financial Safety Notice. The privacy provisions
- describe information handling; the terms address subscriptions, licences, shared workspaces, AI output,
- financial risk, backups, and disputes.
+Tersa | Privacy, Terms & Financial Safety
 
 
 
 
-Tersa | Privacy, Terms & Financial Safety                                                                    Page 1
- 2. Developer and Postal Contact
- Questions, privacy requests, legal notices, and dispute notices may be sent by post to the address below.
- Please do not send passwords, database keys, backup passwords, payment cards, unredacted financial
- documents, or irreplaceable materials.
+Privacy Policy, Terms of Use
+& Financial Safety Notice
+Tersa
+Effective: July 18, 2026
 
-     Developer
-     PO BOX 99900 CQ 646 543
-     RPO THE BEACHES
-     Toronto ON M4E 0B4
-     Canada
 
- 3. How Tersa Works
- Tersa does not connect to bank, card, brokerage, payroll, tax, or accounting accounts. Users enter
- records manually or import supported files, review staged information, and confirm changes. Tersa does
- not initiate payments, transfers, trades, tax filings, or credit applications.
- The local encrypted database is Tersa's working source of truth. Optional CloudKit sync projects
- confirmed records and encrypted attachments into the user's Apple iCloud environment. The Developer
- does not operate a separate Tersa account or general-purpose financial-data server.
+ Plain-language summary
+       •    Tersa is a manual-first personal-finance app. It does not connect to a bank, move money, or create a
+            Tersa account.
 
- Tersa's deterministic financial engine calculates postings, balances, schedules, budgets, forecasts, and
- reports. The bundled local AI may propose drafts, but it cannot autonomously commit, delete, export, or
- sync canonical financial records. The user must review and confirm consequential changes.
+       •    Financial records are stored in an encrypted database on the iPhone. Optional Apple CloudKit sync can
+            copy records to the user's iCloud account.
 
- 4. Information Processed and Collected
- In this policy, "processed" includes information handled locally by the app, while "received by the
- Developer" means information that becomes available to the Developer outside the user's device or
- Apple-controlled private services. These distinctions do not reduce any right that applies under privacy
- law.
+       •    Household workspace content and attachments are encrypted by Tersa before CloudKit upload. Invited
+            household members can decrypt and use the shared workspace; the Developer has no master
+            household decryption key.
 
- The following matrix describes the current production design. Information that a user exports, shares with
- a household, includes in a notification, submits for support, or stores through Apple services may leave
- the app's exclusively local environment.
+       •    The bundled artificial-intelligence model and receipt text recognition run on the iPhone. Tersa does not
+            send financial context, receipt images, recognized receipt text, prompts, AI proposals, or budget
+            explanations to an external AI provider.
 
-   Data category            How it is handled   Details
+       •    Tersa has no advertising, cross-app tracking, data brokerage, third-party analytics SDK, or remote
+            crash-reporting SDK.
 
-                                                Accounts, categories, merchants, transactions, postings, balances, budgets,
-   Financial workspace      Device; optional    schedules, goals, debt, assets, reconciliation records, tags, notes, rules, and
-   records                  CloudKit            report inputs are stored in an encrypted local database. Confirmed records
-                                                may sync through the user's Apple CloudKit account when sync is enabled.
+       •    StoreKit purchases and subscriptions are handled by Apple. Exchange-rate requests send only a base
+            currency, quote currency, and requested date to the configured rate provider.
 
-                                                A household owner can invite people through Apple CloudKit sharing. Shared
-                            Device;
-   Household workspace                          workspace payloads and attachments are encrypted by Tersa before upload.
-                            Tersa-encrypted
-   data                                         Participants receive wrapped workspace-key material and can read, add, edit,
-                            CloudKit
-                                                or delete shared records according to the app's roles and state.
+       •    Tersa provides record-keeping tools and unverified proposals, forecasts, and reports. It is not a bank,
+            accounting system of record, financial adviser, tax adviser, lawyer, broker, or investment service.
 
-                                                Camera scans, imported images or PDFs, and other attachments are
-   Receipt images and       Device; optional    encrypted separately from the database. Receipt text recognition occurs on the
-   attachments              CloudKit            device. If sync is enabled, attachments may be uploaded through CloudKit;
-                                                household attachments receive Tersa end-to-end encryption before upload.
+       •    The Quick Fill widget contains no financial data. Siri transaction text is held in an encrypted, one-shot,
+            device-only draft for no more than ten minutes and opens Tersa for user approval; it is not logged,
+            synced, or backed up.
+
+       •    A privacy-safe diagnostic log remains on the iPhone, is never sent automatically, and can be exported
+            only by the user. Entries are pruned when they are older than five days or when the log exceeds 5 MB.
+
+       •    Users control exports, diagnostic-log export and clearing, encrypted backups, workspace deletion,
+            CloudKit sharing, notification detail, transaction-review presentation, and optional device
+            authentication. Some exported information may remain outside Tersa's protection.
 
 
 
 
-Tersa | Privacy, Terms & Financial Safety                                                                                 Page 2
-   Data category            How it is handled       Details
+                                                                                                                   Page 1
+Tersa | Privacy, Terms & Financial Safety
 
-                                                    The bundled model receives task-bounded financial context or recognized
-   AI context, proposals,                           receipt text and proposes drafts for review. Prompts, proposals, validation
-                            On-device only
-   and learning                                     results, and learned mappings remain on the device. Only records the user
-                                                    confirms become canonical workspace data eligible for sync.
 
-                                                    CSV, OFX, and QIF files are parsed locally into a review stage. Tersa may
-   Import files and         On-device               retain a safe source filename, digest, byte count, row mapping, and confirmed
-   provenance               processing              import history. The source file is not sent to the Developer; confirmed financial
-                                                    records may sync if CloudKit is enabled.
+
+1. Overview and Scope
+This Privacy Policy explains how the Tersa iPhone application handles information. The developer and
+publisher of Tersa is referred to as the "Developer," "we," "us," or "our." It applies to the current
+production version of Tersa and to support or legal correspondence sent to the Developer.
+Tersa is a local-first, manual-first personal-finance application. It provides double-entry record keeping,
+budgets, schedules, goals, reports, receipt capture, local artificial-intelligence assistance, optional Apple
+CloudKit synchronization, and user-controlled household sharing.
+This document also contains the Terms of Use and Financial Safety Notice. The privacy provisions
+describe information handling; the terms address subscriptions, licences, shared workspaces, AI output,
+financial risk, backups, and disputes.
+
+
+2. Developer and Postal Contact
+Questions, privacy requests, legal notices, and dispute notices may be sent by post to the address
+below. Please do not send passwords, database keys, backup passwords, payment cards, unredacted
+financial documents, or irreplaceable materials.
+    Developer
+    PO BOX 99900 CQ 646 543
+    RPO THE BEACHES
+    Toronto ON M4E 0B4
+    Canada
+
+
+3. How Tersa Works
+Tersa does not connect to bank, card, brokerage, payroll, tax, or accounting accounts. Users enter
+records manually or import supported files and approve changes. Imported categories, accounts, and
+transactions use separate review-and-import checkpoints. Tersa does not initiate payments, transfers,
+trades, tax filings, or credit applications.
+The local encrypted database is Tersa's working source of truth. Optional CloudKit sync projects
+confirmed records and encrypted attachments into the user's Apple iCloud environment. The Developer
+does not operate a separate Tersa account or general-purpose financial-data server.
+Tersa's deterministic financial engine calculates postings, balances, schedules, budgets, forecasts,
+reports, and proposed budget amounts. The bundled local AI may propose structured drafts or explain
+deterministic results, but it cannot autonomously commit, delete, export, or sync canonical financial
+records. Every consequential change requires a user approval action. If the device-local Review before
+saving setting is off, the editor's save action is that approval and a separate review screen is skipped;
+imports and budget proposals retain dedicated acceptance steps.
+
+
+
+
+                                                                                                        Page 2
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+4. Information Processed and Collected
+In this policy, "processed" includes information handled locally by the app, while "received by the
+Developer" means information that becomes available to the Developer outside the user's device or
+Apple-controlled private services. These distinctions do not reduce any right that applies under privacy
+law.
+The following matrix describes the current production design. Information that a user exports, shares
+with a household, includes in a notification, submits for support, or stores through Apple services may
+leave the app's exclusively local environment. Tersa does not automatically transmit its diagnostic log or
+a Quick Fill draft to the Developer.
+
+ Data category              How it is handled    Details
+
+                                                 Accounts, categories, merchants, transactions, postings, balances, budgets,
+ Financial workspace        Device; optional     schedules, goals, debt, assets, reconciliation records, tags, notes, rules, and
+ records                    CloudKit             report inputs are stored in an encrypted local database. Confirmed records
+                                                 may sync through the user's Apple CloudKit account when sync is enabled.
+
+                                                 A household owner can invite people through Apple CloudKit sharing.
+                                                 Shared workspace payloads and attachments are encrypted by Tersa
+ Household                  Device; Tersa-
+                                                 before upload. Participants receive wrapped workspace-key material and
+ workspace data             encrypted CloudKit
+                                                 can read, add, edit, or delete shared records according to the app's roles
+                                                 and state.
+
+                                                 Camera scans, imported images or PDFs, and other attachments are
+                                                 encrypted separately from the database. Receipt text recognition occurs
+ Receipt images and         Device; optional
+                                                 on the device. If sync is enabled, attachments may be uploaded through
+ attachments                CloudKit
+                                                 CloudKit; household attachments receive Tersa end-to-end encryption
+                                                 before upload.
+
+                                                 The bundled model receives task-bounded financial context or recognized
+                                                 receipt text and may propose drafts or explain deterministic planning
+ AI context,
+                                                 results. Prompts, proposals, explanations, validation results, and learned
+ proposals, and             On-device only
+                                                 mappings remain on the device. AI cannot choose budget amounts or
+ learning
+                                                 autonomously save records. Only records approved by the user become
+                                                 canonical workspace data eligible for sync.
+
+                                                 CSV, OFX, and QIF files are parsed locally into an encrypted, resumable
+                                                 import draft. Categories, accounts, and transactions are reviewed and
+                                                 imported at separate user-controlled checkpoints, so an accepted earlier
+ Import files and           On-device            phase may remain if a later phase fails or is skipped. Tersa may retain a
+ provenance                 processing           safe source filename, digest, byte count, row mapping, decisions, and
+                                                 confirmed import history. The source file is not sent to the Developer;
+                                                 accepted categories, accounts, and financial records may sync if CloudKit is
+                                                 enabled.
+
+                                                 The widget displays an input-like surface but stores no financial data and
+                                                 opens Tersa for entry. If a Siri App Shortcut receives dictated transaction
+                                                 text before the app is ready, Tersa encrypts it with a Keychain-backed key
+ Quick Fill widget and                           in a one-shot file protected by iOS. The draft is excluded from backup,
+                            Device only
+ Siri input                                      logging, workspace sync, and widget timelines; it expires after ten minutes
+                                                 and is consumed only after onboarding, device authentication when
+                                                 enabled, and writable-workspace checks. Neither path saves a transaction
+                                                 autonomously.
+
+
+
+
+                                                                                                                          Page 3
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+ Data category              How it is handled       Details
 
                                                     When an exchange rate is requested, Tersa sends the base currency, quote
-   Exchange-rate                                    currency, and requested date to api.frankfurter.dev over HTTPS. Tersa does
+ Exchange-rate                                      currency, and requested date to api.frankfurter.dev over HTTPS. Tersa
                             Sent to rate provider
-   request data                                     not include amounts, account names, merchant names, notes, cookies,
-                                                    credentials, or request bodies in that request.
+ request data                                       does not include amounts, account names, merchant names, notes,
+                                                    cookies, credentials, or request bodies in that request.
 
                                                     Apple processes payment, tax, refund, renewal, and App Store account
-   Purchase and             Apple; local            information. Tersa verifies subscription entitlements through StoreKit and
-   entitlement data         verification            stores limited local trial and entitlement state. The Developer does not receive
-                                                    payment-card numbers.
+ Purchase and               Apple; local            information. Tersa verifies subscription entitlements through StoreKit and
+ entitlement data           verification            stores limited local trial and entitlement state. The Developer does not
+                                                    receive payment-card numbers.
 
-                                                    Tersa schedules local reminders for due or overdue items. The default private
-                                                    summary omits descriptions and amounts. If the user chooses a more detailed
-   Notification content     On-device and iOS
-                                                    notification setting, iOS notifications may display descriptions or amounts on
-                                                    the lock screen or connected devices.
+                                                    Tersa schedules local reminders for due or overdue items. The default
+                                                    private summary omits descriptions and amounts. If the user chooses a
+ Notification content       On-device and iOS
+                                                    more detailed notification setting, iOS notifications may display
+                                                    descriptions or amounts on the lock screen or connected devices.
 
                                                     If app lock is enabled, Tersa asks iOS to authenticate with Face ID, Touch ID
-   Device authentication    Handled by iOS          where available, or the device passcode. Tersa receives the authentication
+ Device
+                            Handled by iOS          where available, or the device passcode. Tersa receives the authentication
+ authentication
                                                     result and does not receive or store biometric templates.
 
-                                                    Production diagnostics are designed to be local and redacted and to exclude
-                                                    financial values, names, notes, prompts, receipt content, attachments,
+                                                    All distributions keep a universal diagnostic log on the iPhone. It uses fixed
+                                                    allowlisted fields for technical event types, outcomes, safe error
+                                                    classifications, timestamps, app/build/operating-system context, random
+                                                    diagnostic session or operation identifiers, and resource conditions such as
+                                                    memory, thermal state, and Low Power Mode. It discards free-form details
                             On-device unless
-   Local diagnostics                                household-member data, and encryption keys. A user may choose to export
+ Local diagnostics                                  and excludes financial amounts or text, prompts, personal information,
                             exported
-                                                    material for support. TestFlight builds may expose additional local model
-                                                    diagnostics for user-initiated export.
+                                                    account or category details, receipt content, attachments, workspace
+                                                    record identifiers, and encryption keys. Nothing is sent automatically. Only
+                                                    the user can export or clear it and choose whether to share the exported
+                                                    file. The log is excluded from backup and prunes entries when they are
+                                                    older than five days or when it exceeds 5 MB.
 
                                                     Tersa does not request the advertising identifier, track activity across other
-   Advertising and
+ Advertising and
                             Not used                companies' apps or websites, use behavioural advertising, or include a
-   tracking identifiers
+ tracking identifiers
                                                     marketing or third-party analytics SDK.
 
                                                     Tersa has no Developer-operated account, login, contact-list upload, public
-   Developer account or
-                            Not created             profile, social feed, or proprietary cloud account. Apple account and CloudKit
-   cloud profile
-                                                    identifiers are handled through Apple platform services.
-
-                                                    If a person writes to the postal address in this document, the Developer may
-   Postal                   Only if voluntarily     use the correspondence, return details, and voluntarily supplied materials to
-   correspondence           sent                    respond, prevent abuse, meet legal obligations, and keep ordinary business
-                                                    records.
-
-
-
- 5. Purposes and Privacy Principles
- Tersa processes information to provide the features the user requests; secure and synchronize the
- workspace; validate records; calculate reports; restore purchases; remember settings; prevent duplicate
- or unsafe operations; investigate a user-reported problem; enforce these Terms; and meet legal
- obligations.
- The Developer intends to follow the Canadian fair-information principles of accountability, identifying
- purposes, meaningful consent, limiting collection, limiting use, disclosure and retention, accuracy,
- safeguards, openness, individual access, and the ability to challenge compliance. Tersa is designed to
- minimize information sent outside the device.
-
-
-
-Tersa | Privacy, Terms & Financial Safety                                                                                      Page 3
- Tersa does not use financial records, receipts, prompts, or AI proposals for advertising, data brokerage,
- generalized model training, credit decisions, or profiling across unrelated services.
-
- 6. Local Storage and Encryption
- Tersa stores the workspace in a SQLCipher-encrypted database in the app's protected container. The
- database key is randomly generated and stored in the iOS Keychain with device-only, unlocked-device
- protection. The database and attachments also use iOS file protection.
- Attachments are encrypted separately with authenticated encryption. Tersa uses separate key lifecycles
- for the database, attachments, portable backups, and household sharing. This separation reduces risk
- but does not make compromise impossible.
-
- If the database key is unavailable, Tersa is designed to fail closed rather than silently create an
- unencrypted replacement. Protecting the iPhone, passcode, Apple Account, and backup password
- remains the user's responsibility.
-
- 7. Local AI and Receipt Recognition
- The bundled language model runs on the iPhone. Tersa does not configure it to call an external AI
- service, browse the internet, read arbitrary files, query the full database, or mutate records directly. It
- receives only context selected for the task and returns an untrusted proposal that is checked by
- deterministic code.
- Receipt capture and optical character recognition run through Apple on-device frameworks. The local
- model receives bounded recognized text, not receipt pixels. A user can reject or edit every proposed
- transaction before it becomes a financial record. An optional receipt image or PDF is stored only if the
- user chooses to attach it.
-
- AI and OCR output may be wrong, incomplete, duplicated, misleading, or offensive. Prompts, proposals,
- and learned mappings are kept locally and can be cleared separately. Only user-confirmed canonical
- records are eligible for CloudKit sync.
-
- 8. Apple CloudKit and Individual Sync
- If the user enables individual sync, Tersa uploads confirmed workspace projections and eligible
- attachments to a private CloudKit database associated with the user's Apple Account. Apple provides
- account authentication, storage, transport, and synchronization under Apple's terms and privacy policy.
-
- Individual CloudKit records use Apple platform protections and Tersa does not operate a separate sync
- server. Tersa does not describe individual CloudKit records as having the additional household
- content-encryption layer unless the app expressly says so.
- CloudKit availability, retention, recovery, quota, and account access depend on Apple systems and the
- user's Apple Account. Disabling sync stops future synchronization but may not immediately erase records
- already retained by Apple or another device.
-
- 9. Household Sharing and End-to-End Encryption
- A household owner may create a shared CloudKit zone and invite participants. Tersa encrypts household
- financial payloads and attachments on a participant device before CloudKit upload. Each authorized
- device receives wrapped workspace-key material. The Developer has no master key designed to decrypt
- household content.
-
-
-
-Tersa | Privacy, Terms & Financial Safety                                                                      Page 4
- End-to-end encryption does not prevent invited participants from seeing the shared workspace.
- Participants may add, edit, reconcile, or delete shared records according to the current role and
- subscription state. A participant may also view information on a compromised device, capture
- screenshots, or export records outside Tersa.
- Apple necessarily processes CloudKit account, sharing, routing, device, and service metadata and stores
- opaque encrypted payloads. Tersa minimizes application-level routing metadata but does not control
- Apple's independent processing.
-
- The owner should invite only trusted people, remove participants when access is no longer appropriate,
- and understand that a removed participant may retain prior exports, screenshots, backups, or information
- already learned.
-
- 10. Exchange Rates and Network Requests
- Tersa permits network access only for narrowly defined services: Apple StoreKit and App Store functions,
- Apple CloudKit and sharing, the configured exchange-rate provider, and user-initiated external legal
- pages.
-
- For an exchange-rate lookup, Tersa sends only the base currency, quote currency, and requested date to
- api.frankfurter.dev using an ephemeral HTTPS session. The request is designed without cookies,
- credentials, or a body. The provider and network intermediaries may still receive ordinary connection data
- such as IP address, time, and device-network information under their own practices.
-
- Rates may be delayed, unavailable, rounded, revised, or inaccurate and are provided for record-keeping
- estimates. A user should verify a rate against an authoritative source before making a payment, filing tax,
- valuing an asset, or taking another consequential action.
-
- 11. Permissions, Authentication, and Notifications
- Camera access is used only when the user chooses to scan a receipt. Face ID or other device
- authentication is optional and is performed by iOS; Tersa receives the result, not biometric material.
- CloudKit permissions and account status are managed through Apple services.
-
- Tersa can schedule local reminders. The default private summary hides descriptions and amounts. A
- user who enables description-only or full-detail notifications chooses to expose more information to iOS
- notification surfaces, including the lock screen, Notification Centre, previews, connected watches, and
- other Apple devices according to system settings.
-
- Tersa may obscure the app switcher and relock after a short background interval, but these features are
- convenience safeguards and do not replace a strong device passcode or careful notification settings.
-
- 12. Imports, Exports, and Portable Backups
- CSV, OFX, and QIF imports are parsed locally and staged for review. A user must confirm mappings and
- records before import. Tersa may retain provenance needed to explain or prevent duplicate imports. The
- source file remains under the user's control outside Tersa.
- CSV and PDF exports are not encrypted by Tersa after creation. Once exported to Files, Mail, Messages,
- AirDrop, a printer, another app, or another person, the information is governed by the user's choices and
- the receiving service's practices.
-
- Portable .tersabackup files are encrypted with a user-chosen password using a memory-hard key
- derivation function and authenticated encryption. The Developer does not know the password and cannot
- recover a forgotten password or repair every damaged backup. Users should keep tested copies in
-
-Tersa | Privacy, Terms & Financial Safety                                                                 Page 5
- secure, independent locations.
-
- 13. No Sale, Advertising, or Cross-App Tracking
- Tersa does not sell or rent personal information, share it for cross-context behavioural advertising,
- operate an advertising network, or track users across other companies' apps or websites.
- The current production app contains no Developer-operated financial-data server, remote AI provider,
- marketing SDK, third-party analytics SDK, session-replay SDK, or remote crash-reporting SDK. Apple
- may separately provide aggregated store information or optional diagnostics under the user's Apple
- settings and Apple's terms.
-
- 14. Service Providers and Disclosures
- Apple provides iOS, the App Store, StoreKit, CloudKit, iCloud sharing, device authentication, notification
- delivery, backups, and optional diagnostics. The exchange-rate provider receives the limited request
- described in Section 10. Each provider acts under its own terms and privacy practices for information it
- processes independently.
-
- The Developer may disclose correspondence or limited business records when reasonably necessary to
- comply with law, respond to valid legal process, protect users or the public, investigate abuse or security
- incidents, enforce agreements, or complete a permitted business reorganization. The Developer cannot
- disclose financial content that it does not possess or cannot decrypt.
- If ownership of the app or Developer business changes, information actually held by the Developer may
- transfer subject to applicable law and continued protection. A transaction does not create access to a
- user's device key or household decryption key that the Developer does not hold.
-
- 15. Retention, Deletion, and Workspace Control
- Local workspace records remain until the user edits or deletes them, deletes the workspace, removes the
- app, erases the device, or restores different data, subject to device and Apple backup behaviour. Deleting
- an attachment does not necessarily delete the related financial transaction or history.
- A user can clear learned AI preferences separately, export records, create an encrypted backup, and
- request full workspace deletion through Tersa. Deleting a workspace does not reset an already-used trial
- and does not delete exported files, screenshots, printed copies, recipient copies, or backups stored
- elsewhere.
-
- CloudKit deletion and participant removal can take time to propagate. Other devices may be offline, and
- Apple may retain service copies according to its policies. A household member who loses write access
- may still have read, export, or private-copy options described in the app and may retain earlier copies
- outside Tersa.
- Support and legal correspondence held by the Developer is retained only as long as reasonably needed
- for the request, security, accounting, legal obligations, or dispute records, then deleted or de-identified
- where appropriate.
-
- 16. Privacy Choices, Access, and Complaints
- Users control CloudKit sync, household membership, receipt attachments, app lock, notification detail,
- local AI learning, exports, backups, and workspace deletion through Tersa and iOS settings. Consent can
- be withdrawn for optional processing, but doing so may disable the related feature and does not reverse
- processing already lawfully completed.
-
-
-Tersa | Privacy, Terms & Financial Safety                                                                Page 6
- Because the Developer generally does not receive the local or CloudKit financial workspace and cannot
- decrypt household content, the Developer normally cannot retrieve, correct, export, or delete those
- records remotely. The user should use Tersa's local controls, household controls, Apple account tools,
- and exported backups.
-
- A person may request access to or correction of personal information actually held by the Developer, ask
- how it was used or disclosed, withdraw consent where applicable, or challenge compliance through the
- contact methods in Section 2. The request should describe the issue without sending unnecessary
- financial data. Identity and authority may need to be verified. Applicable exceptions, retention duties, and
- response timelines remain available under law.
-
- A person may also contact the Office of the Privacy Commissioner of Canada or the applicable provincial
- privacy regulator. Raising a privacy concern will not result in discriminatory treatment.
-
- 17. Children, Changes, and Contact
- Tersa is a general-audience personal-finance tool and is not directed to children under 13. A person who
- lacks legal capacity to accept the Terms should use Tersa only with a parent or legal guardian who
- accepts responsibility. Household owners should consider whether sharing financial data with a minor is
- appropriate.
-
- This document may be updated for app changes, law, platform rules, or improved explanations. The
- effective date identifies the current version. Material changes will be presented through the app, App
- Store listing, or published legal page as appropriate before or when the changed practice becomes
- available. If consent is legally required for a new purpose, continued use alone will not replace that
- consent.
- Privacy questions and legal notices may be sent to the postal address in Section 2.
-
-
-
-
-Tersa | Privacy, Terms & Financial Safety                                                                 Page 7
-     Terms of Use & Financial Safety Notice
- The following terms govern use of Tersa and allocate responsibility for subscriptions, financial records,
- local AI proposals, household sharing, exports, backups, and related risks.
-
- 18. Agreement and Relationship with Apple
- These Terms of Use form an agreement between the user and the Developer, not Apple. By
- downloading, installing, subscribing to, accessing, or using Tersa, the user agrees to these Terms and
- the Privacy Policy. If the user does not agree, the user must not use Tersa.
- Tersa is licensed, not sold. Apple's Standard Licensed Application End User License Agreement, Apple
- Media Services Terms and Conditions, and applicable Usage Rules also apply. These Terms supplement
- applicable Apple terms and do not create obligations for Apple beyond Apple's own agreements.
-
- 19. Eligibility and Personal Use
- The user must have legal capacity to form this agreement. A minor or another person who lacks that
- capacity may use Tersa only with a parent, guardian, or authorized representative who accepts these
- Terms and responsibility for the use.
-
- Tersa is intended for lawful personal, family, and household financial organization. It is not offered for
- regulated institutional record keeping, fiduciary administration, professional client accounting, money
- transmission, securities trading, credit adjudication, tax filing, or other high-impact commercial reliance.
-
- 20. Limited Licence and Ownership
- Subject to these Terms, applicable Apple Usage Rules, payment of applicable fees, and applicable law,
- the Developer grants a limited, personal, revocable, non-exclusive, non-transferable licence to use Tersa
- on Apple-branded products the user owns or controls and through Apple-supported family arrangements
- where permitted.
-
- No ownership in Tersa, its interface, code, data model, model packaging, documentation, graphics,
- branding, or other Developer content is transferred. The user retains rights in financial records and
- attachments the user creates or lawfully imports. All other rights are reserved by the Developer and
- applicable licensors.
-
- 21. Trial, Subscriptions, Billing, and Cancellation
- Tersa currently offers a 30-day trial that begins after the app creates a durable workspace. Trial eligibility
- is recorded locally and is not reset by deleting a workspace or reinstalling where Tersa can reliably detect
- prior use. Apple or the Developer may change or discontinue future trial offers to the extent permitted by
- law, without shortening an already-promised trial except to address fraud, abuse, or legal requirements.
- Individual and Household access are offered as auto-renewing subscriptions through Apple's App Store.
- The price, currency, tax, billing period, trial conversion, and renewal terms shown by Apple at purchase
- control. Payment is charged to the user's Apple Account. Unless cancelled within Apple's required time
- before renewal, the subscription renews and Apple charges the account for the next period.
-
- Users manage or cancel subscriptions in Apple account settings and may restore eligible purchases
- through Tersa. Cancellation stops a future renewal but normally does not create a refund or end access
- before the paid period expires. Apple administers refunds subject to its rules and applicable consumer
- law; the Developer does not receive payment-card information.
-
-
-Tersa | Privacy, Terms & Financial Safety                                                                 Page 8
- When trial or paid access expires, Tersa is designed to keep the workspace available in read-only mode
- for viewing, search, reports, exports, encrypted backups, restore, purchase restoration, and deletion.
- Mutations, local AI, CloudKit uploads, and household changes may be unavailable. If a Household
- subscription is replaced by an Individual subscription, a shared workspace may remain read-only and the
- owner may be able to create a private copy.
-
- 22. Manual Financial Records and No Bank Connection
- Tersa does not connect to financial institutions and does not independently verify balances, transactions,
- ownership, identity, tax treatment, market value, payment status, exchange rates, or supporting
- documents. Information is only as accurate and current as the user inputs, imports, mappings,
- assumptions, confirmations, and corrections.
- Tersa is not an official bank statement, general ledger certified by an accountant, tax record accepted by
- an authority, credit report, appraisal, audit, proof of payment, or substitute for source documents. The
- user must reconcile records against authoritative statements and retain source materials required for
- legal, tax, insurance, estate, employment, or business purposes.
-
- Budgets, goals, schedules, net worth, debt plans, projections, and reports are estimates based on
- recorded data and assumptions. They do not guarantee future cash flow, returns, solvency, savings,
- payoff dates, affordability, or achievement of a goal.
-
- 23. No Professional Advice or High-Impact Reliance
- Tersa and its content, calculations, forecasts, AI proposals, examples, and documentation are for
- personal organization and general information. They are not financial, investment, tax, accounting, legal,
- insurance, credit, lending, bankruptcy, estate-planning, or other professional advice and do not create a
- fiduciary or adviser-client relationship.
- The user must obtain appropriate professional advice and independently verify source information before
- filing tax, investing, borrowing, lending, buying or selling an asset, changing insurance, making a legal
- commitment, paying a bill, relying on a debt plan, or taking another consequential action.
-
- Tersa must not be used as the sole basis for an emergency, safety, eligibility, employment, housing,
- insurance, lending, legal, medical, or other high-impact decision about any person.
-
- 24. Local AI, OCR, and User Confirmation
- AI and receipt-recognition output is probabilistic and may be inaccurate, incomplete, duplicated,
- inconsistent, biased, offensive, or fabricated. It may misunderstand an amount, currency, merchant, date,
- category, account, posting, schedule, goal, tax label, or user instruction.
- Tersa presents proposals for review and applies deterministic validation, but no validation can establish
- that a proposal is factually correct or suitable for the user. The user is solely responsible for reviewing
- source documents, editing or rejecting proposals, and confirming the accounts, amounts, currency, date,
- category, tax treatment, and consequences before saving.
- The local model is not authorized to commit canonical changes autonomously. A software defect, device
- compromise, accessibility action, accidental confirmation, or misunderstood interface may still cause loss.
- Users should review important records and maintain backups.
-
-
-
-
-Tersa | Privacy, Terms & Financial Safety                                                               Page 9
- 25. Household Sharing Responsibilities
- A household owner controls invitations and is responsible for obtaining any consent needed to place
- another person's financial information in a shared workspace. Each participant must have authority to
- view and process the shared information and must protect the device, Apple Account, exports, and
- encryption material available to that participant.
- Participants may change or delete records visible to others. Tersa may preserve conflict, audit, or
- tombstone information needed for synchronization, but it cannot guarantee prevention, attribution,
- reversal, or recovery of a participant's action. Household members should agree on roles, review
- changes, and keep independent backups.
- Removing a participant or ending a Household subscription does not erase information the participant
- previously exported, printed, photographed, backed up, or learned. The Developer does not mediate
- ownership, family, separation, estate, employment, partnership, or accounting disputes between
- participants.
-
- 26. Imports, Exports, Backups, and Deletion
- The user must review imported rows, mappings, duplicates, accounts, and opening balances before
- confirmation. Tersa does not guarantee compatibility with every CSV, OFX, QIF, PDF, receipt, financial
- institution, locale, encoding, or third-party export.
- Exports can reveal sensitive information and may no longer be encrypted or controlled by Tersa. The user
- is responsible for choosing recipients and locations, redacting when appropriate, and securely deleting
- unneeded copies.
-
- An encrypted backup is useful only if the file, password, format, device, and app remain available and
- restoration succeeds. The Developer cannot recover a forgotten password or guarantee restoration. The
- user should periodically create and test independent backups before major imports, household changes,
- device replacement, or workspace deletion.
-
- Deletion may be permanent after synchronization and may not be recoverable. Before deleting a
- workspace or attachment, the user should verify exports and backups. Tersa is not responsible for copies
- retained by Apple, household members, recipients, device backups, or other services outside its control.
-
- 27. Exchange Rates and Third-Party Services
- Exchange rates are informational estimates from an external provider. They may differ from a bank, card
- network, tax authority, broker, or transaction rate and may omit fees, spreads, taxes, or market
- movement. Tersa does not guarantee availability, completeness, timeliness, or accuracy.
- Apple services and the exchange-rate provider are independent services. Their availability, security,
- retention, data practices, eligibility, account actions, and terms are outside the Developer's control. Use of
- those services is also subject to their agreements.
-
- 28. User Security and Lawful Use
- The user is responsible for the device, passcode, Apple Account, CloudKit access, notification previews,
- backup passwords, exports, household invitations, and any information entered or shared through Tersa.
- Optional app lock does not protect data after a user intentionally exports or shares it.
- The user represents that the user has authority to process the financial records and attachments and will
- comply with privacy, confidentiality, intellectual-property, consumer, tax, sanctions, anti-fraud, and other
-
-
-
-Tersa | Privacy, Terms & Financial Safety                                                                Page 10
- applicable laws.
- The user may not use Tersa to facilitate fraud, theft, evasion, harassment, unlawful surveillance, money
- laundering, unauthorized financial access, or another unlawful act; introduce malware; interfere with
- security or operation; bypass platform or subscription controls; or attempt unauthorized access to another
- person's workspace, device, or CloudKit data.
-
- 29. Technical and Intellectual-Property Restrictions
- Except where applicable law or an open-source licence expressly permits, the user may not copy,
- redistribute, sell, rent, lease, sublicense, publish, modify, reverse engineer, decompile, extract, scrape,
- probe, or create derivative works from proprietary portions of Tersa; defeat encryption or access controls;
- extract model weights or protected assets; or commercially exploit the app or its design.
- Open-source software and model components remain subject to their respective licences and notices.
- Those licences govern the covered components where they conflict with this restriction. Nothing in these
- Terms limits a non-waivable right to interoperability, security research, repair, or reverse engineering
- granted by applicable law.
-
- 30. Availability, Changes, and Support
- Tersa may be updated, changed, suspended, limited, or discontinued. Features may behave differently
- because of app or iOS updates, device hardware, available memory or storage, permissions, subscription
- state, corrupted data, Apple services, network availability, exchange-rate services, locale, unsupported
- imports, model limitations, or security requirements.
-
- The Developer may correct errors, change the local model, discontinue compatibility with older app or
- backup versions, or require an update for security or platform compliance. Where reasonably possible,
- material changes affecting paid access or data portability will be explained before they take effect.
- Unless separately promised in writing or required by law, the Developer does not guarantee
- maintenance, support, updates, backward compatibility, recovery, or continued availability. The
- Developer, not Apple, is responsible for any maintenance or support the Developer elects to provide.
- Apple has no obligation to furnish maintenance or support for Tersa.
-
- 31. No Warranty
- TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, TERSA IS PROVIDED "AS IS," "AS
- AVAILABLE," AND WITH ALL FAULTS. THE DEVELOPER DISCLAIMS ALL EXPRESS, IMPLIED, AND
- STATUTORY WARRANTIES AND CONDITIONS, INCLUDING ACCURACY, COMPLETENESS,
- RELIABILITY, AVAILABILITY, SECURITY, QUIET ENJOYMENT, NON-INFRINGEMENT,
- MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND
- FITNESS OF FINANCIAL RECORDS, AI OUTPUT, FORECASTS, REPORTS, EXCHANGE RATES,
- IMPORTS, EXPORTS, OR BACKUPS FOR ANY PARTICULAR DECISION OR AUTHORITY.
-
- No proposal, validation result, report, forecast, documentation, demonstration, update, or communication
- creates a warranty. The user assumes the risk and cost of correction, reconciliation, professional review,
- tax treatment, backup, restoration, security, and use of Tersa.
- If Tersa fails to conform to a warranty that applies under Apple's terms, the user may notify Apple, and
- Apple may refund the purchase price, if any, as provided by Apple's rules. To the maximum extent
- permitted by law, Apple has no other warranty obligation concerning Tersa.
-
-
-
-
-Tersa | Privacy, Terms & Financial Safety                                                             Page 11
- SOME JURISDICTIONS DO NOT ALLOW CERTAIN DISCLAIMERS. THIS SECTION APPLIES ONLY
- TO THE EXTENT PERMITTED BY LAW AND DOES NOT EXCLUDE NON-WAIVABLE STATUTORY
- WARRANTIES OR CONSUMER RIGHTS.
-
- 32. Limitation of Liability
- TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER WILL NOT BE
- LIABLE FOR PERSONAL INJURY OR FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
- PUNITIVE, OR CONSEQUENTIAL LOSS OR DAMAGE, INCLUDING LOST PROFITS, OPPORTUNITY,
- SAVINGS, TAX BENEFITS, CREDIT, BUSINESS, GOODWILL, OR DATA, OR LOSS, CORRUPTION,
- DUPLICATION, DISCLOSURE, MISCLASSIFICATION, MISCALCULATION, OR UNAVAILABILITY OF
- FINANCIAL RECORDS, RECEIPTS, ATTACHMENTS, REPORTS, EXPORTS, BACKUPS, OR
- HOUSEHOLD DATA.
- These limitations apply to claims arising from or related to Tersa, AI or OCR output, user confirmations,
- forecasts, exchange rates, imports, exports, subscriptions, CloudKit, household participants, device
- failure, security incidents, third-party services, or inability to use the app, regardless of the theory of
- liability and even if the possibility of loss was disclosed.
- TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER'S TOTAL
- AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO TERSA WILL NOT EXCEED THE
- GREATER OF THE AMOUNT THE USER PAID FOR TERSA DURING THE TWELVE MONTHS
- BEFORE THE EVENT GIVING RISE TO THE CLAIM OR CAD $100.
-
- These exclusions and limits do not apply to fraud, wilful misconduct, gross negligence where it cannot be
- limited, death or personal injury caused by negligence where it cannot be limited, breach of a
- non-waivable statutory obligation, or another liability that applicable law does not permit the parties to
- exclude or limit.
-
- 33. Indemnity
- To the maximum extent permitted by applicable law, the user will defend, indemnify, and hold the
- Developer harmless from third-party claims, liabilities, losses, damages, and reasonable costs arising
- from the user's unlawful misuse of Tersa, breach of these Terms, unauthorized processing or disclosure
- of another person's information, household invitation or dispute, or infringement of another person's
- rights. This obligation does not apply to the extent a claim was caused by the Developer's breach,
- negligence, or unlawful conduct.
-
- 34. Dispute Notice, Individual Arbitration, Class Waiver, and
- Governing Law
- Before starting arbitration or litigation, the complaining party must send a written notice describing the
- dispute, supporting facts, and requested relief to the postal address in Section 2. The parties will attempt
- in good faith to resolve the dispute for 30 days after receipt. This informal process does not prevent either
- party from seeking urgent relief, using small claims court, preserving a limitation period, or exercising a
- right that applicable law does not permit the parties to delay or waive.
- EXCEPT FOR A CLAIM ELIGIBLE FOR SMALL CLAIMS COURT, A REQUEST FOR URGENT
- INJUNCTIVE RELIEF CONCERNING INTELLECTUAL PROPERTY OR SECURITY, OR A DISPUTE
- THAT APPLICABLE LAW PROHIBITS FROM PRE-DISPUTE ARBITRATION, EACH DISPUTE
- ARISING OUT OF OR RELATING TO TERSA OR THESE TERMS WILL BE RESOLVED BY FINAL AND
- BINDING INDIVIDUAL ARBITRATION RATHER THAN IN COURT.
-
-
-Tersa | Privacy, Terms & Financial Safety                                                               Page 12
- The arbitration will be administered under the ADR Institute of Canada Arbitration Rules in effect when
- the claim is filed, before one neutral arbitrator. The legal seat will be Toronto, Ontario, Canada. A hearing
- may occur remotely, in person, or on written submissions as the arbitrator permits. The arbitrator may
- award any individual remedy available under applicable law but may not combine different persons'
- claims without all parties' consent.
-
- EACH PARTY WAIVES A JURY TRIAL TO THE EXTENT SUCH A RIGHT EXISTS. ARBITRATION AND
- LITIGATION MUST PROCEED ONLY ON AN INDIVIDUAL BASIS. TO THE MAXIMUM EXTENT
- PERMITTED BY LAW, NEITHER PARTY MAY BRING OR PARTICIPATE IN A CLASS, COLLECTIVE,
- CONSOLIDATED, MASS, PRIVATE-ATTORNEY-GENERAL, OR REPRESENTATIVE ACTION OR
- ARBITRATION.
- If a portion of the arbitration or class-waiver provisions is invalid or unenforceable for a particular claim,
- remedy, or person, it will be severed only to the minimum extent necessary. Any affected claim or remedy
- will proceed in a court of competent jurisdiction, while the enforceable remainder continues to apply.
- Nothing in this section waives a substantive or procedural consumer right that applicable law makes
- non-waivable.
-
- These Terms and disputes concerning Tersa are governed by the laws of Ontario and the federal laws of
- Canada applicable there, without regard to conflict-of-law principles. Where arbitration does not apply,
- and subject to non-waivable consumer rights and any court with mandatory jurisdiction, the parties submit
- to the courts located in Toronto, Ontario. The United Nations Convention on Contracts for the
- International Sale of Goods does not apply.
-
- 35. Apple, Export Controls, and Third-Party Beneficiaries
- Apple is not a party to these Terms and is not responsible for Tersa or its content. The Developer, not
- Apple, is responsible for addressing claims relating to Tersa, including product-liability, legal-compliance,
- privacy, consumer-protection, and intellectual-property claims.
-
- The user must comply with applicable third-party terms and trade-control laws. The user represents that
- the user is not located in a country or region subject to a United States government embargo or
- designated as supporting terrorism and is not listed on a United States government prohibited- or
- restricted-party list, as required by Apple's licensed-application terms.
-
- Apple and its subsidiaries are third-party beneficiaries of these Terms. Upon the user's acceptance, Apple
- may enforce the applicable provisions against the user.
-
- 36. Termination and General Terms
- The licence terminates automatically if the user materially breaches these Terms. The Developer may
- also restrict future use where reasonably necessary for security, fraud prevention, platform compliance,
- or law. The user may stop using Tersa and cancel renewal at any time. Ending the licence does not itself
- cancel an App Store subscription or erase exported, backed-up, household, or Apple-held data.
- Provisions that by their nature should survive termination will survive, including ownership, payment
- obligations already incurred, disclaimers, liability limits, indemnity, dispute provisions, and governing law.
- If any provision is invalid or unenforceable, it will be modified or severed only to the minimum extent
- necessary, and the remainder will continue. Failure to enforce a provision is not a waiver. The user may
- not assign these Terms without the Developer's consent; the Developer may assign them with the app or
- business subject to applicable law. No agency, partnership, employment, fiduciary, or joint venture is
- created.
-
-
-
-Tersa | Privacy, Terms & Financial Safety                                                                Page 13
- These Terms, the Privacy Policy, applicable Apple terms, and component licences form the entire
- agreement concerning their respective subject matter. The Developer may update these Terms
- prospectively. Material changes will be made available through the app or published legal page.
- Continued use after the effective date constitutes acceptance only to the extent permitted by law; if a
- change requires separate consent, that consent will be requested.
-
-
-
-
-Tersa | Privacy, Terms & Financial Safety                                                              Page 14
+ Developer account
+                            Not created             profile, social feed, or proprietary cloud account. Apple account and
+ or cloud profile
+                                                    CloudKit identifiers are handled through Apple platform services.
+
+                                                    If a person writes to the postal address in this document, the Developer
+ Postal                     Only if voluntarily     may use the correspondence, return details, and voluntarily supplied
+ correspondence             sent                    materials to respond, prevent abuse, meet legal obligations, and keep
+                                                    ordinary business records.
+
+
+
+
+5. Purposes and Privacy Principles
+Tersa processes information to provide the features the user requests; secure and synchronize the
+workspace; validate records; calculate reports; restore purchases; remember settings; prevent duplicate
+or unsafe operations; maintain privacy-safe local diagnostics; investigate a user-reported problem when
+the user chooses to share an export; enforce these Terms; and meet legal obligations.
+
+
+
+
+                                                                                                                             Page 4
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+The Developer intends to follow the Canadian fair-information principles of accountability, identifying
+purposes, meaningful consent, limiting collection, limiting use, disclosure and retention, accuracy,
+safeguards, openness, individual access, and the ability to challenge compliance. Tersa is designed to
+minimize information sent outside the device.
+Tersa does not use financial records, receipts, prompts, or AI proposals for advertising, data brokerage,
+generalized model training, credit decisions, or profiling across unrelated services.
+
+
+6. Local Storage and Encryption
+Tersa stores the workspace in a SQLCipher-encrypted database in the app's protected container. The
+database key is randomly generated and stored in the iOS Keychain with device-only, unlocked-device
+protection. The database and attachments also use iOS file protection.
+Attachments are encrypted separately with authenticated encryption. Tersa uses separate key lifecycles
+for the database, attachments, portable backups, and household sharing. This separation reduces risk
+but does not make compromise impossible.
+If the database key is unavailable, Tersa is designed to fail closed rather than silently create an
+unencrypted replacement. Protecting the iPhone, passcode, Apple Account, and backup password
+remains the user's responsibility.
+
+
+7. Local AI and Receipt Recognition
+The bundled language model runs on the iPhone. Tersa does not configure it to call an external AI
+service, browse the internet, read arbitrary files, query the full database, or mutate records directly. It
+receives only context selected for the task and returns an untrusted proposal that is checked by
+deterministic code.
+Receipt capture and optical character recognition run through Apple on-device frameworks. The local
+model receives bounded recognized text, not receipt pixels. A user can cancel or edit a proposed
+transaction before approval. If Review before saving is off, pressing the editor's save action approves
+and saves a valid proposal without a second review screen. An optional receipt image or PDF is stored
+only if the user chooses to attach it.
+AI and OCR output may be wrong, incomplete, duplicated, misleading, or offensive. Prompts, proposals,
+explanations, and learned mappings are kept locally and can be cleared separately. AI may explain a
+deterministic budget proposal but cannot set its amounts. Only user-approved canonical records are
+eligible for CloudKit sync.
+The Quick Fill widget contains no financial workspace data and opens Tersa's entry editor. A Siri App
+Shortcut can accept dictated transaction text and store it temporarily in an encrypted, one-shot, device-
+only draft. The draft is excluded from backup, logs, sync, and widget timelines, expires after ten minutes,
+and is consumed only after the app's onboarding, authentication, and writable-workspace gates. Widget
+and Siri entry still require user approval and never save autonomously.
+
+
+
+
+                                                                                                        Page 5
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+8. Apple CloudKit and Individual Sync
+If the user enables individual sync, Tersa uploads confirmed workspace projections and eligible
+attachments to a private CloudKit database associated with the user's Apple Account. Apple provides
+account authentication, storage, transport, and synchronization under Apple's terms and privacy policy.
+Individual CloudKit records use Apple platform protections and Tersa does not operate a separate sync
+server. Tersa does not describe individual CloudKit records as having the additional household content-
+encryption layer unless the app expressly says so.
+CloudKit availability, retention, recovery, quota, and account access depend on Apple systems and the
+user's Apple Account. Disabling sync stops future synchronization but may not immediately erase
+records already retained by Apple or another device.
+
+
+9. Household Sharing and End-to-End Encryption
+A household owner may create a shared CloudKit zone and invite participants. Tersa encrypts household
+financial payloads and attachments on a participant device before CloudKit upload. Each authorized
+device receives wrapped workspace-key material. The Developer has no master key designed to decrypt
+household content.
+End-to-end encryption does not prevent invited participants from seeing the shared workspace.
+Participants may add, edit, reconcile, or delete shared records according to the current role and
+subscription state. A participant may also view information on a compromised device, capture
+screenshots, or export records outside Tersa.
+Apple necessarily processes CloudKit account, sharing, routing, device, and service metadata and stores
+opaque encrypted payloads. Tersa minimizes application-level routing metadata but does not control
+Apple's independent processing.
+The owner should invite only trusted people, remove participants when access is no longer appropriate,
+and understand that a removed participant may retain prior exports, screenshots, backups, or
+information already learned.
+
+
+10. Exchange Rates and Network Requests
+Tersa permits network access only for narrowly defined services: Apple StoreKit and App Store
+functions, Apple CloudKit and sharing, the configured exchange-rate provider, and user-initiated
+external legal pages.
+For an exchange-rate lookup, Tersa sends only the base currency, quote currency, and requested date to
+api.frankfurter.dev using an ephemeral HTTPS session. The request is designed without cookies,
+credentials, or a body. The provider and network intermediaries may still receive ordinary connection
+data such as IP address, time, and device-network information under their own practices.
+Rates may be delayed, unavailable, rounded, revised, or inaccurate and are provided for record-keeping
+estimates. A user should verify a rate against an authoritative source before making a payment, filing
+tax, valuing an asset, or taking another consequential action.
+
+
+
+
+                                                                                                    Page 6
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+11. Permissions, Authentication, and Notifications
+Camera access is used only when the user chooses to scan a receipt. Face ID or other device
+authentication is optional and is performed by iOS; Tersa receives the result, not biometric material.
+CloudKit permissions and account status are managed through Apple services.
+Tersa can schedule local reminders. The default private summary hides descriptions and amounts. A
+user who enables description-only or full-detail notifications chooses to expose more information to iOS
+notification surfaces, including the lock screen, Notification Centre, previews, connected watches, and
+other Apple devices according to system settings.
+Tersa may obscure the app switcher and relock after a short background interval, but these features are
+convenience safeguards and do not replace a strong device passcode or careful notification settings.
+
+
+12. Imports, Exports, and Portable Backups
+CSV, OFX, and QIF imports are parsed locally into an encrypted, resumable draft. Tersa reviews and
+imports categories first, accounts second, and transactions last. Each accepted phase commits
+independently; a completed category or account phase remains available if a later phase fails, is retried,
+or is deliberately skipped. The user chooses Create new, Use existing, or Ignore for proposed catalog
+objects and separately accepts the final transaction batch. Tersa may retain provenance needed to
+explain or prevent duplicate imports. The source file remains under the user's control outside Tersa.
+CSV, JSON, PDF, and diagnostic-log exports are not encrypted by Tersa after creation. The diagnostic log
+is designed to exclude financial and personal content, but it still contains technical device and app
+context. Once an export is saved to Files, Mail, Messages, AirDrop, a printer, another app, or another
+person, it is governed by the user's choices and the receiving service's practices.
+Portable .tersabackup files are encrypted with a user-chosen password using a memory-hard key
+derivation function and authenticated encryption. The Developer does not know the password and
+cannot recover a forgotten password or repair every damaged backup. Users should keep tested copies
+in secure, independent locations.
+
+
+13. No Sale, Advertising, or Cross-App Tracking
+Tersa does not sell or rent personal information, share it for cross-context behavioural advertising,
+operate an advertising network, or track users across other companies' apps or websites.
+The current production app contains no Developer-operated financial-data server, remote AI provider,
+marketing SDK, third-party analytics SDK, session-replay SDK, or remote crash-reporting SDK. Apple may
+separately provide aggregated store information or optional diagnostics under the user's Apple settings
+and Apple's terms.
+
+
+14. Service Providers and Disclosures
+Apple provides iOS, the App Store, StoreKit, CloudKit, iCloud sharing, device authentication, notification
+delivery, backups, and optional diagnostics. The exchange-rate provider receives the limited request
+
+
+
+                                                                                                        Page 7
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+described in Section 10. Each provider acts under its own terms and privacy practices for information it
+processes independently.
+The Developer may disclose correspondence or limited business records when reasonably necessary to
+comply with law, respond to valid legal process, protect users or the public, investigate abuse or security
+incidents, enforce agreements, or complete a permitted business reorganization. The Developer cannot
+disclose financial content that it does not possess or cannot decrypt.
+If ownership of the app or Developer business changes, information actually held by the Developer may
+transfer subject to applicable law and continued protection. A transaction does not create access to a
+user's device key or household decryption key that the Developer does not hold.
+
+
+15. Retention, Deletion, and Workspace Control
+Local workspace records remain until the user edits or deletes them, deletes the workspace, removes
+the app, erases the device, or restores different data, subject to device and Apple backup behaviour.
+Deleting an attachment does not necessarily delete the related financial transaction or history.
+A user can clear learned AI preferences separately, export records, create an encrypted backup, and
+request full workspace deletion through Tersa. Deleting a workspace does not reset an already-used trial
+and does not delete exported files, screenshots, printed copies, recipient copies, or backups stored
+elsewhere.
+The universal diagnostic log is separate from the financial workspace, excluded from backup and sync,
+and can be cleared by the user. Tersa prunes an entry when it becomes older than five days and also
+prunes the oldest entries whenever the log exceeds 5 MB. A Siri Quick Fill draft is deleted after one
+consumption attempt and is invalid after ten minutes.
+CloudKit deletion and participant removal can take time to propagate. Other devices may be offline, and
+Apple may retain service copies according to its policies. A household member who loses write access
+may still have read, export, or private-copy options described in the app and may retain earlier copies
+outside Tersa.
+Support and legal correspondence held by the Developer is retained only as long as reasonably needed
+for the request, security, accounting, legal obligations, or dispute records, then deleted or de-identified
+where appropriate.
+
+
+16. Privacy Choices, Access, and Complaints
+Users control CloudKit sync, household membership, receipt attachments, app lock, notification detail,
+local AI learning, transaction-review presentation, diagnostic-log export and clearing, other exports,
+backups, and workspace deletion through Tersa and iOS settings. Consent can be withdrawn for optional
+processing, but doing so may disable the related feature and does not reverse processing already
+lawfully completed.
+Because the Developer generally does not receive the local or CloudKit financial workspace and cannot
+decrypt household content, the Developer normally cannot retrieve, correct, export, or delete those
+records remotely. The user should use Tersa's local controls, household controls, Apple account tools,
+and exported backups.
+
+
+                                                                                                      Page 8
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+A person may request access to or correction of personal information actually held by the Developer,
+ask how it was used or disclosed, withdraw consent where applicable, or challenge compliance through
+the contact methods in Section 2. The request should describe the issue without sending unnecessary
+financial data. Identity and authority may need to be verified. Applicable exceptions, retention duties,
+and response timelines remain available under law.
+A person may also contact the Office of the Privacy Commissioner of Canada or the applicable provincial
+privacy regulator. Raising a privacy concern will not result in discriminatory treatment.
+
+
+17. Children, Changes, and Contact
+Tersa is a general-audience personal-finance tool and is not directed to children under 13. A person who
+lacks legal capacity to accept the Terms should use Tersa only with a parent or legal guardian who
+accepts responsibility. Household owners should consider whether sharing financial data with a minor is
+appropriate.
+This document may be updated for app changes, law, platform rules, or improved explanations. The
+effective date identifies the current version. Material changes will be presented through the app, App
+Store listing, or published legal page as appropriate before or when the changed practice becomes
+available. If consent is legally required for a new purpose, continued use alone will not replace that
+consent.
+Privacy questions and legal notices may be sent to the postal address in Section 2.
+
+
+
+
+                                                                                                   Page 9
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+
+Terms of Use & Financial Safety Notice
+The following terms govern use of Tersa and allocate responsibility for subscriptions, financial records,
+local AI proposals, household sharing, exports, backups, and related risks.
+
+
+18. Agreement and Relationship with Apple
+These Terms of Use form an agreement between the user and the Developer, not Apple. By
+downloading, installing, subscribing to, accessing, or using Tersa, the user agrees to these Terms and the
+Privacy Policy. If the user does not agree, the user must not use Tersa.
+Tersa is licensed, not sold. Apple's Standard Licensed Application End User License Agreement, Apple
+Media Services Terms and Conditions, and applicable Usage Rules also apply. These Terms supplement
+applicable Apple terms and do not create obligations for Apple beyond Apple's own agreements.
+
+
+19. Eligibility and Personal Use
+The user must have legal capacity to form this agreement. A minor or another person who lacks that
+capacity may use Tersa only with a parent, guardian, or authorized representative who accepts these
+Terms and responsibility for the use.
+Tersa is intended for lawful personal, family, and household financial organization. It is not offered for
+regulated institutional record keeping, fiduciary administration, professional client accounting, money
+transmission, securities trading, credit adjudication, tax filing, or other high-impact commercial reliance.
+
+
+20. Limited Licence and Ownership
+Subject to these Terms, applicable Apple Usage Rules, payment of applicable fees, and applicable law,
+the Developer grants a limited, personal, revocable, non-exclusive, non-transferable licence to use Tersa
+on Apple-branded products the user owns or controls and through Apple-supported family
+arrangements where permitted.
+No ownership in Tersa, its interface, code, data model, model packaging, documentation, graphics,
+branding, or other Developer content is transferred. The user retains rights in financial records and
+attachments the user creates or lawfully imports. All other rights are reserved by the Developer and
+applicable licensors.
+
+
+21. Trial, Subscriptions, Billing, and Cancellation
+Tersa currently offers a 30-day trial that begins after the app creates a durable workspace. Trial eligibility
+is recorded locally and is not reset by deleting a workspace or reinstalling where Tersa can reliably
+detect prior use. Apple or the Developer may change or discontinue future trial offers to the extent
+permitted by law, without shortening an already-promised trial except to address fraud, abuse, or legal
+requirements.
+
+
+
+                                                                                                       Page 10
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+Individual and Household access are offered as auto-renewing subscriptions through Apple's App Store.
+The price, currency, tax, billing period, trial conversion, and renewal terms shown by Apple at purchase
+control. Payment is charged to the user's Apple Account. Unless cancelled within Apple's required time
+before renewal, the subscription renews and Apple charges the account for the next period.
+Users manage or cancel subscriptions in Apple account settings and may restore eligible purchases
+through Tersa. Cancellation stops a future renewal but normally does not create a refund or end access
+before the paid period expires. Apple administers refunds subject to its rules and applicable consumer
+law; the Developer does not receive payment-card information.
+When trial or paid access expires, Tersa is designed to keep the workspace available in read-only mode
+for viewing, search, reports, exports, encrypted backups, restore, purchase restoration, and deletion.
+Mutations, local AI, CloudKit uploads, and household changes may be unavailable. If a Household
+subscription is replaced by an Individual subscription, a shared workspace may remain read-only and the
+owner may be able to create a private copy.
+
+
+22. Manual Financial Records and No Bank Connection
+Tersa does not connect to financial institutions and does not independently verify balances,
+transactions, ownership, identity, tax treatment, market value, payment status, exchange rates, or
+supporting documents. Information is only as accurate and current as the user inputs, imports,
+mappings, assumptions, confirmations, and corrections.
+Tersa is not an official bank statement, general ledger certified by an accountant, tax record accepted by
+an authority, credit report, appraisal, audit, proof of payment, or substitute for source documents. The
+user must reconcile records against authoritative statements and retain source materials required for
+legal, tax, insurance, estate, employment, or business purposes.
+Budgets, goals, schedules, net worth, debt plans, projections, and reports are estimates based on
+recorded data and assumptions. They do not guarantee future cash flow, returns, solvency, savings,
+payoff dates, affordability, or achievement of a goal.
+
+
+23. No Professional Advice or High-Impact Reliance
+Tersa and its content, calculations, forecasts, AI proposals, examples, and documentation are for
+personal organization and general information. They are not financial, investment, tax, accounting, legal,
+insurance, credit, lending, bankruptcy, estate-planning, or other professional advice and do not create a
+fiduciary or adviser-client relationship.
+The user must obtain appropriate professional advice and independently verify source information
+before filing tax, investing, borrowing, lending, buying or selling an asset, changing insurance, making a
+legal commitment, paying a bill, relying on a debt plan, or taking another consequential action.
+Tersa must not be used as the sole basis for an emergency, safety, eligibility, employment, housing,
+insurance, lending, legal, medical, or other high-impact decision about any person.
+
+
+
+
+                                                                                                     Page 11
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+24. Local AI, OCR, and User Confirmation
+AI and receipt-recognition output is probabilistic and may be inaccurate, incomplete, duplicated,
+inconsistent, biased, offensive, or fabricated. It may misunderstand an amount, currency, merchant,
+date, category, account, posting, schedule, goal, tax label, or user instruction.
+Tersa presents editable proposals and applies deterministic validation, but no validation can establish
+that a proposal is factually correct or suitable for the user. The user is solely responsible for checking
+source documents and the accounts, amounts, currency, date, category, tax treatment, and
+consequences before taking the approval action. When Review before saving is off, the editor's save
+action is the approval and no separate review screen appears.
+The local model is not authorized to commit canonical changes autonomously. The Quick Fill widget and
+Siri shortcut only open the same editable entry flow and never save autonomously. A software defect,
+device compromise, accessibility action, accidental approval, or misunderstood interface may still cause
+loss. Users should review important records and maintain backups.
+
+
+25. Household Sharing Responsibilities
+A household owner controls invitations and is responsible for obtaining any consent needed to place
+another person's financial information in a shared workspace. Each participant must have authority to
+view and process the shared information and must protect the device, Apple Account, exports, and
+encryption material available to that participant.
+Participants may change or delete records visible to others. Tersa may preserve conflict, audit, or
+tombstone information needed for synchronization, but it cannot guarantee prevention, attribution,
+reversal, or recovery of a participant's action. Household members should agree on roles, review
+changes, and keep independent backups.
+Removing a participant or ending a Household subscription does not erase information the participant
+previously exported, printed, photographed, backed up, or learned. The Developer does not mediate
+ownership, family, separation, estate, employment, partnership, or accounting disputes between
+participants.
+
+
+26. Imports, Exports, Backups, and Deletion
+The user must review import proposals, mappings, duplicates, accounts, categories, opening balances,
+and transactions before accepting the applicable phase. Category, account, and transaction phases
+commit separately, so an earlier accepted phase is not automatically reversed when a later phase fails or
+is skipped. Tersa does not guarantee compatibility with every CSV, OFX, QIF, PDF, receipt, financial
+institution, locale, encoding, or third-party export.
+Exports can reveal sensitive information and may no longer be encrypted or controlled by Tersa. A
+diagnostic-log export is designed to omit financial and personal content but can include technical app,
+operating-system, timing, error-classification, and resource information. The user is responsible for
+choosing recipients and locations, redacting when appropriate, and securely deleting unneeded copies.
+
+
+
+
+                                                                                                      Page 12
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+An encrypted backup is useful only if the file, password, format, device, and app remain available and
+restoration succeeds. The Developer cannot recover a forgotten password or guarantee restoration. The
+user should periodically create and test independent backups before major imports, household changes,
+device replacement, or workspace deletion.
+Deletion may be permanent after synchronization and may not be recoverable. Before deleting a
+workspace or attachment, the user should verify exports and backups. Tersa is not responsible for copies
+retained by Apple, household members, recipients, device backups, or other services outside its control.
+
+
+27. Exchange Rates and Third-Party Services
+Exchange rates are informational estimates from an external provider. They may differ from a bank, card
+network, tax authority, broker, or transaction rate and may omit fees, spreads, taxes, or market
+movement. Tersa does not guarantee availability, completeness, timeliness, or accuracy.
+Apple services and the exchange-rate provider are independent services. Their availability, security,
+retention, data practices, eligibility, account actions, and terms are outside the Developer's control. Use
+of those services is also subject to their agreements.
+
+
+28. User Security and Lawful Use
+The user is responsible for the device, passcode, Apple Account, CloudKit access, notification previews,
+backup passwords, exports, household invitations, and any information entered or shared through
+Tersa. Optional app lock does not protect data after a user intentionally exports or shares it.
+The user represents that the user has authority to process the financial records and attachments and
+will comply with privacy, confidentiality, intellectual-property, consumer, tax, sanctions, anti-fraud, and
+other applicable laws.
+The user may not use Tersa to facilitate fraud, theft, evasion, harassment, unlawful surveillance, money
+laundering, unauthorized financial access, or another unlawful act; introduce malware; interfere with
+security or operation; bypass platform or subscription controls; or attempt unauthorized access to
+another person's workspace, device, or CloudKit data.
+
+
+29. Technical and Intellectual-Property Restrictions
+Except where applicable law or an open-source licence expressly permits, the user may not copy,
+redistribute, sell, rent, lease, sublicense, publish, modify, reverse engineer, decompile, extract, scrape,
+probe, or create derivative works from proprietary portions of Tersa; defeat encryption or access
+controls; extract model weights or protected assets; or commercially exploit the app or its design.
+Open-source software and model components remain subject to their respective licences and notices.
+Those licences govern the covered components where they conflict with this restriction. Nothing in
+these Terms limits a non-waivable right to interoperability, security research, repair, or reverse
+engineering granted by applicable law.
+
+
+
+
+                                                                                                      Page 13
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+30. Availability, Changes, and Support
+Tersa may be updated, changed, suspended, limited, or discontinued. Features may behave differently
+because of app or iOS updates, device hardware, available memory or storage, permissions, subscription
+state, corrupted data, Apple services, network availability, exchange-rate services, locale, unsupported
+imports, model limitations, or security requirements.
+The Developer may correct errors, change the local model, discontinue compatibility with older app or
+backup versions, or require an update for security or platform compliance. Where reasonably possible,
+material changes affecting paid access or data portability will be explained before they take effect.
+Unless separately promised in writing or required by law, the Developer does not guarantee
+maintenance, support, updates, backward compatibility, recovery, or continued availability. The
+Developer, not Apple, is responsible for any maintenance or support the Developer elects to provide.
+Apple has no obligation to furnish maintenance or support for Tersa.
+
+
+31. No Warranty
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, TERSA IS PROVIDED "AS IS," "AS
+AVAILABLE," AND WITH ALL FAULTS. THE DEVELOPER DISCLAIMS ALL EXPRESS, IMPLIED, AND
+STATUTORY WARRANTIES AND CONDITIONS, INCLUDING ACCURACY, COMPLETENESS, RELIABILITY,
+AVAILABILITY, SECURITY, QUIET ENJOYMENT, NON-INFRINGEMENT, MERCHANTABILITY, SATISFACTORY
+QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND FITNESS OF FINANCIAL RECORDS, AI OUTPUT,
+FORECASTS, REPORTS, EXCHANGE RATES, IMPORTS, EXPORTS, OR BACKUPS FOR ANY PARTICULAR
+DECISION OR AUTHORITY.
+No proposal, validation result, report, forecast, documentation, demonstration, update, or
+communication creates a warranty. The user assumes the risk and cost of correction, reconciliation,
+professional review, tax treatment, backup, restoration, security, and use of Tersa.
+If Tersa fails to conform to a warranty that applies under Apple's terms, the user may notify Apple, and
+Apple may refund the purchase price, if any, as provided by Apple's rules. To the maximum extent
+permitted by law, Apple has no other warranty obligation concerning Tersa.
+SOME JURISDICTIONS DO NOT ALLOW CERTAIN DISCLAIMERS. THIS SECTION APPLIES ONLY TO THE
+EXTENT PERMITTED BY LAW AND DOES NOT EXCLUDE NON-WAIVABLE STATUTORY WARRANTIES OR
+CONSUMER RIGHTS.
+
+
+32. Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER WILL NOT BE LIABLE FOR
+PERSONAL INJURY OR FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR
+CONSEQUENTIAL LOSS OR DAMAGE, INCLUDING LOST PROFITS, OPPORTUNITY, SAVINGS, TAX BENEFITS,
+CREDIT, BUSINESS, GOODWILL, OR DATA, OR LOSS, CORRUPTION, DUPLICATION, DISCLOSURE,
+MISCLASSIFICATION, MISCALCULATION, OR UNAVAILABILITY OF FINANCIAL RECORDS, RECEIPTS,
+ATTACHMENTS, REPORTS, EXPORTS, BACKUPS, OR HOUSEHOLD DATA.
+
+
+
+
+                                                                                                   Page 14
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+These limitations apply to claims arising from or related to Tersa, AI or OCR output, user confirmations,
+forecasts, exchange rates, imports, exports, subscriptions, CloudKit, household participants, device
+failure, security incidents, third-party services, or inability to use the app, regardless of the theory of
+liability and even if the possibility of loss was disclosed.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER'S TOTAL AGGREGATE
+LIABILITY FOR ALL CLAIMS RELATING TO TERSA WILL NOT EXCEED THE GREATER OF THE AMOUNT THE
+USER PAID FOR TERSA DURING THE TWELVE MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM
+OR CAD $100.
+These exclusions and limits do not apply to fraud, wilful misconduct, gross negligence where it cannot
+be limited, death or personal injury caused by negligence where it cannot be limited, breach of a non-
+waivable statutory obligation, or another liability that applicable law does not permit the parties to
+exclude or limit.
+
+
+33. Indemnity
+To the maximum extent permitted by applicable law, the user will defend, indemnify, and hold the
+Developer harmless from third-party claims, liabilities, losses, damages, and reasonable costs arising
+from the user's unlawful misuse of Tersa, breach of these Terms, unauthorized processing or disclosure
+of another person's information, household invitation or dispute, or infringement of another person's
+rights. This obligation does not apply to the extent a claim was caused by the Developer's breach,
+negligence, or unlawful conduct.
+
+
+34. Dispute Notice, Individual Arbitration, Class Waiver, and
+Governing Law
+Before starting arbitration or litigation, the complaining party must send a written notice describing the
+dispute, supporting facts, and requested relief to the postal address in Section 2. The parties will
+attempt in good faith to resolve the dispute for 30 days after receipt. This informal process does not
+prevent either party from seeking urgent relief, using small claims court, preserving a limitation period,
+or exercising a right that applicable law does not permit the parties to delay or waive.
+EXCEPT FOR A CLAIM ELIGIBLE FOR SMALL CLAIMS COURT, A REQUEST FOR URGENT INJUNCTIVE RELIEF
+CONCERNING INTELLECTUAL PROPERTY OR SECURITY, OR A DISPUTE THAT APPLICABLE LAW PROHIBITS
+FROM PRE-DISPUTE ARBITRATION, EACH DISPUTE ARISING OUT OF OR RELATING TO TERSA OR THESE
+TERMS WILL BE RESOLVED BY FINAL AND BINDING INDIVIDUAL ARBITRATION RATHER THAN IN COURT.
+The arbitration will be administered under the ADR Institute of Canada Arbitration Rules in effect when
+the claim is filed, before one neutral arbitrator. The legal seat will be Toronto, Ontario, Canada. A
+hearing may occur remotely, in person, or on written submissions as the arbitrator permits. The
+arbitrator may award any individual remedy available under applicable law but may not combine
+different persons' claims without all parties' consent.
+EACH PARTY WAIVES A JURY TRIAL TO THE EXTENT SUCH A RIGHT EXISTS. ARBITRATION AND
+LITIGATION MUST PROCEED ONLY ON AN INDIVIDUAL BASIS. TO THE MAXIMUM EXTENT PERMITTED BY
+
+
+
+
+                                                                                                     Page 15
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+LAW, NEITHER PARTY MAY BRING OR PARTICIPATE IN A CLASS, COLLECTIVE, CONSOLIDATED, MASS,
+PRIVATE-ATTORNEY-GENERAL, OR REPRESENTATIVE ACTION OR ARBITRATION.
+If a portion of the arbitration or class-waiver provisions is invalid or unenforceable for a particular claim,
+remedy, or person, it will be severed only to the minimum extent necessary. Any affected claim or
+remedy will proceed in a court of competent jurisdiction, while the enforceable remainder continues to
+apply. Nothing in this section waives a substantive or procedural consumer right that applicable law
+makes non-waivable.
+These Terms and disputes concerning Tersa are governed by the laws of Ontario and the federal laws of
+Canada applicable there, without regard to conflict-of-law principles. Where arbitration does not apply,
+and subject to non-waivable consumer rights and any court with mandatory jurisdiction, the parties
+submit to the courts located in Toronto, Ontario. The United Nations Convention on Contracts for the
+International Sale of Goods does not apply.
+
+
+35. Apple, Export Controls, and Third-Party Beneficiaries
+Apple is not a party to these Terms and is not responsible for Tersa or its content. The Developer, not
+Apple, is responsible for addressing claims relating to Tersa, including product-liability, legal-compliance,
+privacy, consumer-protection, and intellectual-property claims.
+The user must comply with applicable third-party terms and trade-control laws. The user represents that
+the user is not located in a country or region subject to a United States government embargo or
+designated as supporting terrorism and is not listed on a United States government prohibited- or
+restricted-party list, as required by Apple's licensed-application terms.
+Apple and its subsidiaries are third-party beneficiaries of these Terms. Upon the user's acceptance,
+Apple may enforce the applicable provisions against the user.
+
+
+36. Termination and General Terms
+The licence terminates automatically if the user materially breaches these Terms. The Developer may
+also restrict future use where reasonably necessary for security, fraud prevention, platform compliance,
+or law. The user may stop using Tersa and cancel renewal at any time. Ending the licence does not itself
+cancel an App Store subscription or erase exported, backed-up, household, or Apple-held data.
+Provisions that by their nature should survive termination will survive, including ownership, payment
+obligations already incurred, disclaimers, liability limits, indemnity, dispute provisions, and governing
+law.
+If any provision is invalid or unenforceable, it will be modified or severed only to the minimum extent
+necessary, and the remainder will continue. Failure to enforce a provision is not a waiver. The user may
+not assign these Terms without the Developer's consent; the Developer may assign them with the app
+or business subject to applicable law. No agency, partnership, employment, fiduciary, or joint venture is
+created.
+
+
+
+
+                                                                                                       Page 16
+Tersa | Privacy, Terms & Financial Safety
+
+
+
+These Terms, the Privacy Policy, applicable Apple terms, and component licences form the entire
+agreement concerning their respective subject matter. The Developer may update these Terms
+prospectively. Material changes will be made available through the app or published legal page.
+Continued use after the effective date constitutes acceptance only to the extent permitted by law; if a
+change requires separate consent, that consent will be requested.
+
+
+
+
+                                                                                                   Page 17
 
