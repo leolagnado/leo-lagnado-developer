@@ -90,4 +90,20 @@ export const apps: App[] = [
     ],
     legalPath: 'legal/quietscript/',
   },
+  {
+    name: 'Tersa',
+    description:
+      'Private financial clarity, on your device. Bring upcoming bills, planned spending, and projected cash flow into one view. Tersa pairs a robust financial engine with private, local AI, giving you a clearer view of your money without sacrificing control.',
+    platforms: ['iOS'],
+    icon: 'assets/icons/tersa.png',
+    accent: 'gold',
+    storeLinks: [
+      {
+        label: 'App Store coming soon',
+        store: 'ios',
+        disabled: true,
+      },
+    ],
+    legalPath: 'legal/tersa/',
+  },
 ];
