@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
-const policies = ['neurohub', 'peko', 'photoname', 'quietscript'];
+const policies = ['neurohub', 'peko', 'photoname', 'quietscript', 'tersa'];
 
 const decodeHtml = (value) => value
   .replaceAll('&amp;', '&')

@@ -334,6 +334,13 @@ button {
   transform: rotate(12deg);
 }
 
+.hero-icon-5 {
+  z-index: 3;
+  top: 140px;
+  left: 47%;
+  transform: translateX(-50%) rotate(-2deg);
+}
+
 .icon-halo {
   position: absolute;
   z-index: 1;
@@ -934,6 +941,12 @@ button {
     transform: rotate(12deg);
   }
 
+  .hero-icon-5 {
+    top: 118px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+  }
+
   .app-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -996,7 +1009,7 @@ button {
   }
 
   .hero-icons {
-    min-height: 320px;
+    min-height: 390px;
   }
 
   .hero-icon-wrap img {
@@ -1013,17 +1026,26 @@ button {
     right: 0;
   }
   .hero-icon-3 {
-    top: 178px;
+    top: 126px;
     bottom: auto;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-4deg);
   }
 
   .hero-icon-4 {
-    top: 188px;
+    top: 252px;
+    right: auto;
+    bottom: auto;
+    left: 8%;
+    transform: rotate(12deg);
+  }
+
+  .hero-icon-5 {
+    top: 258px;
     right: 8%;
     bottom: auto;
     left: auto;
-    transform: rotate(12deg);
+    transform: rotate(-2deg);
   }
 
   .section {
