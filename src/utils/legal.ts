@@ -57,7 +57,8 @@ const isBullet = (line: string) => /^(?:•||o\s|[a-c]\.\s|\d+\.\s)/.test(tri
 
 const isFooter = (line: string) => {
   const value = trimmed(line);
-  return value.includes('| Privacy, Terms & Safety |')
+  return /^Page\s+\d+$/.test(value)
+    || value.includes('| Privacy, Terms & Safety |')
     || value.includes('| Privacy, Terms & Photo Safety')
     || value.includes('| Privacy, Terms & Audio Safety')
     || value.includes('| Privacy, Terms & Financial Safety');
@@ -152,8 +153,17 @@ export function parseLegalPolicy(policyText: string): LegalPage[] {
         }
 
         if (isSectionHeading(line)) {
-          blocks.push({ kind: 'heading', text: value });
-          index += 1;
+          const nextLine = lines[index + 1];
+          const wrapsToNextLine = /\b(?:and|or)\s*$/i.test(value)
+            && nextLine !== undefined
+            && Boolean(trimmed(nextLine))
+            && !isSpecial(nextLine);
+
+          blocks.push({
+            kind: 'heading',
+            text: wrapsToNextLine ? `${value} ${trimmed(nextLine)}` : value,
+          });
+          index += wrapsToNextLine ? 2 : 1;
           continue;
         }
 
