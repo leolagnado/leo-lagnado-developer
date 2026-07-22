@@ -51,9 +51,9 @@ export const apps: App[] = [
         href: 'https://apps.apple.com/us/app/pekos-fraction-pizzeria/id6787588180',
       },
       {
-        label: 'Google Play coming soon',
+        label: 'Google Play',
         store: 'android',
-        disabled: true,
+        href: 'https://play.google.com/store/apps/details?id=com.app.pizzamath',
       },
     ],
     legalPath: 'legal/peko/',
