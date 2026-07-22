@@ -83,9 +83,9 @@ export const apps: App[] = [
     accent: 'blue',
     storeLinks: [
       {
-        label: 'App Store coming soon',
+        label: 'App Store',
         store: 'ios',
-        disabled: true,
+        href: 'https://apps.apple.com/us/app/quietscript/id6789757625',
       },
     ],
     legalPath: 'legal/quietscript/',
