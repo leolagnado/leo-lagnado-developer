@@ -6,7 +6,7 @@ Privacy Policy, Terms of Use
 & Financial Safety Notice
 
 Tersa
-Effective: August 12, 2026
+Effective: August 13, 2026
  Plain-language summary
 
      • Tersa is a manual-first personal-finance app. It does not connect to a bank, move money, or create a Tersa
@@ -25,10 +25,11 @@ Effective: August 12, 2026
         system of record, financial adviser, tax adviser, lawyer, broker, or investment service.
      • Quick Fill saves nothing on its own. Siri transaction text may be held briefly in an encrypted, device-only draft until
         the user reviews it.
-     • Diagnostic logs stay on the iPhone unless the user exports them. Tersa does not send diagnostic logs
-        automatically.
+     • Data-minimized diagnostic logs stay on the iPhone unless the user exports them. Tersa does not send diagnostic
+        logs automatically.
      • Users control exports, backups, sync, sharing, notifications, attachments, and deletion. Workspace deletion
-        removes local data first; unavailable encrypted iCloud cleanup remains pending and retries automatically.
+        removes local data first; unavailable encrypted iCloud cleanup may remain pending until the app and
+        required Apple Account, network, and service access are available.
         Information placed with Apple, another Files provider, another app, or another person is governed by that
         destination.
      • Neither the Developer nor Apple holds a master key or can reset Tersa's encryption keys. An Apple Account and
@@ -97,19 +98,19 @@ Quick Fill draft to the Developer.
 
                                    Accounts, categories, merchants, transactions, postings, balances, budgets,
                   Device; content- schedules, goals, debt, assets, reconciliation records, tags, notes, rules, and
- Financial workspace level E2EE in report inputs are stored in an encrypted local database. Before any eligible
- records          CloudKit when    Individual or Household record is uploaded, Tersa JSON-encodes and seals
-                  enabled          it with AES-256-GCM under that workspace's key. This content-level
-                                   protection does not encrypt every CloudKit field or service metadata item.
+ Financial workspace level E2EE in report inputs are stored in an encrypted local database. When sync is
+ records          CloudKit when    enabled, eligible financial content is encrypted on the device before upload.
+                  enabled          Application-level encryption does not cover all routing, synchronization,
+                                   identifier, size, timing, or other service metadata.
                                    A household owner can invite people through Apple CloudKit sharing.
                                    Household purchase, creation, and invitation flows disclose that encrypted
                   Device; content- iCloud sync is required and obtain consent before upload. Sync stays on
  Household
-                  level E2EE in    while the Household workspace is active. A device identity published
+                  level E2EE in    while the Household workspace is active. After a CloudKit invitation is
  workspace data
-                  CloudKit         through an accepted share may receive a device-specific wrapped
-                                   workspace key from an owner device. Key-holding participants can read,
-                                   add, edit, or delete shared records according to the app's roles and state.
+                  CloudKit         accepted, the invited device publishes an access request and six-digit
+                                   comparison code. The owner must enter that code and authenticate before
+                                   key-holding participants can read, add, edit, or delete shared records.
                                    Tersa can receive a user-selected image through Apple's system Photos
                                    picker, capture one receipt page or a goal photo with the camera, or
                                    import a supported file. Images, PDFs, and other attachments retained by
@@ -118,11 +119,10 @@ Quick Fill draft to the Developer.
                   level E2EE in
  images, and                       recognition and goal-image processing occur on the device. If sync is active,
                   CloudKit when
- attachments                       Tersa independently seals attachment contents with AES-256-GCM before
+ attachments                       eligible attachment content is encrypted on the device before upload.
                   enabled
-                                   upload and encrypts the corresponding content-key record under the
-                                   workspace key in both Individual and Household modes. Attachment
-                                   identifiers and size and routing descriptors remain service metadata.
+                                   Attachment identifiers and size, timing, routing, synchronization, and other
+                                   service descriptors may remain available as metadata.
 
 
                                                                                   Page 3
@@ -139,20 +139,21 @@ Quick Fill draft to the Developer.
                   enabled          workspace. A selected Files provider may store or synchronize backup files
                                    under its own terms and privacy practices. The user is responsible for
                                    keeping a separate password copy and tested, usable backups.
-                                   Each device creates a P-256 key-agreement identity. The private key and
-                                   unwrapped workspace keys remain in the device-only iOS Keychain and do
-                                   not use iCloud Keychain. CloudKit may store a public device identity,
-                                   recipient and routing identifiers, and a workspace key wrapped for a
-                                   specific device. A new Individual device requires a six-digit human
+                                   Tersa uses device-specific cryptographic identities and workspace keys. The
+                                   private identity material and usable workspace keys are stored through
+                                   device-bound iOS security services and are not synchronized as part of the
+                                   financial workspace. CloudKit may store public identity information,
+                                   routing information, and encrypted key material for an eligible device. A
+                                   new Individual device requires a six-digit human
  Sync device      Device Keychain;
                                    comparison code on an existing key-holding device, whose user then
  identities and   opaque CloudKit
                                    authenticates with Face ID, Touch ID, or the device passcode. The short
  wrapped keys     records
                                    code is a comparison safeguard, not a secret, password, or independent
-                                   cryptographic proof of device identity. In Household mode, an owner
-                                   device may automatically wrap the workspace key to a device identity
-                                   published through an accepted CloudKit share. Tersa receives only the iOS
+                                   guarantee of device identity. In Household mode, an invited device publishes
+                                   a six-digit comparison code after accepting a CloudKit share. The owner enters
+                                   that code and authenticates before Tersa wraps the key. Tersa receives only the iOS
                                    authentication result, not biometric material.
                                    The bundled model receives task-bounded financial context or recognized
                                    receipt text and may propose drafts or explain deterministic planning
@@ -180,16 +181,17 @@ Quick Fill draft to the Developer.
                                    The widget stores no financial data and opens Tersa for user entry. Siri
                                    transaction text may be held temporarily in an encrypted, device-only
  Quick Fill widget and
-                  Device only      draft. The draft is excluded from backup, logging, and workspace sync and
+                  Device only      draft. The draft is excluded from Tersa backup, diagnostic logs, and
  Siri input
-                                   expires after ten minutes. Neither Quick Fill nor Siri saves a transaction
+                                   workspace sync, becomes invalid after ten minutes, and is later removed
+                                   when the app can do so. Neither Quick Fill nor Siri saves a transaction
                                    without user approval.
                                    When an exchange rate is requested, Tersa sends the base currency, quote
                                    currency, and requested date over HTTPS to Frankfurter
  Exchange-rate    Sent to rate     (api.frankfurter.dev) and, only for unresolved rates, the fawazahmed0
- request data     providers        currency API through jsDelivr or Cloudflare Pages. Tersa does not include
-                                   amounts, account names, merchant names, notes, cookies, credentials, or
-                                   financial request bodies.
+ request data     providers        currency API through jsDelivr or Cloudflare Pages. The request does not
+                                   include amounts, account names, merchant names, notes, or financial
+                                   records.
 
 
                                                                                   Page 5
@@ -218,21 +220,21 @@ Quick Fill draft to the Developer.
 
 
  Data category    How it is handled Details
-                                   All distributions keep a universal diagnostic log on the iPhone. It uses fixed
-                                   allowlisted fields for technical event types, outcomes, safe error
-                                   classifications, timestamps, app/build/operating-system context, random
-                                   diagnostic session or operation identifiers, and resource conditions such as
-                                   memory, thermal state, and Low Power Mode. A user-initiated export may
-                                   also include a privacy-safe audit summary containing stable check
+                                   The current app keeps a data-minimized diagnostic log on the iPhone. It
+                                   may include technical event categories and outcomes, timestamps, app,
+                                   build and operating-system context, random diagnostic session or operation
+                                   identifiers, resource conditions, and a user-initiated audit summary with
                   On-device unless
- Local diagnostics                 identifiers, check statuses, and count buckets. Diagnostics discard free-
+ Local diagnostics                 check identifiers, statuses, and count ranges. This technical information
                   exported
-                                   form details and exclude financial amounts or text, prompts, personal
-                                   information, account or category details, receipt content, attachments,
+                                   may constitute personal information under applicable law. The log is
+                                   designed to exclude financial records, financial amounts, receipts,
+                                   attachments, prompts, free-form text, direct account or category details,
                                    workspace record identifiers, and encryption keys. Nothing is sent
                                    automatically. Only the user can export or clear the log and choose
-                                   whether to share the exported file. The log is excluded from backup and
-                                   prunes entries when they are older than five days or when it exceeds 5 MB.
+                                   whether to share the exported file. The log is excluded from Tersa backups
+                                   and is configured to prune entries older than five days or after it exceeds
+                                   5 MB, subject to normal app and operating-system operation.
                                    Tersa does not request the advertising identifier, track activity across other
  Advertising and
                   Not used         companies' apps or websites, use behavioural advertising, or include a
@@ -272,38 +274,33 @@ Quick Fill draft to the Developer.
 
 Tersa processes information to provide the features the user requests; secure and synchronize the
 workspace; validate records; calculate reports; restore purchases; remember settings; prevent duplicate
-or unsafe operations; maintain privacy-safe local diagnostics; investigate a user-reported problem when
+or unsafe operations; maintain data-minimized local diagnostics; investigate a user-reported problem when
 the user chooses to share an export; enforce these Terms; and meet legal obligations.
-The Developer intends to follow the Canadian fair-information principles of accountability, identifying
-purposes, meaningful consent, limiting collection, limiting use, disclosure and retention, accuracy,
-safeguards, openness, individual access, and the ability to challenge compliance. Tersa is designed to
-minimize information sent outside the device.
+The Developer will handle personal information under the Developer's control as required by applicable
+privacy law, including requirements concerning identified purposes, consent, limited collection, use,
+disclosure and retention, safeguards, access, correction, and complaints. Tersa is designed to minimize
+information sent outside the device.
 Tersa does not use financial records, receipts, prompts, or AI proposals for advertising, data brokerage,
 generalized model training, credit decisions, or profiling across unrelated services.
 
 6. Local Storage and Encryption
 
-Tersa stores the workspace in a SQLCipher-encrypted database in the app's protected container. The
-database key is randomly generated and stored in the iOS Keychain with device-only, unlocked-device
-protection. The database and attachments also use iOS file protection.
-Attachments and portable backups use separate encryption from the local database. Device identities
-and workspace keys use device-only iOS Keychain storage and are not synchronized through iCloud
-Keychain. Tersa does not retain manual backup passwords. While automatic backup is enabled, its
-password is stored only in this iPhone's device-only Keychain and is not synchronized through iCloud
-Keychain or the financial workspace. These safeguards reduce but do not eliminate the risk of loss,
-compromise, or unauthorized access.
-When this Policy describes synced financial content as end-to-end encrypted, it means Tersa is designed
-to encrypt that content on a Tersa endpoint before CloudKit receives it and to decrypt it only on a Tersa
-endpoint holding the required workspace key. Endpoints include approved Individual devices and key-
-holding Household participant devices. The term does not mean that every CloudKit field or metadata
-item is encrypted, that an endpoint or participant is trustworthy, that device or share membership is
-independently proven by the ciphertext, or that the system is immune to compromised devices,
-accounts, operating systems, software, approval flows, implementation defects, or active attacks.
-If a required database, attachment, or workspace key is unavailable or ciphertext authentication fails,
-Tersa is designed to fail closed rather than silently use plaintext or replace a different key. Neither the
-Developer nor Apple holds a master key, retains the user's unwrapped workspace key, or can reset
-Tersa's encryption keys. Possession of the Apple Account and encrypted iCloud data alone may
-therefore be insufficient to restore the original synchronized workspace.
+Tersa stores the workspace in an encrypted database in the app's protected container and uses iOS
+security services to protect device-bound keys and files. Attachments and portable backups use
+separate protection from the local database. Manual backup passwords are not retained by the
+Developer. While automatic backup is enabled, Tersa stores the required password in device-bound
+system storage and does not synchronize it as part of the financial workspace. These safeguards reduce
+but do not eliminate the risk of loss, compromise, or unauthorized access.
+When this Policy describes eligible synced financial content as end-to-end encrypted, it means Tersa
+encrypts that content on a key-holding Tersa device before CloudKit upload and decrypts it on an eligible
+Tersa device holding the required workspace key. This description does not apply to all CloudKit fields
+or service metadata and does not guarantee the trustworthiness of devices, participants, accounts,
+operating systems, approval flows, or software.
+If required key material is unavailable or encrypted content cannot be authenticated, Tersa may deny
+access to the affected content. Tersa does not provide the Developer or Apple with an unwrapped
+workspace key or a master key designed to decrypt eligible financial content, and neither can reset
+Tersa's workspace keys through Tersa. Possession of the Apple Account and encrypted iCloud data alone
+may therefore be insufficient to restore the original synchronized workspace.
 Recovery of the original synchronized workspace requires an eligible existing device that still holds the
 workspace key and can complete the applicable approval route. Separately, a usable encrypted Tersa
 backup and its correct password can restore the data captured in that backup into a new workspace
@@ -324,56 +321,47 @@ a manual-backup password is not retained by Tersa and an automatic-backup passwo
 this iPhone's device-only Keychain while that feature remains enabled.
 7. Local AI and Receipt Recognition
 
-The bundled language model runs on the iPhone. Tersa does not configure it to call an external AI
-service, browse the internet, read arbitrary files, query the full database, or mutate records directly. It
-receives only context selected for the task and returns an untrusted proposal that is checked by
-deterministic code.
-Receipt capture and optical character recognition run through Apple on-device frameworks. The receipt
-workflow processes one page: a camera scan must contain exactly one page, and a Photos selection
-supplies one selected image. If the user imports a multi-page PDF in the Add workflow, Tersa loads it
-locally to present page previews and processes only the page the user selects. That selected page is
-converted to a bounded JPEG for OCR and, if chosen, attachment; the Add workflow does not retain the
-original multi-page PDF. Adding a supported file directly to an existing transaction is a separate
-attachment action and may retain that original file.
-The local model receives recognized receipt text, not receipt pixels. A user can cancel or edit a proposed
-transaction before saving it. A processed receipt image is stored only if the user chooses to attach it.
+Tersa's AI and receipt-recognition features process task-specific information on the iPhone using
+components bundled with the app or Apple on-device frameworks. Tersa does not send financial data,
+receipts, prompts, or AI output to an external AI provider. The AI cannot directly save or change
+financial records.
+Receipt workflows process only user-selected or captured material on the device. The Add workflow
+normalizes one selected page to a bounded JPEG and retains only that JPEG if the user chooses an
+attachment; it does not retain the original source file. A user can cancel or edit a proposal before saving.
 AI and OCR output may be wrong, incomplete, duplicated, misleading, or offensive. Prompts, proposals,
 explanations, and learned mappings are kept locally and can be cleared separately. AI may explain a
 deterministic budget proposal but cannot set its amounts. Only user-approved canonical records are
 eligible for CloudKit sync.
 The Quick Fill widget contains no financial workspace data and opens Tersa for user entry. Siri
 transaction text may be held temporarily in an encrypted, device-only draft. The draft is excluded from
-backup, logs, and sync and expires after ten minutes. Quick Fill and Siri still require user approval and do
-not save financial records on their own.
+Tersa backup, diagnostic logs, and workspace sync, becomes invalid after ten minutes, and is removed
+when the app next has an ordinary opportunity to do so. Quick Fill and Siri still require user approval and
+do not save financial records on their own.
 8. Apple CloudKit and End-to-End Encryption of Individual Financial
 Content
 
-Individual sync is off by default. While it remains off, Tersa does not prepare a CloudKit zone, discover an
-existing route, fetch, or upload the workspace. If the user enables sync, Tersa uploads eligible data to a
-private CloudKit database associated with the user's Apple Account. Apple provides account
-authentication, storage, transport, and synchronization under Apple's terms and privacy policy.
-Before upload, Tersa JSON-encodes and encrypts each eligible financial record with AES-256-GCM under
-a random per-workspace key. The record name, kind, workspace identity, actor information, revision
-lineage, and financial payload are authenticated inside the ciphertext. Attachment files are
+Individual sync is off by default. While it remains off, Tersa does not upload the workspace to CloudKit.
+If the user enables sync, Tersa uploads eligible encrypted content to a private CloudKit database
+associated with the user's Apple Account. Apple provides account authentication, storage, transport,
+and synchronization under Apple's terms and privacy policy.
+Before upload, Tersa encrypts eligible financial records and attachment content on the device using the
+workspace's cryptographic keys. CloudKit receives encrypted content rather than the corresponding
+plaintext financial values or an unwrapped workspace key. Required routing, synchronization,
+identifier, size, timing, and other service metadata may remain available to Apple. This is application-
+level end-to-end encryption of eligible content, not a representation that every CloudKit record, field,
+service, or metadata item is end-to-end encrypted.
 
 
                                                                                  Page 10
 Tersa | Privacy, Terms & Financial Safety
 
-independently sealed with AES-256-GCM, and each attachment content key is itself stored in a
-workspace-encrypted record. This supports a content-level end-to-end encryption description because
-CloudKit receives ciphertext rather than those plaintext financial values or an unwrapped workspace
-key. It does not make the entire CloudKit record, service, or architecture end-to-end encrypted.
-A new Individual device publishes a public key-agreement identity and displays a six-digit code derived
-from the workspace and requesting public identity. An existing key-holding device must display the
-matching code, its user must authenticate through iOS, and that device then wraps the workspace key
-specifically for the requesting device. The code is a short human-comparison safeguard, not a secret,
-password, digital signature, or independent cryptographic proof of device identity. A matching code and
-device authentication reduce accidental or wrong-device approval risk but do not guarantee resistance
-to every active key-substitution attempt, compromised Apple Account or platform, implementation
-defect, or user mistake. The private key and unwrapped workspace key stay in device-only Keychain
-storage. In normal operation, neither Apple nor the Developer receives that unwrapped key or holds a
-master key designed to decrypt the financial content.
+A new Individual device displays a six-digit comparison code that must match the code shown on an
+existing key-holding device. The user of the existing device must then authenticate through iOS before
+approving access. The code is a comparison safeguard, not a secret, password, digital signature, or
+independent guarantee of device identity. A matching code and device authentication reduce, but do
+not eliminate, the risk of wrong-device approval, account or device compromise, software defects, or
+user error. Tersa does not provide Apple or the Developer with an unwrapped workspace key or a master
+key designed to decrypt the eligible financial content.
 Turning Individual sync off offers a choice: pause future synchronization while retaining the encrypted
 iCloud copy for later resumption, or request deletion of the iCloud copy while retaining local data under
 a new private workspace identity. Deletion may take time to propagate and may not remove copies
@@ -392,16 +380,15 @@ requirement, explains the application-level encryption and key custody, and requ
 consent action. The sync control remains on while the Household workspace is active; a user who no
 longer agrees must use the available leave, plan-transition, private-copy, backup, or deletion controls
 rather than continue an active Household workspace without its required sync.
-A household owner may create a shared CloudKit zone and invite participants. Tersa encrypts Household
-financial records, attachment contents, and attachment-key records on a key-holding device before
-CloudKit upload. A device identity published through an accepted CloudKit share may be treated as
-eligible, and an online owner device may automatically create a device-specific wrapped workspace key
-for that identity. The Household flow relies on Apple's share membership and access controls and does
-not require the owner to compare a separate per-device code before every such wrap. In normal
-operation, neither Apple nor the Developer receives an unwrapped workspace key or holds a master key
-designed to decrypt the financial content.
-End-to-end encryption applies to the protected financial content, not to the trustworthiness or separate
-identity proof of every Household endpoint. It does not prevent invited or key-holding participants from
+A household owner may invite participants through CloudKit sharing. Tersa encrypts eligible Household
+financial records and attachment content on a key-holding device before CloudKit upload. After a
+participant accepts a CloudKit share, the invited device publishes an access request and six-digit
+comparison code. The owner enters that code and authenticates before Tersa wraps the workspace key
+for that exact device. CloudKit membership alone does not grant key access, and Tersa does not provide
+Apple or the Developer with an unwrapped workspace key or a master key for eligible financial content.
+End-to-end encryption applies to eligible financial content, not to the trustworthiness or separate
+identity proof of each Household participant or device. It does not prevent invited or key-holding
+participants from
 
                                                                                  Page 11
 Tersa | Privacy, Terms & Financial Safety
@@ -410,26 +397,26 @@ seeing the shared workspace. Participants may add, edit, reconcile, or delete sh
 to the current role and subscription state. A participant may also view information on a compromised
 device, capture screenshots, or export records outside Tersa.
 
-Apple necessarily processes CloudKit account and share-participant information, zone and record
-existence and timing, coarse payload class, routing and workspace-control values, pseudonymous
-workspace, device, recipient, and attachment identifiers, public keys and wrapped-key envelopes,
-attachment size descriptors including plaintext and ciphertext byte counts, change and deletion state,
-and other service metadata. Apple stores the encrypted financial payloads and attachment ciphertext.
-Tersa does not place plaintext financial values or plaintext workspace keys in control records, but it does
-not control Apple's independent processing or claim that this metadata is end-to-end encrypted.
+CloudKit requires Apple to process information needed to provide account, storage, sharing, routing,
+synchronization, security, and deletion functions. Depending on Apple's systems, this may include
+account and participant information; record existence and timing; content or payload categories;
+pseudonymous workspace, device, recipient, record, and attachment identifiers; public-key and
+encrypted-key material; size information; change and deletion state; and other service metadata. Apple
+stores encrypted financial and attachment content. Tersa does not control Apple's independent
+processing and does not represent that CloudKit service metadata is end-to-end encrypted.
 The owner should invite only trusted people, remove participants when access is no longer appropriate,
 and understand that a removed participant may retain prior exports, screenshots, backups, or
 information already learned.
 10. Exchange Rates and Network Requests
 
-Tersa permits network access only for narrowly defined services: Apple StoreKit and App Store
-functions, Apple CloudKit and sharing, the configured exchange-rate providers, and user-initiated
-external legal or contact pages hosted on GitHub Pages.
+The current version of Tersa uses network access for Apple StoreKit and App Store functions, Apple
+CloudKit and sharing, the configured exchange-rate providers, and user-initiated external legal or
+contact pages hosted on GitHub Pages.
 For an exchange-rate lookup, Tersa sends only the base currency, quote currency, and requested date
 over HTTPS. Tersa tries Frankfurter at api.frankfurter.dev first and uses the open-source fawazahmed0
-currency API through jsDelivr or Cloudflare Pages only for rates Frankfurter does not resolve. Requests
-are designed without cookies or credentials; Frankfurter receives no financial request body, while
-fallback currency codes and dates appear in the requested URL path. Providers and network
+currency API through jsDelivr or Cloudflare Pages only for rates Frankfurter does not resolve. The
+request is limited to the currencies and date needed for the lookup and does not include the user's
+financial amounts, account names, merchant names, notes, or financial records. Providers and network
 intermediaries may still receive ordinary connection data such as IP address, time, and device-network
 information under their own practices.
 Rates may be delayed, unavailable, rounded, revised, or inaccurate and are provided for record-keeping
@@ -462,10 +449,11 @@ relying on it. Tersa may retain limited file information, mapping choices, and i
 an import or identify possible duplicates. Source files remain under the user's control and are not sent to
 the Developer.
 CSV, JSON, PDF, and diagnostic-log exports are not encrypted by Tersa after creation. The diagnostic
-export is designed to exclude financial and personal content, but it can contain technical device and app
-context and a privacy-safe audit summary with stable check identifiers, check statuses, and count
-buckets. Once an export is saved to Files, Mail, Messages, AirDrop, a printer, another app, or another
-person, it is governed by the user's choices and the receiving service's practices.
+export is data-minimized and designed to exclude the financial and free-form content identified in
+Section 4, but it can contain technical device, app, operating-system, timing, event, resource, and audit
+information that may constitute personal information. Once an export is saved to Files, Mail, Messages,
+AirDrop, a printer, another app, or another person, it is governed by the user's choices and the receiving
+service's practices.
 Manual and automatic backup files are encrypted under a user-chosen password. Tersa does not retain
 manual backup passwords. While automatic backup is enabled, its password is stored only in this
 iPhone's device-only Keychain and is not synchronized through iCloud Keychain or the financial
@@ -534,26 +522,26 @@ Automatic-backup retention may delete older automatic files according to the use
 automatic backup off stops future attempts and removes its saved password and folder access from the
 app, but it does not delete existing backup files. Files may remain with Apple or another selected
 provider until the user deletes them there and any provider retention period ends.
-The universal diagnostic log is separate from the financial workspace, excluded from backup and sync,
-and can be cleared by the user. Tersa prunes an entry when it becomes older than five days and also
+The local diagnostic log is separate from the financial workspace, excluded from Tersa backup and sync,
+and can be cleared by the user. It is configured to prune entries older than five days and to
 
 
                                                                                  Page 14
 Tersa | Privacy, Terms & Financial Safety
 
-prunes the oldest entries whenever the log exceeds 5 MB. A Siri Quick Fill draft is deleted after one
-consumption attempt and is invalid after ten minutes.
+prune the oldest entries after the log exceeds 5 MB, subject to normal app and operating-system
+operation. A Siri Quick Fill draft becomes invalid after one consumption attempt or ten minutes and is
+removed when the app next has an ordinary opportunity to do so.
 
 After the user confirms Delete Workspace and completes any required device authentication, Tersa
-records the exact remote cleanup obligation and removes the local financial workspace first, including
-its records, attachments, workspace keys, route, and synchronization state. Limited trial and purchase
-evidence is retained. Local deletion remains complete even if the device is offline, CloudKit is
-unavailable, or a different Apple Account is active.
-Remote cleanup then proceeds automatically and idempotently. For an Individual or Household owner,
-it requests deletion of the exact private CloudKit zone or share; for a Household participant, it removes
-that participant's local identity and requests departure from the exact share without deleting the
-owner's workspace. If the required network or original Apple Account is unavailable, Tersa shows the
-cloud deletion as pending and retries when the required access returns. There is no guaranteed
+removes the local financial workspace, including its records, attachments, usable workspace keys, and
+local synchronization state. Limited trial, purchase, and pending-cleanup information may be retained.
+Local deletion remains complete even if the device is offline, CloudKit is unavailable, or a different
+Apple Account is active.
+Where cloud data or a Household share is associated with the deleted workspace, Tersa requests the
+applicable CloudKit deletion or departure. If the required network, service, or Apple Account access is
+unavailable, Tersa may show cleanup as pending and retry when the required access becomes available.
+A Household participant's departure does not delete the owner's workspace. There is no guaranteed
 completion time, and other devices may be offline.
 No system can guarantee erasure of independent exports, backup files, screenshots, printed copies,
 recipient copies, offline device copies, Apple backups, or service copies retained under applicable law or
@@ -594,10 +582,10 @@ lacks legal capacity to accept the Terms should use Tersa only with a parent or 
 accepts responsibility. Household owners should consider whether sharing financial data with a minor is
 appropriate.
 This document may be updated for app changes, law, platform rules, or improved explanations. The
-effective date identifies the current version. Material changes will be presented through the app, App
-Store listing, or published legal page as appropriate before or when the changed practice becomes
-available. If consent is legally required for a new purpose, continued use alone will not replace that
-consent.
+effective date identifies the current version. Changes apply prospectively. Where reasonably practicable
+and required by law, material changes will be presented through the app, App Store listing, or published
+legal page before they take effect. If consent is legally required for a new purpose, continued use alone
+will not replace that consent.
 Privacy questions and legal notices may be sent to the postal address in Section 2.
 
 
@@ -612,9 +600,10 @@ local AI proposals, household sharing, exports, backups, and related risks.
 
 18. Agreement and Relationship with Apple
 
-These Terms of Use form an agreement between the user and the Developer, not Apple. By
-downloading, installing, subscribing to, accessing, or using Tersa, the user agrees to these Terms and the
-Privacy Policy. If the user does not agree, the user must not use Tersa.
+These Terms of Use form an agreement between the user and the Developer, not Apple. By downloading,
+installing, subscribing to, accessing, or using Tersa, the user agrees to these Terms and the Privacy
+Policy to the extent permitted by applicable law. Tersa provides access to these documents through
+the Legal and subscription screens. If the user does not agree, the user must not use Tersa.
 Tersa is licensed, not sold. Apple's Standard Licensed Application End User License Agreement applies to
 the extent it governs Tersa; Apple Media Services Terms and Conditions and applicable Usage Rules also
 apply. These Terms supplement applicable Apple terms and do not create obligations for Apple beyond
@@ -642,8 +631,10 @@ applicable licensors.
 21. Trial, Subscriptions, Billing, and Cancellation
 
 Tersa currently offers a 30-day trial that begins after the app creates a durable workspace. The trial
-includes the local app but not iCloud sync or Household sharing. Trial eligibility is recorded locally and is
-not reset by deleting a workspace or reinstalling where Tersa can reliably detect prior use. Apple or the
+includes the local app but not iCloud sync or Household sharing. The trial does not automatically convert
+to a paid subscription; paid access begins only after the user confirms a purchase through Apple. Trial
+eligibility is recorded locally and is not reset by deleting a workspace or reinstalling where Tersa can
+reliably detect prior use. Apple or the
 
 
                                                                                  Page 17
@@ -668,9 +659,13 @@ before the paid period expires. Apple administers refunds subject to its rules a
 law; the Developer does not receive payment-card information.
 When trial or paid access expires, Tersa is designed to keep the workspace available in read-only mode
 for viewing, search, reports, exports, encrypted backups, restore, purchase restoration, and deletion.
-Mutations, local AI, CloudKit uploads, and household changes may be unavailable. If a Household
-subscription is replaced by an Individual subscription, a shared workspace may remain read-only and the
-owner may be able to create a private copy.
+Mutations, local AI, CloudKit uploads, and household changes may be unavailable. Encrypted downloads
+remain available while the required Apple Account, network, CloudKit service, and workspace-key access
+are available, but uploads stop and offline copies may temporarily diverge. The user should allow sync to
+finish and create a current export or tested backup before expiry, cancellation, downgrade, device
+replacement, or a Household change. When Household is replaced by Individual, the shared workspace
+remains read-only while Tersa downloads and verifies complete financial and attachment projections,
+then automatically creates a verified private copy; no separate copy action is required.
 22. Manual Financial Records and No Bank Connection
 Tersa does not connect to financial institutions and does not independently verify balances,
 transactions, ownership, identity, tax treatment, market value, payment status, exchange rates, or
@@ -721,16 +716,17 @@ another person's financial information in a shared workspace. Tersa's consent to
 iCloud sync does not obtain consent from a third person whose information a participant chooses to
 enter. Each participant must have authority to view and process the shared information and must
 protect the device, Apple Account, exports, approval codes, and encryption material available to that
-participant. Because an owner device may automatically wrap the workspace key to a device identity
-published through an accepted CloudKit share, owners must promptly review and remove people whose
-share access is no longer appropriate and protect the Apple Account and participating devices.
+participant. Because an invited device receives key access only after the owner enters its six-digit
+comparison code and authenticates, owners must promptly review and remove people whose share access
+is no longer appropriate and protect the Apple Account and participating devices.
 Participants may change or delete records visible to others. Tersa may preserve conflict, audit, or
 tombstone information needed for synchronization, but it cannot guarantee prevention, attribution,
 reversal, or recovery of a participant's action. Household members should agree on roles, review
 changes, and keep independent backups.
 Removing a participant or ending a Household subscription does not erase information the participant
-previously exported, printed, photographed, backed up, or learned. Neither Apple nor the Developer
-holds a master key or can reset Tersa's encryption keys. The original shared workspace requires an
+previously exported, printed, photographed, backed up, or learned. Tersa does not provide Apple or the
+Developer with a master key designed to decrypt eligible financial content, and neither can reset Tersa's
+workspace keys through Tersa. The original shared workspace requires an
 eligible key-holding device, while a usable encrypted backup and its password can restore only the data
 captured in that backup into a new workspace. If neither recovery path remains, the shared financial
 data is permanently unrecoverable. The Developer does not mediate ownership, family, separation,
@@ -748,9 +744,9 @@ inaccurate. Tersa does not guarantee a successful import, preservation of source
 compatibility with every file, provider, financial institution, locale, or export. The user should retain
 original records and compare important results with authoritative sources.
 Exports can reveal sensitive information and may no longer be encrypted or controlled by Tersa. A
-diagnostic-log export is designed to omit financial and personal content but can include technical app,
-operating-system, timing, error-classification, resource information, and a privacy-safe audit summary
-containing stable check identifiers, check statuses, and count buckets. The user is responsible for
+diagnostic-log export is data-minimized and designed to exclude the financial and free-form content
+identified in Section 4, but can include technical device, app, operating-system, timing, event, resource,
+and audit information that may constitute personal information. The user is responsible for
 choosing recipients and locations, redacting when appropriate, and securely deleting unneeded copies.
 An encrypted backup is useful only if the file, password, format, device, and app remain available and
 restoration succeeds. A usable Tersa backup and its password restore the backed-up data into a new
@@ -764,12 +760,11 @@ creation, provider availability, retention, validation, or restoration. The user
 independent backups before major imports, household changes, device replacement, or workspace
 deletion.
 Permanent workspace deletion is irreversible and may require confirmation and device authentication.
-Tersa removes the local financial workspace first and then performs the exact CloudKit zone-deletion or
-share-leaving obligation. If the required network, CloudKit service, or original Apple Account is
-unavailable, local deletion remains complete while cloud cleanup is visibly pending and retries
-automatically when the required access returns. An owner requests deletion of the owner's exact
-private zone or share; a Household participant requests departure from the exact share without deleting
-the owner's workspace. No completion time is guaranteed. Removing or offloading Tersa is not the same
+Tersa removes the local financial workspace first and then requests the applicable CloudKit deletion or
+Household-share departure. If the required network, CloudKit service, or Apple Account access is
+unavailable, local deletion remains complete while cloud cleanup may remain pending until the required
+access becomes available. A Household participant's departure does not delete the owner's workspace.
+No completion time is guaranteed. Removing or offloading Tersa is not the same
 as Delete Workspace and does not request cloud cleanup, leave a Household share, cancel a
 subscription, or delete exports or backups. The Developer does not guarantee recovery after deletion or
 erasure of copies retained independently by Apple, household members, offline devices, recipients,
@@ -825,6 +820,10 @@ imports, model limitations, or security requirements.
 The Developer may correct errors, change the local model, discontinue compatibility with older app or
 backup versions, or require an update for security or platform compliance. Where reasonably possible,
 material changes affecting paid access or data portability will be explained before they take effect.
+Where reasonably practicable, planned discontinuation will be preceded by notice and a reasonable
+opportunity to use then-available export or backup tools. This does not require continued operation where
+immediate suspension or discontinuation is reasonably necessary for security, legal, platform, or third-
+party-service reasons.
 
 
                                                                                  Page 21
@@ -837,6 +836,9 @@ Apple has no obligation to furnish maintenance or support for Tersa.
 
 31. No Warranty
 
+NOTHING IN THESE TERMS EXCLUDES, RESTRICTS, OR MODIFIES A WARRANTY, CONDITION, REMEDY, OR
+OTHER RIGHT THAT APPLICABLE LAW DOES NOT PERMIT THE PARTIES TO EXCLUDE, RESTRICT, OR
+MODIFY.
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, TERSA IS PROVIDED "AS IS," "AS
 AVAILABLE," AND WITH ALL FAULTS. THE DEVELOPER DISCLAIMS ALL EXPRESS, IMPLIED, AND
 STATUTORY WARRANTIES AND CONDITIONS, INCLUDING ACCURACY, COMPLETENESS, RELIABILITY,
@@ -845,13 +847,15 @@ QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND FITNESS OF FINANCIAL RECORDS, AI 
 FORECASTS, REPORTS, EXCHANGE RATES, IMPORTS, EXPORTS, BACKUPS, ENCRYPTION, KEY
 MANAGEMENT, SYNCHRONIZATION, DEVICE APPROVAL, OR DELETION FOR ANY PARTICULAR DECISION,
 AUTHORITY, SECURITY OUTCOME, OR RECOVERY RESULT.
-No proposal, validation result, report, forecast, documentation, demonstration, update, or
-communication creates a warranty. The user assumes the risk and cost of correction, reconciliation,
+Except for an express obligation in these Terms or a non-waivable obligation under applicable law, no
+proposal, validation result, report, forecast, documentation, demonstration, update, or communication
+creates an additional warranty. The user assumes the risk and cost of correction, reconciliation,
 professional review, tax treatment, backup, restoration, security, and use of Tersa.
 No encryption, authentication, synchronization, backup, or deletion system is guaranteed to prevent
 every defect, compromise, unauthorized approval, metadata disclosure, data loss, or residual copy.
-Neither the Developer nor Apple holds a master key or can reset Tersa's encryption keys. An Apple
-Account and encrypted iCloud data alone may not restore the workspace; if no eligible key-holding
+Tersa does not provide the Developer or Apple with a master key designed to decrypt eligible financial
+content, and neither can reset Tersa's workspace keys through Tersa. An Apple Account and encrypted
+iCloud data alone may not restore the workspace; if no eligible key-holding
 device and no usable Tersa backup with its password remain, the financial data is permanently
 unrecoverable.
 If Tersa fails to conform to a warranty that applies under Apple's terms, the user may notify Apple, and
@@ -894,71 +898,56 @@ Developer harmless from third-party claims, liabilities, losses, damages, and re
 from the user's unlawful misuse of Tersa, breach of these Terms, unauthorized processing or disclosure
 of another person's information, approval of an unknown or mismatched device, household invitation or
 dispute, upload of information without required authority or consent, or infringement of another
-person's rights. This obligation does not apply to the extent a claim was caused by the Developer's
+person’s rights. This obligation does not apply to the extent a claim was caused by the Developer's
 breach, negligence, or unlawful conduct.
-34. Dispute Notice and Cure, Individual Arbitration, Class Waiver, and
+The Developer will give reasonably prompt notice of a covered claim where practicable. The user may
+control the defence with counsel reasonably acceptable to the Developer, but may not settle a claim in
+a way that admits wrongdoing by, imposes a non-monetary obligation on, or fails to fully release the
+Developer without the Developer's written consent. The Developer may participate with separate counsel
+at the Developer's own expense.
+34. Informal Dispute Resolution, Courts, and Governing Law
 
-Governing Law
-Before starting arbitration or litigation, the complaining party must send an individually signed written
-notice to the postal address in Section 2. The notice must identify the complaining party and reliable
+Before starting litigation, the complaining party must send a signed written notice to the postal address
+in Section 2. The notice must identify the complaining party and reliable
 return contact, the App Store country or region, the relevant subscription or transaction without
 including full payment credentials, the app version or build if known, the facts and legal basis of each
 claim, prior attempts to resolve it, and the specific relief and monetary calculation requested. The notice
-must not include passwords, encryption keys, unnecessary financial records, or irreplaceable originals. A
-notice for multiple people is not an individual notice.
-For 30 days after a complete notice is received, the parties will attempt in good faith to resolve the
-dispute and, if either requests it, participate personally in a telephone or video settlement conference
-before commencing a formal proceeding. Compliance with this individual notice-and-cure process is a
-condition precedent to arbitration or litigation to the maximum extent permitted by law. Any applicable
-limitation period and filing-fee deadline will be tolled during that 30-day period where the law permits.
+must not include passwords, encryption keys, unnecessary financial records, or irreplaceable originals.
+For 90 days after a substantially complete notice is received, the parties will attempt in good faith to
+resolve the dispute without a formal proceeding. If either party requests it, each party will participate
+personally in at least one telephone or video settlement conference during that period. Each party will
+bear its own informal-resolution costs. Neither party is required to retain a lawyer, hire a mediator, or
+pay a private dispute-resolution provider as a condition of completing this process.
+Compliance with this notice-and-resolution process is a condition precedent to litigation to the maximum
+extent permitted by law. To the extent permitted by law, the parties agree that any applicable limitation
+period is suspended from the Developer's receipt of a substantially complete notice until the 90-day
+period ends. If filing is reasonably necessary to preserve a claim or comply with a non-waivable deadline,
+the filing party may file but, where permitted, will request a stay or refrain from serving or otherwise
+advancing the proceeding until the 90-day period ends.
 Settlement communications remain without prejudice and confidential to the extent permitted by law.
-This process does not prevent urgent relief, an eligible small-claims filing, preservation of a limitation
-period, a regulatory complaint, or exercise of any right that law does not permit the parties to delay or
-waive.
-EXCEPT FOR A CLAIM ELIGIBLE FOR SMALL CLAIMS COURT, A REQUEST FOR URGENT INJUNCTIVE RELIEF
-CONCERNING INTELLECTUAL PROPERTY OR SECURITY, OR A DISPUTE THAT APPLICABLE LAW PROHIBITS
+This process does not prevent a request for genuinely urgent interim relief, a regulatory complaint, or
+exercise of a right that applicable law does not permit the parties to delay or waive. The parties may
+extend the informal-resolution period by written agreement.
+After the 90-day period, the parties may use non-binding mediation only if they mutually agree in writing
+on the mediator, remote or in-person format, and allocation of costs before the mediation begins. A party
+is not required to mediate before starting litigation.
 
 
                                                                                  Page 23
 Tersa | Privacy, Terms & Financial Safety
 
-FROM PRE-DISPUTE ARBITRATION, EACH DISPUTE ARISING OUT OF OR RELATING TO TERSA OR THESE
-TERMS WILL BE RESOLVED BY FINAL AND BINDING INDIVIDUAL ARBITRATION RATHER THAN IN COURT.
-
-The arbitration will be administered under the ADR Institute of Canada Arbitration Rules in effect when
-the claim is filed, before one neutral arbitrator. The legal seat will be Toronto, Ontario, Canada. A
-hearing may occur remotely, in person, or on written submissions as the arbitrator permits. The
-arbitrator may award any individual remedy a court could award under applicable law, but only to the
-individual claimant and only to the extent necessary to resolve that claimant's proven claim. The
-arbitration, filings, evidence, and award will be confidential except as disclosure is reasonably necessary
-to conduct or enforce the proceeding, protect a legal right, or comply with law. Fees and costs will be
-allocated under the applicable rules and law; nothing requires a consumer to pay an amount that
-applicable law requires the Developer to pay.
-Except for a court's authority over the enforceability of the class-action waiver or a matter applicable
-law reserves to a court, the arbitrator has exclusive authority to resolve disputes about the
-interpretation, scope, formation, applicability, or enforceability of this arbitration agreement. The
-arbitrator must enforce these Terms as written, subject to applicable law, and may not combine
-different persons' claims, preside over a representative proceeding, or award relief for anyone other
-than the individual parties without all affected parties' written consent.
-EACH PARTY WAIVES A JURY TRIAL TO THE EXTENT SUCH A RIGHT EXISTS. ARBITRATION AND
-LITIGATION MUST PROCEED ONLY ON AN INDIVIDUAL BASIS. TO THE MAXIMUM EXTENT PERMITTED BY
-LAW, NEITHER PARTY MAY BRING, JOIN, ADMINISTER, OR PARTICIPATE IN A CLASS, COLLECTIVE,
-CONSOLIDATED, COORDINATED, MASS, PRIVATE-ATTORNEY-GENERAL, OR REPRESENTATIVE ACTION OR
-ARBITRATION. If applicable consumer law gives a person a non-waivable right to commence or join a
-class proceeding, or makes pre-dispute arbitration unavailable, that right and the corresponding court
-process remain available notwithstanding this paragraph.
-If a portion of the notice, arbitration, or class-waiver provisions is invalid or unenforceable for a
-particular claim, remedy, or person, it will be modified or severed only to the minimum extent
-necessary. Any affected claim or remedy will proceed in a court of competent jurisdiction, while the
-enforceable remainder continues to apply. If a final decision holds the class waiver unenforceable for a
-particular class or representative claim, that claim must proceed in court and not arbitration. Nothing in
-this section waives a substantive or procedural consumer right that applicable law makes non-waivable.
-This section survives termination of the licence and use of Tersa.
+Any unresolved dispute may be brought in the Ontario Superior Court of Justice or, where eligible, the
+Ontario Small Claims Court. Subject to any non-waivable consumer right and any court with mandatory
+jurisdiction, each party submits to the exclusive jurisdiction of courts located in Toronto, Ontario. Each
+party waives a civil jury trial to the extent such a waiver is permitted. Court costs and legal fees are
+governed by applicable law and court order, and each party otherwise bears its own costs.
+If any part of this Section is invalid or unenforceable for a particular claim, remedy, or person, it will be
+modified or severed only to the minimum extent necessary, and the enforceable remainder will continue.
+Nothing in this Section waives a substantive or procedural consumer right that applicable law makes
+non-waivable. This Section survives termination of the licence and use of Tersa.
 These Terms and disputes concerning Tersa are governed by the laws of Ontario and the federal laws of
-Canada applicable there, without regard to conflict-of-law principles. Where arbitration does not apply,
-and subject to non-waivable consumer rights and any court with mandatory jurisdiction, the parties
-submit to the courts located in Toronto, Ontario. The United Nations Convention on Contracts for the
-International Sale of Goods does not apply.
+Canada applicable there, without regard to conflict-of-law principles. The United Nations Convention on
+Contracts for the International Sale of Goods does not apply.
 35. Apple, Export Controls, and Third-Party Beneficiaries
 Apple is not a party to these Terms and is not responsible for Tersa or its content. The Developer, not
 Apple, is responsible for addressing claims relating to Tersa, including product-liability, legal-compliance,
@@ -991,9 +980,13 @@ or business subject to applicable law. No agency, partnership, employment, fiduc
 created.
 These Terms, the Privacy Policy, applicable Apple terms, and component licences form the entire
 agreement concerning their respective subject matter. The Developer may update these Terms
-prospectively. Material changes will be made available through the app or published legal page.
-Continued use after the effective date constitutes acceptance only to the extent permitted by law; if a
-change requires separate consent, that consent will be requested.
+prospectively and will not make a change retroactive unless required by law or accepted by the affected
+user. Where reasonably practicable and required by law, material changes will be presented through the
+app or published legal page before they take effect. Continued use after legally sufficient notice
+constitutes acceptance only to the extent permitted by law. If a change requires separate consent, that
+consent will be requested. A user who does not accept a change may stop using Tersa and cancel future
+renewal, but remains responsible for exporting or deleting data and for obligations arising before use
+ended.
 
 
                                                                                  Page 25
