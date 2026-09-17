@@ -50,7 +50,7 @@ import { withBase } from '../utils/paths';
       <div class="section-heading legal-copy">
         <p class="eyebrow"><ShieldCheck size={16} aria-hidden="true" />Clear and accessible</p>
         <h2 id="legal-title">Legal policies</h2>
-        <p>Know what to expect before you download. Each app’s complete policy is easy to find and read right in your browser.</p>
+        <p>Know what to expect before you download. See each app’s complete policy.</p>
       </div>
       <div class="legal-card-list">
         {apps.map((app) => (
@@ -58,7 +58,7 @@ import { withBase } from '../utils/paths';
             <img src={withBase(app.icon)} alt="" width="48" height="48" loading="lazy" />
             <span>
               <strong>{app.name} Legal Policy</strong>
-              <small>Read the complete HTML policy</small>
+              <small></small>
             </span>
             <ArrowDown class="rotate-link-icon" size={18} aria-hidden="true" />
           </a>
@@ -73,7 +73,7 @@ import { withBase } from '../utils/paths';
         <div class="contact-copy">
           <p class="eyebrow">Developer contact</p>
           <h2 id="contact-title">Support and inquiries</h2>
-          <p>For support, privacy questions, or legal inquiries, use the protected developer contact email below.</p>
+          <p>For support, privacy questions, or legal inquiries, use the contact email below.</p>
         </div>
         <ContactReveal />
       </div>
