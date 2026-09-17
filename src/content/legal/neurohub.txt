@@ -2,8 +2,7 @@ NeuroHub
 
 Privacy Policy
 
-Effective: 2022-05-11
-Last Updated: 2023-04-09
+Effective: 2022-05-11 - Last Updated: 2023-04-09
 
 Welcome to the Privacy Policy for NeuroHub ("we", "us", or "our"), a free mobile
 application. This Privacy Policy describes how we handle your information while you use
