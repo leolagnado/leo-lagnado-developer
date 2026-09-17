@@ -105,7 +105,7 @@ export const apps: App[] = [
       {
         label: 'App Store',
         store: 'ios',
-        href: 'https://apps.apple.com/us/app/tersa/id000',
+        href: 'https://apps.apple.com/app/tersa-budget-money-planner/id6790876034',
         // disabled: true,
       },
     ],
